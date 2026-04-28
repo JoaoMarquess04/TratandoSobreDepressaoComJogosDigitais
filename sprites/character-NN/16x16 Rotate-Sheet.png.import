@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x0um1pt2tvf5"
-path="res://.godot/imported/frame_1_delay-0.2s.png-3408f0a6bb75c01dffe83c1da8297b17.ctex"
+uid="uid://bka1h71kmifyl"
+path="res://.godot/imported/16x16 Rotate-Sheet.png-c75c78e5ce9ee3ee04525eae625f8bf6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/character/Dash/frame_1_delay-0.2s.png"
-dest_files=["res://.godot/imported/frame_1_delay-0.2s.png-3408f0a6bb75c01dffe83c1da8297b17.ctex"]
+source_file="res://sprites/character-NN/16x16 Rotate-Sheet.png"
+dest_files=["res://.godot/imported/16x16 Rotate-Sheet.png-c75c78e5ce9ee3ee04525eae625f8bf6.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://budkmqdl0fptm"
-path="res://.godot/imported/frame_0_delay-0.2s.png-346157851a75c8177ad61c36273c97fa.ctex"
+uid="uid://vqgv7r7ekvbt"
+path="res://.godot/imported/tall-abandoned-lighthouse.png-d89e4b786a0ee47481ac8dab6bd67822.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/character/Dash/frame_0_delay-0.2s.png"
-dest_files=["res://.godot/imported/frame_0_delay-0.2s.png-346157851a75c8177ad61c36273c97fa.ctex"]
+source_file="res://sprites/bg-itens/tall-abandoned-lighthouse.png"
+dest_files=["res://.godot/imported/tall-abandoned-lighthouse.png-d89e4b786a0ee47481ac8dab6bd67822.ctex"]
 
 [params]
 
