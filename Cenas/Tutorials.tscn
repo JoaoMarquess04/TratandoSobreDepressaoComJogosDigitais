@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://dwfdw0no0uydo" path="res://sprites/character-NN/16x16 Jump-Sheet.png" id="7_jp51f"]
 [ext_resource type="Texture2D" uid="uid://dgmn6mi43e8qf" path="res://sprites/character-NN/16x16 Run-Sheet.png" id="8_n2f7w"]
 [ext_resource type="Script" uid="uid://dhktlqgsrf20w" path="res://scene_transition_1.gd" id="9_mjb8x"]
-[ext_resource type="Texture2D" uid="uid://bf0ot2y4x247o" path="res://sprites/general-itens/Coracao.png" id="10_grlfb"]
 [ext_resource type="Script" uid="uid://c6hk36s43v6xd" path="res://Cenas/BarraDeVida.gd" id="10_o6x1e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
@@ -299,6 +298,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k4kxg"]
 size = Vector2(18, 25)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o6x1e"]
+load_path = "res://.godot/imported/Coracao.png-0eb44d2fdd143c5b1a1349a6a330b501.ctex"
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m74mh"]
 size = Vector2(61.5, 456)
 
@@ -378,7 +380,7 @@ offset_right = 111.78261
 offset_bottom = 109.0
 value = 100.0
 nine_patch_stretch = true
-texture_progress = ExtResource("10_grlfb")
+texture_progress = SubResource("CompressedTexture2D_o6x1e")
 script = ExtResource("10_o6x1e")
 player = NodePath("../../CharacterBody2D")
 

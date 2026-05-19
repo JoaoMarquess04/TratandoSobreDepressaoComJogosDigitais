@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf0ot2y4x247o"
-path="res://.godot/imported/Coracao.png-0eb44d2fdd143c5b1a1349a6a330b501.ctex"
+uid="uid://cibo4hi8p02iq"
+path="res://.godot/imported/CaixaDialogoPadrao.png-bfde99a44fa8490e61716b3b619ca08c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/general-itens/Coracao.png"
-dest_files=["res://.godot/imported/Coracao.png-0eb44d2fdd143c5b1a1349a6a330b501.ctex"]
+source_file="res://sprites/caixas-dialogo/CaixaDialogoPadrao.png"
+dest_files=["res://.godot/imported/CaixaDialogoPadrao.png-bfde99a44fa8490e61716b3b619ca08c.ctex"]
 
 [params]
 
