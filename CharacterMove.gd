@@ -3,6 +3,11 @@ extends CharacterBody2D
 const  SPEED = 200.0
 const JUMP_VELOCITY = -300.0
 
+#BarraDeVida
+var maxHp = 100
+var hp = 100
+
+
 #ConfigDash 
 const DASH_SPEED = 700.0
 const DASH_TIME = 0.2
@@ -25,6 +30,13 @@ func _ready():
 	respawn_position = global_position
 
 func _physics_process(delta: float) -> void:
+	
+	
+	#BarraDeVida
+	if Input.is_action_just_pressed("Dash"):
+		hp -= 10
+	else:
+			hp += 1 * delta
 	
 	#verificar queda
 	if global_position.y > FALL_LIMIT:

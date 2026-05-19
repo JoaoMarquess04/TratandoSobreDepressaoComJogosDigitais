@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://dwfdw0no0uydo" path="res://sprites/character-NN/16x16 Jump-Sheet.png" id="7_jp51f"]
 [ext_resource type="Texture2D" uid="uid://dgmn6mi43e8qf" path="res://sprites/character-NN/16x16 Run-Sheet.png" id="8_n2f7w"]
 [ext_resource type="Script" uid="uid://dhktlqgsrf20w" path="res://scene_transition_1.gd" id="9_mjb8x"]
+[ext_resource type="Texture2D" uid="uid://bf0ot2y4x247o" path="res://sprites/general-itens/Coracao.png" id="10_grlfb"]
+[ext_resource type="Script" uid="uid://c6hk36s43v6xd" path="res://Cenas/BarraDeVida.gd" id="10_o6x1e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("3_o6x1e")
@@ -365,6 +367,20 @@ limit_left = 0
 limit_top = 0
 limit_right = 4380
 limit_bottom = 650
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1880469479]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer" unique_id=1043899086 node_paths=PackedStringArray("player")]
+texture_filter = 1
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 111.78261
+offset_bottom = 109.0
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("10_grlfb")
+script = ExtResource("10_o6x1e")
+player = NodePath("../../CharacterBody2D")
 
 [node name="SceneTransition1" type="Area2D" parent="." unique_id=941545252]
 script = ExtResource("9_mjb8x")
