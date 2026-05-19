@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://dfxf7104r8ps5"]
 
-[ext_resource type="Texture2D" uid="uid://de1eqgotyjaf5" path="res://sprites/sky/sky-night.png" id="1_frmi4"]
 [ext_resource type="Texture2D" uid="uid://vqgv7r7ekvbt" path="res://sprites/bg-itens/tall-abandoned-lighthouse.png" id="2_yv64e"]
 [ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="3_5lb1i"]
 [ext_resource type="Script" uid="uid://cwj85d1venhau" path="res://CharacterMove.gd" id="4_m10gh"]
@@ -296,18 +295,6 @@ animations = [{
 size = Vector2(18, 25)
 
 [node name="Node2D" type="Node2D" unique_id=1679215678]
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=679537619]
-texture_filter = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 3406.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_frmi4")
-stretch_mode = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="LIGHTHOUSE" type="Sprite2D" parent="." unique_id=1425584230]
 texture_filter = 1
