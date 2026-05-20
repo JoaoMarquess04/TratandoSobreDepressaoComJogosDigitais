@@ -377,15 +377,87 @@ theme_override_font_sizes/font_size = 11
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id lorem et velit viverra malesuada. Aenean sed purus vel libero."
 autowrap_mode = 2
 
-[node name="Placa2" type="Sprite2D" parent="." unique_id=1332408975]
+[node name="Placa2" type="Sprite2D" parent="." unique_id=1650396102]
 texture_filter = 1
-position = Vector2(431, 586)
+position = Vector2(443, 585)
 texture = ExtResource("4_kjhup")
+script = ExtResource("5_4yk3r")
 
-[node name="Placa3" type="Sprite2D" parent="." unique_id=994271342]
+[node name="Area2D" type="Area2D" parent="Placa2" unique_id=1512278516]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Placa2/Area2D" unique_id=1377071931]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_4yk3r")
+
+[node name="Label" type="Label" parent="Placa2" unique_id=84646887]
+visible = false
+offset_left = 15.0
+offset_top = -66.0
+offset_right = 92.0
+offset_bottom = -43.0
+text = "Press \"F\""
+
+[node name="TextureRect" type="TextureRect" parent="Placa2" unique_id=1037141258]
+offset_left = -33.0
+offset_top = -132.0
+offset_right = 162.0
+offset_bottom = -32.0
+texture = ExtResource("6_jp51f")
+
+[node name="Label2" type="Label" parent="Placa2/TextureRect" unique_id=2023640576]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 13.0
+offset_right = 184.0
+offset_bottom = 79.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("7_n2f7w")
+theme_override_font_sizes/font_size = 11
+text = "texture test"
+autowrap_mode = 2
+
+[node name="Placa3" type="Sprite2D" parent="." unique_id=2033661519]
 texture_filter = 1
-position = Vector2(824, 586)
+position = Vector2(811, 587)
 texture = ExtResource("4_kjhup")
+script = ExtResource("5_4yk3r")
+
+[node name="Area2D" type="Area2D" parent="Placa3" unique_id=287010028]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Placa3/Area2D" unique_id=2007028454]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_4yk3r")
+
+[node name="Label" type="Label" parent="Placa3" unique_id=2068351884]
+visible = false
+offset_left = 15.0
+offset_top = -66.0
+offset_right = 92.0
+offset_bottom = -43.0
+text = "Press \"F\""
+
+[node name="TextureRect" type="TextureRect" parent="Placa3" unique_id=120427547]
+offset_left = -112.0
+offset_top = -140.0
+offset_right = 83.0
+offset_bottom = -40.0
+texture = ExtResource("6_jp51f")
+
+[node name="Label2" type="Label" parent="Placa3/TextureRect" unique_id=667374545]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 13.0
+offset_right = 184.0
+offset_bottom = 79.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("7_n2f7w")
+theme_override_font_sizes/font_size = 11
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id lorem et velit viverra malesuada. Aenean sed purus vel libero."
+autowrap_mode = 2
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=608180040]
 script = ExtResource("4_grlfb")
@@ -436,4 +508,8 @@ shape = SubResource("RectangleShape2D_m74mh")
 
 [connection signal="body_entered" from="Placa/Area2D" to="Placa" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Placa/Area2D" to="Placa" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Placa2/Area2D" to="Placa2" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Placa2/Area2D" to="Placa2" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Placa3/Area2D" to="Placa3" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Placa3/Area2D" to="Placa3" method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="SceneTransition1" to="SceneTransition1" method="_on_body_entered"]
