@@ -5,12 +5,17 @@
 [ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="3_o6x1e"]
 [ext_resource type="Script" uid="uid://cwj85d1venhau" path="res://CharacterMove.gd" id="4_grlfb"]
 [ext_resource type="Texture2D" uid="uid://coeumlwktdel0" path="res://sprites/general-itens/Placa.png" id="4_kjhup"]
+[ext_resource type="Script" uid="uid://3207tb8123fc" path="res://Cenas/Placa1.gd" id="5_4yk3r"]
 [ext_resource type="Texture2D" uid="uid://bka1h71kmifyl" path="res://sprites/character-NN/16x16 Rotate-Sheet.png" id="5_rxx8n"]
 [ext_resource type="Texture2D" uid="uid://ckdb3mqor6c0x" path="res://sprites/character-NN/16x16 Idle-Sheet.png" id="6_4yk3r"]
+[ext_resource type="Texture2D" uid="uid://cibo4hi8p02iq" path="res://sprites/caixas-dialogo/CaixaDialogoPadrao.png" id="6_jp51f"]
 [ext_resource type="Texture2D" uid="uid://dwfdw0no0uydo" path="res://sprites/character-NN/16x16 Jump-Sheet.png" id="7_jp51f"]
+[ext_resource type="FontFile" uid="uid://ccxk70tf5hw46" path="res://Fontes/Minecraft.ttf" id="7_n2f7w"]
 [ext_resource type="Texture2D" uid="uid://dgmn6mi43e8qf" path="res://sprites/character-NN/16x16 Run-Sheet.png" id="8_n2f7w"]
 [ext_resource type="Script" uid="uid://dhktlqgsrf20w" path="res://scene_transition_1.gd" id="9_mjb8x"]
 [ext_resource type="Script" uid="uid://c6hk36s43v6xd" path="res://Cenas/BarraDeVida.gd" id="10_o6x1e"]
+[ext_resource type="Texture2D" uid="uid://cppq5u8u47hdl" path="res://sprites/general-itens/CoracaoVazio.png" id="10_rxx8n"]
+[ext_resource type="Texture2D" uid="uid://cm0dewmoowc7" path="res://sprites/general-itens/CoracaoCheio.png" id="11_4yk3r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("3_o6x1e")
@@ -110,6 +115,9 @@ texture = ExtResource("3_o6x1e")
 [sub_resource type="TileSet" id="TileSet_lo64l"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_k1ngt")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4yk3r"]
+size = Vector2(20, 25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r3uya"]
 atlas = ExtResource("5_rxx8n")
@@ -298,9 +306,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k4kxg"]
 size = Vector2(18, 25)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o6x1e"]
-load_path = "res://.godot/imported/Coracao.png-0eb44d2fdd143c5b1a1349a6a330b501.ctex"
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m74mh"]
 size = Vector2(61.5, 456)
 
@@ -335,6 +340,42 @@ layer_0/tile_data = PackedInt32Array(2490368, 393216, 0, 2555904, 393216, 1, 262
 texture_filter = 1
 position = Vector2(116, 586)
 texture = ExtResource("4_kjhup")
+script = ExtResource("5_4yk3r")
+
+[node name="Area2D" type="Area2D" parent="Placa" unique_id=178400104]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Placa/Area2D" unique_id=2021419786]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_4yk3r")
+
+[node name="Label" type="Label" parent="Placa" unique_id=1771679359]
+visible = false
+offset_left = 15.0
+offset_top = -66.0
+offset_right = 92.0
+offset_bottom = -43.0
+text = "Press \"F\""
+
+[node name="TextureRect" type="TextureRect" parent="Placa" unique_id=1711155256]
+offset_left = 5.0
+offset_top = -131.0
+offset_right = 200.0
+offset_bottom = -31.0
+texture = ExtResource("6_jp51f")
+
+[node name="Label2" type="Label" parent="Placa/TextureRect" unique_id=265194421]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 13.0
+offset_right = 184.0
+offset_bottom = 79.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("7_n2f7w")
+theme_override_font_sizes/font_size = 11
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id lorem et velit viverra malesuada. Aenean sed purus vel libero."
+autowrap_mode = 2
 
 [node name="Placa2" type="Sprite2D" parent="." unique_id=1332408975]
 texture_filter = 1
@@ -376,11 +417,12 @@ limit_bottom = 650
 texture_filter = 1
 offset_left = 3.0
 offset_top = 1.0
-offset_right = 111.78261
-offset_bottom = 109.0
+offset_right = 236.87036
+offset_bottom = 74.0
 value = 100.0
 nine_patch_stretch = true
-texture_progress = SubResource("CompressedTexture2D_o6x1e")
+texture_under = ExtResource("10_rxx8n")
+texture_progress = ExtResource("11_4yk3r")
 script = ExtResource("10_o6x1e")
 player = NodePath("../../CharacterBody2D")
 
@@ -392,4 +434,6 @@ next_scene = "res://Cenas/Cena2.tscn"
 position = Vector2(4400, 371)
 shape = SubResource("RectangleShape2D_m74mh")
 
+[connection signal="body_entered" from="Placa/Area2D" to="Placa" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Placa/Area2D" to="Placa" method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="SceneTransition1" to="SceneTransition1" method="_on_body_entered"]

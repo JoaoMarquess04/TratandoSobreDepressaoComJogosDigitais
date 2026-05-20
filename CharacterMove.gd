@@ -38,6 +38,10 @@ func _physics_process(delta: float) -> void:
 	else:
 			hp += 1 * delta
 	
+	if hp <= 0:
+		respawn()
+		hp = 100 
+	
 	#verificar queda
 	if global_position.y > FALL_LIMIT:
 		respawn()
