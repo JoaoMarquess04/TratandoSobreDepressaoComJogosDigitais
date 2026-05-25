@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://6s3rmkhlty0a"]
+
+[ext_resource type="Script" uid="uid://cdr825s3pfovl" path="res://Cenas/dialog_manager.gd" id="1_fwnaa"]
+[ext_resource type="PackedScene" uid="uid://done46octxley" path="res://Cenas/NiveisFarol/Nivel-1/NivelAndar1.tscn" id="2_773pa"]
+
+[node name="DialogManager" type="Node" unique_id=285851977]
+script = ExtResource("1_fwnaa")
+dialog_scene = ExtResource("2_773pa")

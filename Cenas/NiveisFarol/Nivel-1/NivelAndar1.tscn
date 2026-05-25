@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://ba01wgtal7x3h" path="res://sprites/CasaNivel1/MesaDeCanto.png" id="12_egrpo"]
 [ext_resource type="Texture2D" uid="uid://cols5ncw8t3t2" path="res://sprites/CasaNivel1/ComodosQuarto.png" id="13_egrpo"]
 [ext_resource type="Texture2D" uid="uid://dk32j1sb22cv8" path="res://sprites/CasaNivel1/MesaDeTrabalho.png" id="14_gum0b"]
+[ext_resource type="PackedScene" uid="uid://dya2cy3u60p7r" path="res://Cenas/radio.tscn" id="16_6rwqm"]
+[ext_resource type="PackedScene" uid="uid://bxqe3l1cnqsyw" path="res://Cenas/dialog_box.tscn" id="17_6i17h"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f5hml"]
 load_path = "res://.godot/imported/FundoCasaMadeira.png-acc4324b86b6d70cf509df393ae740e6.ctex"
@@ -448,3 +450,10 @@ texture_filter = 1
 position = Vector2(991, 560)
 scale = Vector2(2.777778, 2.777778)
 texture = ExtResource("14_gum0b")
+
+[node name="DialogBox" parent="." unique_id=1069792070 instance=ExtResource("17_6i17h")]
+visible = false
+
+[node name="Radio" parent="." unique_id=648558778 instance=ExtResource("16_6rwqm")]
+texture_filter = 1
+position = Vector2(537, 565)

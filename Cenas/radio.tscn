@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dya2cy3u60p7r"]
+
+[ext_resource type="Script" uid="uid://dcod5sk00ajyy" path="res://Cenas/NiveisFarol/Nivel-1/radio.gd" id="1_0d2di"]
+[ext_resource type="Texture2D" uid="uid://b8c5nx8bqnudx" path="res://sprites/CasaNivel1/Radio.png" id="2_ikslq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpjf8"]
+
+[node name="Radio" type="Area2D" unique_id=648558778]
+position = Vector2(536, 565)
+script = ExtResource("1_0d2di")
+texts = Array[String](["Ele ligava esse rádio tão alto…", "A casa inteira vibrava junto.", "Eu dizia que era barulho demais", "Agora o silêncio ficou pior"])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1429061157]
+texture = ExtResource("2_ikslq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1224284075]
+shape = SubResource("RectangleShape2D_cpjf8")
+
+[node name="Label" type="Label" parent="." unique_id=1065088072]
+offset_left = -29.0
+offset_top = -36.0
+offset_right = 11.0
+offset_bottom = -13.0
+text = "\"F\""

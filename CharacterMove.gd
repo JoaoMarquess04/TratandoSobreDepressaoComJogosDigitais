@@ -112,3 +112,7 @@ func respawn():
 	global_position = respawn_position
 	velocity = Vector2.ZERO
 	is_dashing = false
+
+
+func _on_radio_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
