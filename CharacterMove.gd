@@ -12,6 +12,8 @@ var hp = 100
 const DASH_SPEED = 700.0
 const DASH_TIME = 0.2
 const DASH_VERTICAL_MULTIPLIER = 0.6
+const DASH_COOLDOWN = 1.0
+
 
 #RespawnSystem
 const FALL_LIMIT = 1000.0
@@ -20,6 +22,7 @@ var is_dashing = false
 var dash_timer = 1.0
 var dash_direction = Vector2.ZERO
 var can_dash = true
+var dash_cooldown_timer = 0.0
 
 var respawn_position: Vector2
 
@@ -30,10 +33,13 @@ func _ready():
 	respawn_position = global_position
 
 func _physics_process(delta: float) -> void:
+	if dash_cooldown_timer > 0:
+		dash_cooldown_timer -= delta
+
 	
 	
 	#BarraDeVida
-	if Input.is_action_just_pressed("Dash"):
+	if Input.is_action_just_pressed(""):
 		hp -= 10
 	else:
 			hp += 1 * delta
@@ -47,7 +53,7 @@ func _physics_process(delta: float) -> void:
 		respawn()
 
 	#dash reset
-	if is_on_floor():
+	if is_on_floor() and dash_cooldown_timer <= 0:
 		can_dash = true
 
 	#dash input
@@ -96,6 +102,7 @@ func start_dash():
 	is_dashing = true
 	dash_timer = DASH_TIME
 	can_dash = false
+	dash_cooldown_timer = DASH_COOLDOWN
 
 	var input_dir = Vector2(
 		Input.get_axis("ui_left", "ui_right"),
