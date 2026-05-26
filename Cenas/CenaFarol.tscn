@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cm0dewmoowc7" path="res://sprites/general-itens/CoracaoCheio.png" id="8_6ra2h"]
 [ext_resource type="Script" uid="uid://c6hk36s43v6xd" path="res://Cenas/BarraDeVida.gd" id="9_g4v4m"]
 [ext_resource type="Script" uid="uid://c2hmsevw8ra55" path="res://Cenas/area_2d.gd" id="13_dgshj"]
+[ext_resource type="Script" uid="uid://cr8rrsvwci31j" path="res://Cenas/scene_transition_2.gd" id="14_wcljq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("1_ytphb")
@@ -371,6 +372,9 @@ size = Vector2(193, 5)
 
 [sub_resource type="GDScript" id="GDScript_wcljq"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c27d8"]
+size = Vector2(54, 53)
+
 [node name="Node" type="Node" unique_id=1482666183]
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=1523541365]
@@ -454,3 +458,12 @@ script = ExtResource("13_dgshj")
 position = Vector2(576.5, 555.5)
 shape = SubResource("RectangleShape2D_wcljq")
 script = SubResource("GDScript_wcljq")
+
+[node name="SceneTransition2" type="Area2D" parent="." unique_id=1000575445]
+script = ExtResource("14_wcljq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTransition2" unique_id=2039874403]
+position = Vector2(204, 93)
+shape = SubResource("RectangleShape2D_c27d8")
+
+[connection signal="body_entered" from="SceneTransition2" to="SceneTransition2" method="_on_body_entered"]

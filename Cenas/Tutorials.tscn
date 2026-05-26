@@ -500,10 +500,9 @@ player = NodePath("../../CharacterBody2D")
 
 [node name="SceneTransition1" type="Area2D" parent="." unique_id=941545252]
 script = ExtResource("9_mjb8x")
-next_scene = "res://Cenas/Cena2.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTransition1" unique_id=1356304409]
-position = Vector2(4400, 371)
+position = Vector2(4283, 374)
 shape = SubResource("RectangleShape2D_m74mh")
 
 [connection signal="body_entered" from="Placa/Area2D" to="Placa" method="_on_area_2d_body_entered"]
