@@ -40,14 +40,12 @@ func _physics_process(delta: float) -> void:
 		dash_cooldown_timer -= delta
 
 	#BarraDeVida
-	'''if Input.is_action_just_pressed(""):
-		hp -= 10
-	else:
-			hp += 1 * delta
+	if hp < 100:
+		hp += 1 * delta
 	
 	if hp <= 0:
 		respawn()
-		hp = 100 '''
+		hp = 100 
 	
 	#verificar queda
 	if global_position.y > FALL_LIMIT:
