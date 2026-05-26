@@ -3,6 +3,9 @@ extends CharacterBody2D
 const  SPEED = 200.0
 const JUMP_VELOCITY = -300.0
 
+#variavel de Dano
+var taking_damage = false
+
 #BarraDeVida
 var maxHp = 100
 var hp = 100
@@ -36,8 +39,6 @@ func _physics_process(delta: float) -> void:
 	if dash_cooldown_timer > 0:
 		dash_cooldown_timer -= delta
 
-	
-	
 	#BarraDeVida
 	if Input.is_action_just_pressed(""):
 		hp -= 10
@@ -120,6 +121,16 @@ func respawn():
 	velocity = Vector2.ZERO
 	is_dashing = false
 
+func take_damage(damage):
+	if taking_damage:
+		return
 
-func _on_radio_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.
+	taking_damage = true
+
+	while taking_damage:
+		hp -= damage
+
+		await get_tree().create_timer(0.5).timeout
+
+func stop_damage():
+	taking_damage = false
