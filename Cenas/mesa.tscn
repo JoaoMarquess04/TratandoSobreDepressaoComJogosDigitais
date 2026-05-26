@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://f0nbms21318o"]
+
+[ext_resource type="Script" uid="uid://dcod5sk00ajyy" path="res://Cenas/NiveisFarol/Nivel-1/radio.gd" id="1_dlq0x"]
+[ext_resource type="Texture2D" uid="uid://dk32j1sb22cv8" path="res://sprites/CasaNivel1/MesaDeTrabalho.png" id="2_dlq0x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpjf8"]
+size = Vector2(19, 19)
+
+[node name="Mesa" type="Area2D" unique_id=648558778]
+texture_filter = 1
+position = Vector2(684, 571)
+script = ExtResource("1_dlq0x")
+texts = Array[String](["Ele odiava frio, e mesmo adulto, ainda esquecia de levar casaco"])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1429061157]
+position = Vector2(43.750008, -24.03127)
+scale = Vector2(2.3515627, 2.3315983)
+texture = ExtResource("2_dlq0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1224284075]
+position = Vector2(8.5, -2.5)
+shape = SubResource("RectangleShape2D_cpjf8")
+
+[node name="Label" type="Label" parent="." unique_id=1065088072]
+offset_left = -29.0
+offset_top = -36.0
+offset_right = 11.0
+offset_bottom = -13.0
+text = "\"F\""

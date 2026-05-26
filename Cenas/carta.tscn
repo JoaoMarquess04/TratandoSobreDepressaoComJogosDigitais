@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://ctgy6bu6ytbci"]
+
+[ext_resource type="Script" uid="uid://dcod5sk00ajyy" path="res://Cenas/NiveisFarol/Nivel-1/radio.gd" id="1_pxkao"]
+[ext_resource type="Texture2D" uid="uid://7dx0hb3dguo8" path="res://sprites/CasaNivel1/Cartaz.png" id="2_pxkao"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpjf8"]
+
+[node name="Carta" type="Area2D" unique_id=648558778]
+texture_filter = 1
+position = Vector2(344, 594)
+script = ExtResource("1_pxkao")
+texts = Array[String](["A letra dele ficava torta quando estava cansado", "Eu reconheceria essas palavras em qualquer lugar", "É estranho…", "Um pedaço de papel conseguir pesar tanto."])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1429061157]
+position = Vector2(5.9604645e-08, -18.000002)
+scale = Vector2(0.96875, 0.96875)
+texture = ExtResource("2_pxkao")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1224284075]
+position = Vector2(0, -21)
+shape = SubResource("RectangleShape2D_cpjf8")
+
+[node name="Label" type="Label" parent="." unique_id=1065088072]
+offset_left = -34.0
+offset_top = -47.0
+offset_right = 6.0
+offset_bottom = -24.0
+text = "\"F\""

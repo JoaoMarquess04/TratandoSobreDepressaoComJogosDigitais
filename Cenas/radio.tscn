@@ -6,19 +6,21 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cpjf8"]
 
 [node name="Radio" type="Area2D" unique_id=648558778]
-position = Vector2(536, 565)
+position = Vector2(536, 602)
 script = ExtResource("1_0d2di")
 texts = Array[String](["Ele ligava esse rádio tão alto…", "A casa inteira vibrava junto.", "Eu dizia que era barulho demais", "Agora o silêncio ficou pior"])
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1429061157]
+position = Vector2(2, -15)
 texture = ExtResource("2_ikslq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1224284075]
+position = Vector2(-1, -18)
 shape = SubResource("RectangleShape2D_cpjf8")
 
 [node name="Label" type="Label" parent="." unique_id=1065088072]
-offset_left = -29.0
-offset_top = -36.0
-offset_right = 11.0
-offset_bottom = -13.0
+offset_left = -35.0
+offset_top = -47.0
+offset_right = 5.0
+offset_bottom = -24.0
 text = "\"F\""

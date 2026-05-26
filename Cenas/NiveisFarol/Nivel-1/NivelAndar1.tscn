@@ -8,13 +8,17 @@
 [ext_resource type="Texture2D" uid="uid://dwfdw0no0uydo" path="res://sprites/character-NN/16x16 Jump-Sheet.png" id="5_egrpo"]
 [ext_resource type="Texture2D" uid="uid://dgmn6mi43e8qf" path="res://sprites/character-NN/16x16 Run-Sheet.png" id="6_gum0b"]
 [ext_resource type="Texture2D" uid="uid://cppq5u8u47hdl" path="res://sprites/general-itens/CoracaoVazio.png" id="7_l5eya"]
+[ext_resource type="PackedScene" uid="uid://dkfnro0rdqp1s" path="res://Cenas/casaco.tscn" id="8_1dje1"]
 [ext_resource type="Texture2D" uid="uid://cm0dewmoowc7" path="res://sprites/general-itens/CoracaoCheio.png" id="8_6rwqm"]
+[ext_resource type="PackedScene" uid="uid://f0nbms21318o" path="res://Cenas/mesa.tscn" id="9_1dje1"]
 [ext_resource type="Script" uid="uid://c6hk36s43v6xd" path="res://Cenas/BarraDeVida.gd" id="9_6i17h"]
+[ext_resource type="PackedScene" uid="uid://6b4yn484hpjm" path="res://Cenas/relógio.tscn" id="10_absk0"]
+[ext_resource type="PackedScene" uid="uid://d15cuak0hgyrc" path="res://Cenas/caixa_de_ferramenta.tscn" id="11_bg23m"]
 [ext_resource type="Texture2D" uid="uid://msg3qrl5eemg" path="res://sprites/CasaNivel1/Sofas.png" id="11_nl4sx"]
 [ext_resource type="Texture2D" uid="uid://ba01wgtal7x3h" path="res://sprites/CasaNivel1/MesaDeCanto.png" id="12_egrpo"]
 [ext_resource type="Texture2D" uid="uid://cols5ncw8t3t2" path="res://sprites/CasaNivel1/ComodosQuarto.png" id="13_egrpo"]
-[ext_resource type="Texture2D" uid="uid://dk32j1sb22cv8" path="res://sprites/CasaNivel1/MesaDeTrabalho.png" id="14_gum0b"]
 [ext_resource type="PackedScene" uid="uid://dya2cy3u60p7r" path="res://Cenas/radio.tscn" id="16_6rwqm"]
+[ext_resource type="PackedScene" uid="uid://ctgy6bu6ytbci" path="res://Cenas/carta.tscn" id="17_1dje1"]
 [ext_resource type="PackedScene" uid="uid://bxqe3l1cnqsyw" path="res://Cenas/dialog_box.tscn" id="17_6i17h"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f5hml"]
@@ -373,7 +377,9 @@ anchor_left = -1.1927084
 anchor_top = 0.55864197
 anchor_right = -1.1927084
 anchor_bottom = 1.0
+offset_top = 1.0
 offset_right = 3406.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("CompressedTexture2D_f5hml")
@@ -393,11 +399,41 @@ position = Vector2(186.00003, 561.50006)
 scale = Vector2(2.8611114, 2.8611114)
 texture = ExtResource("11_nl4sx")
 
+[node name="Radio" parent="." unique_id=648558778 instance=ExtResource("16_6rwqm")]
+texture_filter = 1
+position = Vector2(346, 583)
+
 [node name="MesaDeCanto" type="Sprite2D" parent="." unique_id=104210656]
 texture_filter = 1
 position = Vector2(327, 570)
 scale = Vector2(2.3055556, 2.3055556)
 texture = ExtResource("12_egrpo")
+
+[node name="Carta" parent="." unique_id=1770791443 instance=ExtResource("17_1dje1")]
+position = Vector2(537, 582)
+texts = Array[String](["A letra dele ficava torta quando estava cansado", "Eu reconheceria essas palavras em qualquer lugar", "É estranho…", "Um pedaço de papel conseguir pesar tanto"])
+
+[node name="ComodosQuarto" type="Sprite2D" parent="." unique_id=829861217]
+texture_filter = 1
+position = Vector2(610, 566)
+scale = Vector2(2.8958325, 2.8958325)
+texture = ExtResource("13_egrpo")
+
+[node name="Casaco" parent="." unique_id=1580820057 instance=ExtResource("8_1dje1")]
+position = Vector2(683, 590)
+texts = Array[String](["Ele odiava frio, e mesmo adulto, ainda esquecia de levar casaco"])
+
+[node name="Mesa" parent="." unique_id=498497514 instance=ExtResource("9_1dje1")]
+position = Vector2(889, 590)
+texts = Array[String](["Eu achei que, se deixasse tudo igual…", "Então nada teria acabado de verdade."])
+
+[node name="Relógio" parent="." unique_id=293465285 instance=ExtResource("10_absk0")]
+position = Vector2(964, 578)
+texts = Array[String](["Ele vivia chegando atrasado…", "Mãe aprende a esperar até quando não devia", "Mas eu sempre esperava"])
+
+[node name="Caixa de Ferramenta" parent="." unique_id=947421518 instance=ExtResource("11_bg23m")]
+position = Vector2(1052, 596)
+texts = Array[String](["Ele sempre achava que podia consertar tudo", "Portas quebradas…  ", "móveis velhos…", "até o farol", "Mas existem coisas…", "Que ninguém consegue salvar."])
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=608180040]
 script = ExtResource("2_f5hml")
@@ -439,21 +475,5 @@ script = ExtResource("9_6i17h")
 player = NodePath("../../CharacterBody2D")
 metadata/_edit_use_anchors_ = true
 
-[node name="ComodosQuarto" type="Sprite2D" parent="." unique_id=829861217]
-texture_filter = 1
-position = Vector2(610, 566)
-scale = Vector2(2.8958325, 2.8958325)
-texture = ExtResource("13_egrpo")
-
-[node name="MesaDeTrabalho" type="Sprite2D" parent="." unique_id=1751542851]
-texture_filter = 1
-position = Vector2(991, 560)
-scale = Vector2(2.777778, 2.777778)
-texture = ExtResource("14_gum0b")
-
 [node name="DialogBox" parent="." unique_id=1069792070 instance=ExtResource("17_6i17h")]
 visible = false
-
-[node name="Radio" parent="." unique_id=648558778 instance=ExtResource("16_6rwqm")]
-texture_filter = 1
-position = Vector2(537, 565)
