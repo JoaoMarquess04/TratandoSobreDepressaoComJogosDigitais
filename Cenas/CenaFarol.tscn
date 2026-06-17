@@ -474,7 +474,7 @@ shape = SubResource("RectangleShape2D_wcljq")
 script = SubResource("GDScript_wcljq")
 
 [node name="SceneTransition2" type="Area2D" parent="." unique_id=1000575445]
-position = Vector2(-136, -170)
+position = Vector2(1, 1)
 script = ExtResource("14_wcljq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTransition2" unique_id=2039874403]
@@ -482,6 +482,7 @@ position = Vector2(204, 93)
 shape = SubResource("RectangleShape2D_c27d8")
 
 [node name="EnergyOrb" type="Area2D" parent="." unique_id=124832857 groups=["player"]]
+visible = false
 position = Vector2(975, 553)
 script = ExtResource("16_g4v4m")
 
@@ -492,6 +493,7 @@ texture = ExtResource("17_8apjj")
 shape = SubResource("CircleShape2D_e74ll")
 
 [node name="EnergyOrb2" type="Area2D" parent="." unique_id=1505369014]
+visible = false
 position = Vector2(202, 224)
 script = ExtResource("16_g4v4m")
 
@@ -502,6 +504,7 @@ texture = ExtResource("17_8apjj")
 shape = SubResource("CircleShape2D_e74ll")
 
 [node name="EnergyOrb3" type="Area2D" parent="." unique_id=608137389]
+visible = false
 position = Vector2(707, 550)
 script = ExtResource("16_g4v4m")
 
@@ -512,6 +515,7 @@ texture = ExtResource("17_8apjj")
 shape = SubResource("CircleShape2D_e74ll")
 
 [node name="EnergyOrb4" type="Area2D" parent="." unique_id=615169248]
+visible = false
 position = Vector2(266, 542)
 script = ExtResource("16_g4v4m")
 
@@ -522,6 +526,7 @@ texture = ExtResource("17_8apjj")
 shape = SubResource("CircleShape2D_e74ll")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=360281610]
+visible = false
 script = ExtResource("18_8apjj")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2" unique_id=766443103]
