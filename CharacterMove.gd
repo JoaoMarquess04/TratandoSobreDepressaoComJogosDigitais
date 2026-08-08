@@ -58,6 +58,8 @@ func controlar_cooldown_dash(delta):
 func resetarDash():
 	if is_on_floor() and dash_cooldown_timer <= 0:
 		can_dash = true
+	if is_on_wall() :
+		can_dash = true
 #============================================================================
 #FUNCAO PARA VERIFICAR INPUT DO DASH (SE FOI PRESSIONADO OU NAO BASICAMENTE) 
 #============================================================================     
@@ -140,6 +142,10 @@ func pegar_direcao_dash():
 		Input.get_axis("ui_left", "ui_right"),
 		Input.get_axis("ui_up", "ui_down")
 	)
+	
+	if input_dir.x == 0 and input_dir.y != 0:
+		input_dir.x = -1 if sprite_2d.flip_h else 1
+	
 	if input_dir == Vector2.ZERO:
 		input_dir = Vector2(-1, 0) if sprite_2d.flip_h else Vector2(1, 0)
 	return input_dir.normalized()
