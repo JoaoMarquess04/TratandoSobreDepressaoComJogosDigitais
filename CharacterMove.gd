@@ -11,6 +11,10 @@ var hp = 100
 #Respawn VARIAVEIS
 const FALL_LIMIT = 1000.0
 var respawn_position: Vector2
+#WallGrab VARIAVEIS
+const wall_jump_pushback = 100
+const wall_slide_gravity = 40
+var is_wall_sliding = false
 
 #===============================================
 #CONFIGURACOES E VARIAVEIS RELACIONADAS AO DASH
@@ -37,6 +41,7 @@ func _physics_process(delta: float) -> void:
 	controlar_movimento_dash(delta)
 	verificar_queda()
 	move_and_slide()
+	wall_slide(delta) #NEW - func wall_slide()
 	sprite_2d.flip_h = velocity.x < 0
 	
 #=========================================================================
@@ -84,8 +89,16 @@ func movimento_normal():
 	#=============================
 	# CODIGO DE PULO DO PLAYER
 	#=============================
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+	if Input.is_action_just_pressed("ui_accept"):
+		if is_on_floor():
+			velocity.y = JUMP_VELOCITY
+		#WallGrab
+		if is_on_wall() and Input.is_action_pressed("ui_right"):
+			velocity.y = JUMP_VELOCITY
+			velocity.x = -wall_jump_pushback
+		if is_on_wall() and Input.is_action_pressed("ui_left"):
+			velocity.y = JUMP_VELOCITY
+			velocity.x = wall_jump_pushback
 	#===========================================
 	# CODIGO DE MOVIMENTO HORIZONTAL DO PLAYER
 	#============================================
@@ -96,6 +109,22 @@ func movimento_normal():
 	else:
 		velocity.x = move_toward(velocity.x, 0, 20)
 		sprite_2d.animation = "default"
+
+#=============================
+#FUNCAO WALL SLIDE(COMP DE WALLGRAB)
+#=============================
+func wall_slide(delta):
+	if is_on_wall() and !is_on_floor():
+		if Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_right"):
+			is_wall_sliding = true
+		else:
+			is_wall_sliding = false
+	else:
+		is_wall_sliding = false
+	
+	if is_wall_sliding:
+		velocity.y += (wall_slide_gravity * delta)
+		velocity.y = min(velocity.y, wall_slide_gravity)
 #======================================
 #FUNCAO DE GRAVIDADE DO JOGO 
 #======================================
