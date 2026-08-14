@@ -1,6 +1,8 @@
 class_name BotaoAtivo
 extends Area2D
 
+signal desafio_completo
+
 #Variaveis de entrada para Sprite
 @export var textura_normal: Texture2D
 @export var textura_pressionado: Texture2D
@@ -43,3 +45,4 @@ func _on_body_exited(body):
 func confirmar():
 	if botao_pressionado and not botao_confirmado:
 		botao_confirmado = true
+		desafio_completo.emit()
