@@ -5,7 +5,7 @@ extends Area2D
 @export var textura_normal: Texture2D
 @export var textura_pressionado: Texture2D
 #Variavel para entrada de temporizador
-@export var tempo_para_resetar: float = 20.0
+@export var tempo_para_resetar: float = 5.0
 #Variavel botao secundario(passivo)
 @export var botao2: Area2D
 
