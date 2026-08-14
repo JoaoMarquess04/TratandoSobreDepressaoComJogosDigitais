@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cb2dpnqp0lxwc" path="res://sprites/BotaoText-PopCat/images (2).jpg" id="16_6ra2h"]
 [ext_resource type="Texture2D" uid="uid://byb0gnrduh45o" path="res://sprites/general-itens/OrbeEnergia.png" id="17_8apjj"]
 [ext_resource type="Script" uid="uid://byj1yedqgfsdi" path="res://Cenas/canvas_layer_2.gd" id="18_8apjj"]
+[ext_resource type="Script" uid="uid://ddnk1m5g5h88i" path="res://pathPlataform.gd" id="18_e74ll"]
 [ext_resource type="Texture2D" uid="uid://celreh1c42ris" path="res://sprites/PlataformaTeste.png" id="19_fwrns"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
@@ -529,6 +530,7 @@ layout_mode = 2
 position = Vector2(956, 96)
 rotation = -1.5707964
 curve = SubResource("Curve2D_8apjj")
+script = ExtResource("18_e74ll")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1399312040]
 position = Vector2(-1, -1)
@@ -539,7 +541,7 @@ remote_path = NodePath("../../AnimatableBody2D")
 update_rotation = false
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D" unique_id=1379388920]
-position = Vector2(-138, -5)
+position = Vector2(-76.73049, -3.2111206)
 rotation = 1.5707964
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D" unique_id=1396332617]
