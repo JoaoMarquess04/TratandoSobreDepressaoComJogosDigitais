@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://4o281vhy1r17"]
+
+[ext_resource type="Script" uid="uid://vabywqhpjtmv" path="res://menu.gd" id="1_pveh2"]
+[ext_resource type="AudioStream" uid="uid://b2h0r0ssae1ut" path="res://BIMINI, Avi Snow - No Way (with Avi Snow) [NCS Release].mp3" id="2_vpgfy"]
+[ext_resource type="Script" uid="uid://ch74i6es5xd51" path="res://controle_de_audio.gd" id="3_vpgfy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_61ot5"]
+font_size = 64
+shadow_size = 13
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_12j5o"]
+color = Color(1, 1, 1, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_61ot5"]
+color = Color(0.260017, 0.47939724, 1, 1)
+thickness = 5
+
+[node name="Menu" type="Node2D" unique_id=376355893]
+script = ExtResource("1_pveh2")
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=1342703741]
+
+[node name="Imagem de fundo" type="TextureRect" parent="Hud" unique_id=777263478]
+offset_top = 1.0000001
+offset_right = 388.0
+offset_bottom = 65.0
+scale = Vector2(2.961351, 10.097086)
+stretch_mode = 1
+
+[node name="Botões principais" type="VBoxContainer" parent="Hud" unique_id=300516220]
+offset_left = 204.0
+offset_top = 320.0
+offset_right = 370.0
+offset_bottom = 476.0
+
+[node name="Jogar" type="Button" parent="Hud/Botões principais" unique_id=1569434707]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "JOGAR
+"
+
+[node name="Configurações do Jogo" type="Button" parent="Hud/Botões principais" unique_id=2002052034]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "CONFIGURAÇÃO 
+
+"
+
+[node name="Créditos" type="Button" parent="Hud/Botões principais" unique_id=278229936]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "CRÉDITOS
+
+
+"
+
+[node name="Sair" type="Button" parent="Hud/Botões principais" unique_id=768083475]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "SAIR
+"
+
+[node name="Nome do Jogo" type="Label" parent="Hud" unique_id=1220386248]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 162.0
+offset_top = -161.0
+offset_right = 424.0
+offset_bottom = -73.0
+grow_vertical = 2
+text = "POLARIS"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Bimini,AviSnowNoWay(withAviSnow)[ncsRelease]" type="AudioStreamPlayer" parent="Hud" unique_id=461792764]
+stream = ExtResource("2_vpgfy")
+autoplay = true
+bus = &"Musica"
+
+[node name="Configuração" type="Panel" parent="Hud" unique_id=289943291]
+visible = false
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -407.0
+offset_top = -40.0
+offset_right = 258.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Hud/Configuração" unique_id=1215138682]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 60.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 27
+text = "OPÇÕES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Voltar ao menu" type="Button" parent="Hud/Configuração" unique_id=983572260]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -87.5
+offset_top = -57.0
+offset_right = 96.5
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "VOLTAR AO MENU
+"
+
+[node name="ControleDeAudio" type="HSlider" parent="Hud/Configuração" unique_id=1210866565]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -184.0
+offset_top = -22.0
+offset_right = 184.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_12j5o")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_61ot5")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_61ot5")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("3_vpgfy")
+audio_bus_name = "Musica"
+
+[connection signal="pressed" from="Hud/Botões principais/Jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="Hud/Botões principais/Configurações do Jogo" to="." method="_on_configurações_do_jogo_pressed"]
+[connection signal="pressed" from="Hud/Botões principais/Créditos" to="." method="_on_créditos_pressed"]
+[connection signal="pressed" from="Hud/Botões principais/Sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="Hud/Configuração/Voltar ao menu" to="." method="_on_voltar_ao_menu_opcoes_pressed"]
+[connection signal="value_changed" from="Hud/Configuração/ControleDeAudio" to="Hud/Configuração/ControleDeAudio" method="_on_value_changed"]

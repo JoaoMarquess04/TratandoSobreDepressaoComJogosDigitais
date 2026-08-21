@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://crh76lb7xwuis"]
+
+[ext_resource type="Script" uid="uid://dyh45rm7npg7b" path="res://créditos.gd" id="1_hwb68"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_miwni"]
+font_size = 64
+shadow_size = 13
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_61ot5"]
+font_size = 25
+
+[node name="Créditos" type="Node2D" unique_id=984887899]
+script = ExtResource("1_hwb68")
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=820673647]
+
+[node name="Imagem de Fundo" type="TextureRect" parent="Hud" unique_id=2146691719]
+offset_right = 388.0
+offset_bottom = 64.0
+scale = Vector2(2.961351, 10.097086)
+stretch_mode = 1
+
+[node name="Créditos" type="Label" parent="Hud" unique_id=565124534]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.0
+offset_top = 53.0
+offset_right = 153.0
+offset_bottom = 141.0
+grow_horizontal = 2
+text = "CRÉDITOS"
+label_settings = SubResource("LabelSettings_miwni")
+
+[node name="Desenvolvedores" type="VBoxContainer" parent="Hud" unique_id=844810404]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -643.0
+offset_top = -7.0
+offset_right = 15.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Hud/Desenvolvedores" unique_id=2044966247]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "João Filipe Pinheiro Marques"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Label2" type="Label" parent="Hud/Desenvolvedores" unique_id=1343263976]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Lucas Machado da Costa Pennone"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Label3" type="Label" parent="Hud/Desenvolvedores" unique_id=1143001281]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Guilherme Castro Alves"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Designers" type="VBoxContainer" parent="Hud" unique_id=664908398]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -12.0
+offset_right = 668.0
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Hud/Designers" unique_id=963491602]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "A Galera"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Label2" type="Label" parent="Hud/Designers" unique_id=299194928]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "De"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Label3" type="Label" parent="Hud/Designers" unique_id=922812018]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Design"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Voltar ao menu" type="Button" parent="Hud" unique_id=887170160]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -67.0
+offset_top = -66.0
+offset_right = 60.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Voltar ao menu"
+
+[connection signal="pressed" from="Hud/Voltar ao menu" to="." method="_on_voltar_ao_menu_pressed"]

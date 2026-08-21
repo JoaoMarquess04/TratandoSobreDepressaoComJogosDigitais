@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2h0r0ssae1ut"
+path="res://.godot/imported/BIMINI, Avi Snow - No Way (with Avi Snow) [NCS Release].mp3-be20aaee09c9355ef6578e04c938b50e.mp3str"
+
+[deps]
+
+source_file="res://BIMINI, Avi Snow - No Way (with Avi Snow) [NCS Release].mp3"
+dest_files=["res://.godot/imported/BIMINI, Avi Snow - No Way (with Avi Snow) [NCS Release].mp3-be20aaee09c9355ef6578e04c938b50e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="GENESIS"
-run/main_scene="uid://bxutt2u82i0c"
+run/main_scene="uid://4o281vhy1r17"
 config/features=PackedStringArray("4.7", "Forward Plus")
+
+[audio]
+
+buses/default_bus_layout="uid://p57t36oe15gh"
 
 [autoload]
 
