@@ -22,7 +22,7 @@ var is_wall_sliding = false
 const DASH_SPEED = 700.0
 const DASH_TIME = 0.2
 const DASH_VERTICAL_MULTIPLIER = 0.6
-const DASH_COOLDOWN = 1.0
+const DASH_COOLDOWN = 2.0
 var is_dashing = false
 var dash_timer = 1.0
 var dash_direction = Vector2.ZERO
@@ -58,7 +58,7 @@ func controlar_cooldown_dash(delta):
 func resetarDash():
 	if is_on_floor() and dash_cooldown_timer <= 0:
 		can_dash = true
-	if is_on_wall() :
+	if is_on_wall() and dash_cooldown_timer <= 0:
 		can_dash = true
 #============================================================================
 #FUNCAO PARA VERIFICAR INPUT DO DASH (SE FOI PRESSIONADO OU NAO BASICAMENTE) 
