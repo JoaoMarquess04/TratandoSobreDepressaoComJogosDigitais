@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://done46octxley"]
 
 [ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="1_76t1x"]
-[ext_resource type="Script" uid="uid://cwj85d1venhau" path="res://CharacterMove.gd" id="2_f5hml"]
 [ext_resource type="Texture2D" uid="uid://q8dk3u8wbut2" path="res://sprites/CasaNivel1/CasaMontagem.png" id="2_rh83n"]
 [ext_resource type="Texture2D" uid="uid://bka1h71kmifyl" path="res://sprites/character-NN/16x16 Rotate-Sheet.png" id="3_rh83n"]
 [ext_resource type="Texture2D" uid="uid://ckdb3mqor6c0x" path="res://sprites/character-NN/16x16 Idle-Sheet.png" id="4_nl4sx"]
@@ -20,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://dya2cy3u60p7r" path="res://Cenas/radio.tscn" id="16_6rwqm"]
 [ext_resource type="PackedScene" uid="uid://ctgy6bu6ytbci" path="res://Cenas/carta.tscn" id="17_1dje1"]
 [ext_resource type="PackedScene" uid="uid://bxqe3l1cnqsyw" path="res://Cenas/dialog_box.tscn" id="17_6i17h"]
+[ext_resource type="Script" uid="uid://cdgcjwr7o6dd3" path="res://Cenas/NiveisFarol/Nivel-1/vozinha.gd" id="17_soox3"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f5hml"]
 load_path = "res://.godot/imported/FundoCasaMadeira.png-acc4324b86b6d70cf509df393ae740e6.ctex"
@@ -435,10 +435,10 @@ texts = Array[String](["Ele vivia chegando atrasado…", "Mãe aprende a esperar
 position = Vector2(1052, 596)
 texts = Array[String](["Ele sempre achava que podia consertar tudo", "Portas quebradas…  ", "móveis velhos…", "até o farol", "Mas existem coisas…", "Que ninguém consegue salvar."])
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=608180040]
-script = ExtResource("2_f5hml")
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=85634322]
+script = ExtResource("17_soox3")
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1416926623]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D2" unique_id=1586933960]
 texture_filter = 1
 position = Vector2(56, 574)
 scale = Vector2(2.6, 2.6)
@@ -447,11 +447,11 @@ animation = &"dashing"
 autoplay = "default"
 frame_progress = 0.65016127
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1172161867]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=779524405]
 position = Vector2(56, 580)
 shape = SubResource("RectangleShape2D_k4kxg")
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1039846920]
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D2" unique_id=1942300614]
 position = Vector2(45, 591)
 zoom = Vector2(3, 3)
 limit_left = 0
@@ -472,7 +472,7 @@ nine_patch_stretch = true
 texture_under = ExtResource("7_l5eya")
 texture_progress = ExtResource("8_6rwqm")
 script = ExtResource("9_6i17h")
-player = NodePath("../../CharacterBody2D")
+player = NodePath("../../CharacterBody2D2")
 metadata/_edit_use_anchors_ = true
 
 [node name="DialogBox" parent="." unique_id=1069792070 instance=ExtResource("17_6i17h")]
