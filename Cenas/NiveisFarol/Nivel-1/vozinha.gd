@@ -22,12 +22,12 @@ var is_wall_sliding = false
 const DASH_SPEED = 700.0
 const DASH_TIME = 0.2
 const DASH_VERTICAL_MULTIPLIER = 0.6
-const DASH_COOLDOWN = 2.0
+const DASH_COOLDOWN = 1000.0
 var is_dashing = false
 var dash_timer = 1.0
 var dash_direction = Vector2.ZERO
-var can_dash = true
-var dash_cooldown_timer = 0.0
+var can_dash = false
+var dash_cooldown_timer = 100.0
 #-------------------------------------------------------------#
 @onready var sprite_2d: AnimatedSprite2D = $Sprite2D
 
