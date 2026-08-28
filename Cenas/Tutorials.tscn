@@ -477,7 +477,6 @@ text = "As vezes obstáculos aparecem em nossa jornada... Pressione \"space bar\
 autowrap_mode = 2
 
 [node name="Placa3" type="Sprite2D" parent="." unique_id=2033661519]
-visible = false
 texture_filter = 1
 position = Vector2(-321, 664)
 texture = ExtResource("4_kjhup")

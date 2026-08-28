@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 #Player VARIAVEIS
 const  SPEED = 100.0
-const JUMP_VELOCITY = -300.0
 #Dano VARIAVEIS
 var taking_damage = false
 #BarraDeVida VARIAVEIS 
@@ -85,12 +84,6 @@ func executar_dash(delta):
 #FUNCAO DE MOVIMENTO NORMAL DO PLAYER (COMO ANDAR E PULAR)
 #================================================================
 func movimento_normal():
-	#=============================
-	# CODIGO DE PULO DO PLAYER
-	#=============================
-	if Input.is_action_just_pressed("ui_accept"):
-		if is_on_floor():
-			velocity.y = JUMP_VELOCITY
 	#===========================================
 	# CODIGO DE MOVIMENTO HORIZONTAL DO PLAYER
 	#============================================
