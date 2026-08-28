@@ -10,7 +10,11 @@
 [ext_resource type="Texture2D" uid="uid://cu5ibt585f5bh" path="res://sprites/characters/vozinha/F2.png" id="13_absk0"]
 [ext_resource type="Texture2D" uid="uid://cols5ncw8t3t2" path="res://sprites/CasaNivel1/ComodosQuarto.png" id="13_egrpo"]
 [ext_resource type="Texture2D" uid="uid://5wpjao1t4tak" path="res://sprites/characters/vozinha/F4.png" id="14_bg23m"]
+[ext_resource type="Script" uid="uid://cgwbs0v0sgndp" path="res://Cenas/NiveisFarol/Nivel-1/InventoryUI.gd" id="14_gum0b"]
+[ext_resource type="Texture2D" uid="uid://byb0gnrduh45o" path="res://sprites/general-itens/OrbeEnergia.png" id="15_6i17h"]
+[ext_resource type="FontFile" uid="uid://ccxk70tf5hw46" path="res://Fontes/Minecraft.ttf" id="15_l5eya"]
 [ext_resource type="Texture2D" uid="uid://cy23ck7ipyeo0" path="res://sprites/characters/vozinha/F5.png" id="15_soox3"]
+[ext_resource type="PackedScene" uid="uid://colct4ijuicwi" path="res://Cenas/antena.tscn" id="16_6rwqm"]
 [ext_resource type="PackedScene" uid="uid://bxqe3l1cnqsyw" path="res://Cenas/dialog_box.tscn" id="17_6i17h"]
 [ext_resource type="Script" uid="uid://cdgcjwr7o6dd3" path="res://Cenas/NiveisFarol/Nivel-1/vozinha.gd" id="17_soox3"]
 
@@ -199,6 +203,14 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k4kxg"]
 size = Vector2(32, 42)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gum0b"]
+bg_color = Color(0.2522599, 0.1790533, 0.014555413, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
 [node name="Node" type="Node" unique_id=1482666183]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=2123595930]
@@ -268,3 +280,120 @@ metadata/_edit_use_anchors_ = true
 
 [node name="DialogBox" parent="." unique_id=1069792070 instance=ExtResource("17_6i17h")]
 visible = false
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1196588835]
+
+[node name="InventoryUI" type="Control" parent="CanvasLayer2" unique_id=515909199]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("14_gum0b")
+
+[node name="InventoryPanel" type="PanelContainer" parent="CanvasLayer2/InventoryUI" unique_id=2058276493]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 35.0
+offset_top = 145.0
+offset_right = 385.0
+offset_bottom = 470.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gum0b")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/InventoryUI/InventoryPanel" unique_id=2063913023]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 14
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/InventoryUI/InventoryPanel/MarginContainer" unique_id=845002375]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="CanvasLayer2/InventoryUI/InventoryPanel/MarginContainer/VBoxContainer" unique_id=954920301]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="BagIcon" type="TextureRect" parent="CanvasLayer2/InventoryUI/InventoryPanel/MarginContainer/VBoxContainer/Header" unique_id=1894763967]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+texture = ExtResource("15_6i17h")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer2/InventoryUI/InventoryPanel/MarginContainer/VBoxContainer/Header" unique_id=1489676727]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("15_l5eya")
+theme_override_font_sizes/font_size = 17
+text = "INVENTÁRIO"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer2/InventoryUI/InventoryPanel/MarginContainer/VBoxContainer" unique_id=650794214]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 6
+columns = 5
+
+[node name="TooltipPanel" type="PanelContainer" parent="CanvasLayer2/InventoryUI" unique_id=2041607408]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/InventoryUI/TooltipPanel" unique_id=749634709]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/InventoryUI/TooltipPanel/MarginContainer" unique_id=100483590]
+layout_mode = 2
+
+[node name="TooltipIcon" type="TextureRect" parent="CanvasLayer2/InventoryUI/TooltipPanel/MarginContainer/HBoxContainer" unique_id=31274165]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/InventoryUI/TooltipPanel/MarginContainer/HBoxContainer" unique_id=765543268]
+layout_mode = 2
+
+[node name="TooltipName" type="Label" parent="CanvasLayer2/InventoryUI/TooltipPanel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1539043878]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TooltipDescription" type="Label" parent="CanvasLayer2/InventoryUI/TooltipPanel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=649993015]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="PickupToast" type="PanelContainer" parent="CanvasLayer2/InventoryUI" unique_id=1231061816]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/InventoryUI/PickupToast" unique_id=74723501]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/InventoryUI/PickupToast/MarginContainer" unique_id=1255001176]
+layout_mode = 2
+
+[node name="ToastIcon" type="TextureRect" parent="CanvasLayer2/InventoryUI/PickupToast/MarginContainer/HBoxContainer" unique_id=395860253]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/InventoryUI/PickupToast/MarginContainer/HBoxContainer" unique_id=1314488757]
+layout_mode = 2
+
+[node name="ToastTitle" type="Label" parent="CanvasLayer2/InventoryUI/PickupToast/MarginContainer/HBoxContainer/VBoxContainer" unique_id=106741769]
+layout_mode = 2
+text = "item coletado"
+
+[node name="ToastItemName" type="Label" parent="CanvasLayer2/InventoryUI/PickupToast/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1919019332]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Antena" parent="." unique_id=1150097864 instance=ExtResource("16_6rwqm")]
+position = Vector2(283, 570)
+
+[node name="Antena2" parent="." unique_id=786338235 instance=ExtResource("16_6rwqm")]
+position = Vector2(372, 566)

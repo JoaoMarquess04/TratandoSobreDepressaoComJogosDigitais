@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://colct4ijuicwi"]
+
+[ext_resource type="Script" uid="uid://y6vfvn834x3s" path="res://antena.gd" id="1_xgrgo"]
+[ext_resource type="Texture2D" uid="uid://b8c5nx8bqnudx" path="res://sprites/CasaNivel1/Radio.png" id="2_34enf"]
+[ext_resource type="Texture2D" uid="uid://dqtbc84x8nw1a" path="res://sprites/CasaNivel1/Relogio.png" id="2_fvjql"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+
+[node name="Antena" type="Area2D" unique_id=1150097864]
+script = ExtResource("1_xgrgo")
+icon = ExtResource("2_34enf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=155319861]
+texture = ExtResource("2_fvjql")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1486548526]
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="PickupPrompt" type="PanelContainer" parent="." unique_id=975073167]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="PickupPrompt" unique_id=895586768]
+layout_mode = 2
+text = "F   Pegar"
