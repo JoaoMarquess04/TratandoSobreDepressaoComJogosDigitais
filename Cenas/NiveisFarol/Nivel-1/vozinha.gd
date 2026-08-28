@@ -107,7 +107,6 @@ func movimento_normal():
 func aplicar_gravidade(delta):
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-		sprite_2d.animation = "jumping"
 #============================================================
 #FUNCAO PARA PEGAR A DIRECAO EM QUE ESTA REALIZANDO O DASH
 #============================================================
