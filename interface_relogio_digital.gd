@@ -33,11 +33,11 @@ func _on_hora_menos():
 	atualizar_display()
 
 func _on_minuto_mais():
-	minuto_atual = (minuto_atual + 5) % 60  # incrementos de 5 em 5
+	minuto_atual = (minuto_atual + 1) % 60  # incrementos de 5 em 5
 	atualizar_display()
 
 func _on_minuto_menos():
-	minuto_atual = (minuto_atual - 5 + 60) % 60
+	minuto_atual = (minuto_atual - 1 + 60) % 60
 	atualizar_display()
 
 func atualizar_display():

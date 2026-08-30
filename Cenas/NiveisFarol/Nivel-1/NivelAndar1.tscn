@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://done46octxley"]
 
 [ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="1_76t1x"]
+[ext_resource type="Texture2D" uid="uid://bdanyyuu7o2iu" path="res://sprites/CasaNivel1/FundoCasaMadeira.png" id="1_av7oi"]
 [ext_resource type="Texture2D" uid="uid://q8dk3u8wbut2" path="res://sprites/CasaNivel1/CasaMontagem.png" id="2_rh83n"]
 [ext_resource type="Texture2D" uid="uid://cppq5u8u47hdl" path="res://sprites/general-itens/CoracaoVazio.png" id="7_l5eya"]
 [ext_resource type="Texture2D" uid="uid://cm0dewmoowc7" path="res://sprites/general-itens/CoracaoCheio.png" id="8_6rwqm"]
@@ -21,8 +22,12 @@
 [ext_resource type="Texture2D" uid="uid://c3npslipmyouf" path="res://sprites/ComodosAbbyProvisorio/Quadro 2.png" id="19_soox3"]
 [ext_resource type="Texture2D" uid="uid://ohraifrfsebd" path="res://sprites/ComodosAbbyProvisorio/Quadro 3.png" id="20_cpjf8"]
 [ext_resource type="Script" uid="uid://c81vtb7adf63l" path="res://relogio_digital.gd" id="21_1310y"]
-[ext_resource type="Texture2D" uid="uid://cj15fth0h0q80" path="res://sprites/BotaoText-PopCat/images (1).jpg" id="22_0c1la"]
+[ext_resource type="Texture2D" uid="uid://dqtbc84x8nw1a" path="res://sprites/CasaNivel1/Relogio.png" id="23_7b5v8"]
 [ext_resource type="Script" uid="uid://ds5ar7poetqr8" path="res://interface_relogio_digital.gd" id="23_juej4"]
+[ext_resource type="Script" uid="uid://cig3pj2t51h20" path="res://porta.gd" id="24_wxs0y"]
+[ext_resource type="Texture2D" uid="uid://cibo4hi8p02iq" path="res://sprites/caixas-dialogo/CaixaDialogoPadrao.png" id="25_7b5v8"]
+[ext_resource type="Texture2D" uid="uid://cm3fs5kiw2r5d" path="res://sprites/ComodosAbbyProvisorio/PortaFechadaProvisoria.png" id="25_av7oi"]
+[ext_resource type="Texture2D" uid="uid://cgxui4nvqe3ai" path="res://sprites/ComodosAbbyProvisorio/PortaAbertaProvisoria.png" id="26_7b5v8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("1_76t1x")
@@ -181,6 +186,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_k1ngt")
 sources/1 = SubResource("TileSetAtlasSource_nl4sx")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(14, 8)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_8080v"]
 animations = [{
 "frames": [{
@@ -217,10 +225,17 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0, 0, 0, 1)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
-size = Vector2(32, 31)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sn0t7"]
+size = Vector2(20, 19.687286)
 
 [node name="Node" type="Node" unique_id=1482666183]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1107651274]
+texture_filter = 1
+offset_right = 1947.0
+offset_bottom = 613.0
+texture = ExtResource("1_av7oi")
+stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="." unique_id=2123595930]
 texture_filter = 1
@@ -231,13 +246,13 @@ layer_0/tile_data = PackedInt32Array(2490368, 393217, 0, 2555904, 393217, 1, 262
 
 [node name="Sofas" type="Sprite2D" parent="." unique_id=529628940]
 texture_filter = 1
-position = Vector2(186.00003, 1137.5)
+position = Vector2(186.00003, 561.50006)
 scale = Vector2(2.8611114, 2.8611114)
 texture = ExtResource("11_nl4sx")
 
 [node name="MesaDeCanto" type="Sprite2D" parent="." unique_id=104210656]
 texture_filter = 1
-position = Vector2(327, 1146)
+position = Vector2(327, 568.9999)
 scale = Vector2(2.3055556, 2.3055556)
 texture = ExtResource("12_egrpo")
 
@@ -246,6 +261,32 @@ texture_filter = 1
 position = Vector2(610, 1142)
 scale = Vector2(2.8958325, 2.8958325)
 texture = ExtResource("13_egrpo")
+
+[node name="RelogioDigital" type="Node2D" parent="." unique_id=321880578]
+script = ExtResource("21_1310y")
+interface_puzzle = NodePath("../InterfaceRelogio")
+porta = NodePath("../StaticBody2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="RelogioDigital" unique_id=968507145]
+texture_filter = 1
+position = Vector2(347.00003, 568.00006)
+scale = Vector2(0.7361161, 0.7361161)
+texture = ExtResource("23_7b5v8")
+
+[node name="Area2D" type="Area2D" parent="RelogioDigital" unique_id=1973965490]
+position = Vector2(348, 567)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RelogioDigital/Area2D" unique_id=1570125880]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="RelogioDigital" unique_id=709031401]
+offset_left = 335.0
+offset_top = 553.0
+offset_right = 390.0
+offset_bottom = 576.0
+scale = Vector2(0.44, 0.44)
+text = "Press F"
 
 [node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=85634322]
 script = ExtResource("17_soox3")
@@ -409,111 +450,125 @@ position = Vector2(1237, 537)
 
 [node name="Quadro1" type="Sprite2D" parent="." unique_id=198943780]
 texture_filter = 1
-position = Vector2(231.23999, 505.68)
+position = Vector2(231.23999, 483.68)
 scale = Vector2(1.3199999, 1.3199999)
 texture = ExtResource("18_bg23m")
 
 [node name="Quadro2" type="Sprite2D" parent="." unique_id=505647849]
 texture_filter = 1
-position = Vector2(288.12, 505.68)
+position = Vector2(288.12, 483.68)
 scale = Vector2(1.3199999, 1.3199999)
 texture = ExtResource("19_soox3")
 
 [node name="Quadro3" type="Sprite2D" parent="." unique_id=1900776613]
 texture_filter = 1
-position = Vector2(172.12, 505.68)
+position = Vector2(172.12, 483.68)
 scale = Vector2(1.3199999, 1.3199999)
 texture = ExtResource("20_cpjf8")
-
-[node name="RelogioDigital" type="Node2D" parent="." unique_id=321880578]
-script = ExtResource("21_1310y")
-interface_puzzle = NodePath("../InterfaceRelogio")
-
-[node name="Sprite2D" type="Sprite2D" parent="RelogioDigital" unique_id=968507145]
-position = Vector2(419.00003, 574.00006)
-scale = Vector2(0.13611113, 0.13611113)
-texture = ExtResource("22_0c1la")
-
-[node name="Area2D" type="Area2D" parent="RelogioDigital" unique_id=1973965490]
-position = Vector2(420, 573)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RelogioDigital/Area2D" unique_id=1570125880]
-position = Vector2(-1, 0.5)
-shape = SubResource("RectangleShape2D_bhunq")
-
-[node name="Label" type="Label" parent="RelogioDigital" unique_id=709031401]
-offset_left = 407.0
-offset_top = 544.0
-offset_right = 462.0
-offset_bottom = 567.0
-scale = Vector2(0.44, 0.44)
-text = "Press F"
 
 [node name="InterfaceRelogio" type="CanvasLayer" parent="." unique_id=26167806]
 process_mode = 3
 script = ExtResource("23_juej4")
 
+[node name="TextureRect" type="TextureRect" parent="InterfaceRelogio" unique_id=1339319655]
+texture_filter = 1
+offset_left = 484.0
+offset_top = 21.0
+offset_right = 540.0
+offset_bottom = 61.0
+scale = Vector2(4.96, 3.7162776)
+texture = ExtResource("25_7b5v8")
+metadata/_edit_use_anchors_ = true
+
 [node name="Control" type="Control" parent="InterfaceRelogio" unique_id=1448235451]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 142.0
+offset_top = 9.0
+offset_right = 182.0
+offset_bottom = 49.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="InterfaceRelogio/Control" unique_id=1618503734]
 layout_mode = 0
-offset_left = 413.0
-offset_top = 39.0
-offset_right = 455.0
-offset_bottom = 62.0
+offset_left = 436.0
+offset_top = 36.0
+offset_right = 478.0
+offset_bottom = 59.0
+scale = Vector2(1.8799996, 1.8799996)
 text = "08:45"
+metadata/_edit_use_anchors_ = true
 
 [node name="BotaoHoraMais" type="Button" parent="InterfaceRelogio/Control" unique_id=26789566]
 layout_mode = 0
-offset_left = 349.0
-offset_top = 80.0
-offset_right = 379.0
-offset_bottom = 111.0
+offset_left = 357.0
+offset_top = 98.0
+offset_right = 387.0
+offset_bottom = 129.0
 text = "H+"
+metadata/_edit_use_anchors_ = true
 
 [node name="BotaoHoraMenos" type="Button" parent="InterfaceRelogio/Control" unique_id=961864711]
 layout_mode = 0
-offset_left = 389.0
-offset_top = 80.0
-offset_right = 415.0
-offset_bottom = 111.0
+offset_left = 397.0
+offset_top = 98.0
+offset_right = 423.0
+offset_bottom = 129.0
 text = "H-"
+metadata/_edit_use_anchors_ = true
 
 [node name="BotaoMinutosMais" type="Button" parent="InterfaceRelogio/Control" unique_id=1416532993]
 layout_mode = 0
-offset_left = 448.0
-offset_top = 78.0
-offset_right = 480.0
-offset_bottom = 109.0
+offset_left = 523.0
+offset_top = 96.0
+offset_right = 555.0
+offset_bottom = 127.0
 text = "M+"
+metadata/_edit_use_anchors_ = true
 
 [node name="BotaoMinutosMenos" type="Button" parent="InterfaceRelogio/Control" unique_id=694445000]
 layout_mode = 0
-offset_left = 489.0
-offset_top = 78.0
-offset_right = 517.0
-offset_bottom = 109.0
+offset_left = 564.0
+offset_top = 96.0
+offset_right = 592.0
+offset_bottom = 127.0
 text = "M-"
+metadata/_edit_use_anchors_ = true
 
 [node name="Confirmar" type="Button" parent="InterfaceRelogio/Control" unique_id=1794657068]
 layout_mode = 0
-offset_left = 392.0
-offset_top = 122.0
-offset_right = 463.0
-offset_bottom = 153.0
+offset_left = 439.0
+offset_top = 97.0
+offset_right = 510.0
+offset_bottom = 128.0
 text = "Confirm"
+metadata/_edit_use_anchors_ = true
 
 [node name="Fechar" type="Button" parent="InterfaceRelogio/Control" unique_id=678934197]
 layout_mode = 0
-offset_left = 507.0
-offset_top = 9.0
-offset_right = 525.0
-offset_bottom = 40.0
+offset_left = 584.0
+offset_top = 34.0
+offset_right = 602.0
+offset_bottom = 65.0
 text = "X"
+metadata/_edit_use_anchors_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1884401759]
+position = Vector2(474, 579)
+scale = Vector2(0.78813213, 1.3155899)
+script = ExtResource("24_wxs0y")
+textura_fechada = ExtResource("25_av7oi")
+textura_aberta = ExtResource("26_7b5v8")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1318561652]
+texture_filter = 1
+position = Vector2(-3.8062744, -0.76013184)
+scale = Vector2(1.1522526, 1.1522526)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=449980281]
+position = Vector2(-3.8064575, -1.5202332)
+scale = Vector2(0.3402122, 1.853252)
+shape = SubResource("RectangleShape2D_sn0t7")
 
 [connection signal="body_entered" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_exited"]
