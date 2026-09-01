@@ -1,13 +1,10 @@
 [gd_scene format=3 uid="uid://4o281vhy1r17"]
 
 [ext_resource type="Script" uid="uid://vabywqhpjtmv" path="res://menu.gd" id="1_pveh2"]
+[ext_resource type="Texture2D" uid="uid://jvmvlqt6ccia" path="res://sprites/MainMenu/Fundo-Menu.jpeg" id="2_eheat"]
 [ext_resource type="AudioStream" uid="uid://b2h0r0ssae1ut" path="res://BIMINI, Avi Snow - No Way (with Avi Snow) [NCS Release].mp3" id="2_vpgfy"]
+[ext_resource type="Texture2D" uid="uid://ck4vg4nuyc6aj" path="res://sprites/MainMenu/PolarisLOGO.jpeg.png" id="3_fapvr"]
 [ext_resource type="Script" uid="uid://ch74i6es5xd51" path="res://controle_de_audio.gd" id="3_vpgfy"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_61ot5"]
-font_size = 64
-shadow_size = 13
-shadow_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_12j5o"]
 color = Color(1, 1, 1, 1)
@@ -23,17 +20,19 @@ script = ExtResource("1_pveh2")
 [node name="Hud" type="CanvasLayer" parent="." unique_id=1342703741]
 
 [node name="Imagem de fundo" type="TextureRect" parent="Hud" unique_id=777263478]
-offset_top = 1.0000001
-offset_right = 388.0
-offset_bottom = 65.0
+texture_filter = 1
+offset_top = -1.000001
+offset_right = 388.67398
+offset_bottom = 62.780777
 scale = Vector2(2.961351, 10.097086)
-stretch_mode = 1
+texture = ExtResource("2_eheat")
+expand_mode = 1
 
 [node name="Botões principais" type="VBoxContainer" parent="Hud" unique_id=300516220]
-offset_left = 204.0
-offset_top = 320.0
-offset_right = 370.0
-offset_bottom = 476.0
+offset_left = 228.0
+offset_top = 340.0
+offset_right = 404.0
+offset_bottom = 496.0
 
 [node name="Jogar" type="Button" parent="Hud/Botões principais" unique_id=1569434707]
 layout_mode = 2
@@ -62,17 +61,18 @@ theme_override_font_sizes/font_size = 20
 text = "SAIR
 "
 
-[node name="Nome do Jogo" type="Label" parent="Hud" unique_id=1220386248]
+[node name="Nome do Jogo" type="TextureRect" parent="Hud" unique_id=1141086767]
+texture_filter = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 162.0
-offset_top = -161.0
-offset_right = 424.0
-offset_bottom = -73.0
+offset_left = 81.0
+offset_top = -291.0
+offset_right = 561.0
+offset_bottom = 8.0
 grow_vertical = 2
-text = "POLARIS"
-label_settings = SubResource("LabelSettings_61ot5")
+texture = ExtResource("3_fapvr")
+expand_mode = 1
 
 [node name="Bimini,AviSnowNoWay(withAviSnow)[ncsRelease]" type="AudioStreamPlayer" parent="Hud" unique_id=461792764]
 stream = ExtResource("2_vpgfy")
@@ -86,10 +86,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -407.0
-offset_top = -40.0
-offset_right = 258.0
-offset_bottom = 224.0
+offset_left = -396.0
+offset_top = -52.0
+offset_right = 269.0
+offset_bottom = 212.0
 grow_horizontal = 2
 grow_vertical = 2
 

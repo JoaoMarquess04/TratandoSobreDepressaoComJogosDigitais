@@ -11,7 +11,7 @@ extends Node2D
 #================================================
 #Função do botão iniciar
 func _on_jogar_pressed() -> void:
-	get_tree().change_scene_to_file("res://Cenas/Tutorials.tscn")
+	get_tree().change_scene_to_file("res://Cenas/CenaFarol.tscn")
 
 #================================================
 #BOTÃO DE CONFIGURAÇÕES

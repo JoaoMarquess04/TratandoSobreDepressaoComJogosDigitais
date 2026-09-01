@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://crh76lb7xwuis"]
 
-[ext_resource type="Script" uid="uid://dyh45rm7npg7b" path="res://créditos.gd" id="1_hwb68"]
+[ext_resource type="Script" uid="uid://0cxx2usvn4u4" path="res://créditos.gd" id="1_hwb68"]
+[ext_resource type="Texture2D" uid="uid://jvmvlqt6ccia" path="res://sprites/MainMenu/Fundo-Menu.jpeg" id="2_miwni"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_miwni"]
 font_size = 64
@@ -16,10 +17,12 @@ script = ExtResource("1_hwb68")
 [node name="Hud" type="CanvasLayer" parent="." unique_id=820673647]
 
 [node name="Imagem de Fundo" type="TextureRect" parent="Hud" unique_id=2146691719]
-offset_right = 388.0
-offset_bottom = 64.0
+texture_filter = 1
+offset_right = 390.02472
+offset_bottom = 64.27598
 scale = Vector2(2.961351, 10.097086)
-stretch_mode = 1
+texture = ExtResource("2_miwni")
+expand_mode = 1
 
 [node name="Créditos" type="Label" parent="Hud" unique_id=565124534]
 anchors_preset = 5
