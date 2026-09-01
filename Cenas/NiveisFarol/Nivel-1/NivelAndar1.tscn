@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://cibo4hi8p02iq" path="res://sprites/caixas-dialogo/CaixaDialogoPadrao.png" id="25_7b5v8"]
 [ext_resource type="Texture2D" uid="uid://cm3fs5kiw2r5d" path="res://sprites/ComodosAbbyProvisorio/PortaFechadaProvisoria.png" id="25_av7oi"]
 [ext_resource type="Texture2D" uid="uid://cgxui4nvqe3ai" path="res://sprites/ComodosAbbyProvisorio/PortaAbertaProvisoria.png" id="26_7b5v8"]
+[ext_resource type="PackedScene" uid="uid://d15cuak0hgyrc" path="res://Cenas/caixa_de_ferramenta.tscn" id="29_4vnej"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("1_76t1x")
@@ -258,7 +259,7 @@ texture = ExtResource("12_egrpo")
 
 [node name="ComodosQuarto" type="Sprite2D" parent="." unique_id=829861217]
 texture_filter = 1
-position = Vector2(610, 1142)
+position = Vector2(1012, 567)
 scale = Vector2(2.8958325, 2.8958325)
 texture = ExtResource("13_egrpo")
 
@@ -569,6 +570,9 @@ scale = Vector2(1.1522526, 1.1522526)
 position = Vector2(-3.8064575, -1.5202332)
 scale = Vector2(0.3402122, 1.853252)
 shape = SubResource("RectangleShape2D_sn0t7")
+
+[node name="Caixa de Ferramenta" parent="." unique_id=648558778 instance=ExtResource("29_4vnej")]
+position = Vector2(560, 596)
 
 [connection signal="body_entered" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_exited"]
