@@ -576,7 +576,11 @@ shape = SubResource("RectangleShape2D_sn0t7")
 position = Vector2(560, 596)
 
 [node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("30_p4fr8")]
-position = Vector2(1532, 593)
+position = Vector2(417, 579)
+correct_frequency = 875
+min_frequency = 800
+max_frequency = 1100
+starting_frequency = 900
 
 [connection signal="body_entered" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_exited"]

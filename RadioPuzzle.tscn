@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://05dpdyrjnimh"]
+
+[ext_resource type="Script" uid="uid://c2sb6tyqofst3" path="res://Cenas/NiveisFarol/Nivel-1/RadioPuzzle.gd" id="1_nwumc"]
+[ext_resource type="Texture2D" uid="uid://b8c5nx8bqnudx" path="res://sprites/CasaNivel1/Radio.png" id="2_blej4"]
+[ext_resource type="AudioStream" uid="uid://b2h0r0ssae1ut" path="res://BIMINI, Avi Snow - No Way (with Avi Snow) [NCS Release].mp3" id="3_blej4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(100, 57)
+
+[node name="Radio" type="Area2D" unique_id=1753180043]
+script = ExtResource("1_nwumc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1110927855]
+texture = ExtResource("2_blej4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1283543454]
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="InteractionLabel" type="Label" parent="." unique_id=1313007972]
+unique_name_in_owner = true
+visible = false
+offset_left = -39.0
+offset_top = -30.0
+offset_right = 41.0
+offset_bottom = -7.0
+text = "F interagir"
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=992157575]
+unique_name_in_owner = true
+stream = ExtResource("3_blej4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1479961144]
+
+[node name="RadioUI" type="Control" parent="CanvasLayer" unique_id=1517504362]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="CanvasLayer/RadioUI" unique_id=940562575]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 129.0
+offset_right = 739.0
+offset_bottom = 284.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/RadioUI/Panel" unique_id=409648703]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 303.0
+offset_bottom = 153.0
+alignment = 1
+
+[node name="Titlelabel" type="Label" parent="CanvasLayer/RadioUI/Panel/VBoxContainer" unique_id=2107928934]
+layout_mode = 2
+text = "Radio"
+horizontal_alignment = 1
+
+[node name="FreqLabel" type="Label" parent="CanvasLayer/RadioUI/Panel/VBoxContainer" unique_id=1215948997]
+unique_name_in_owner = true
+layout_mode = 2
+text = "90.0 MHz"
+horizontal_alignment = 1
+
+[node name="ButtonsCenter" type="CenterContainer" parent="CanvasLayer/RadioUI/Panel/VBoxContainer" unique_id=969889463]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/RadioUI/Panel/VBoxContainer/ButtonsCenter" unique_id=813024912]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="DecreaseButton" type="Button" parent="CanvasLayer/RadioUI/Panel/VBoxContainer/ButtonsCenter/HBoxContainer" unique_id=895546292]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 45)
+layout_mode = 2
+text = "<"
+
+[node name="IncreaseButton" type="Button" parent="CanvasLayer/RadioUI/Panel/VBoxContainer/ButtonsCenter/HBoxContainer" unique_id=1030328482]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 45)
+layout_mode = 2
+text = ">"
+
+[node name="ConfirmCenter" type="CenterContainer" parent="CanvasLayer/RadioUI/Panel/VBoxContainer" unique_id=449331150]
+layout_mode = 2
+
+[node name="ConfirmButton" type="Button" parent="CanvasLayer/RadioUI/Panel/VBoxContainer/ConfirmCenter" unique_id=360359710]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 45)
+layout_mode = 2
+text = "CONFIRMAR"
