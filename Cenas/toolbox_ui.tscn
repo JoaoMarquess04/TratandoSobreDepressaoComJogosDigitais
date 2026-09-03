@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bejqymmyfomba"]
+
+[ext_resource type="Script" uid="uid://b6xuiidgdo1uh" path="res://toolbox_ui.gd" id="1_ddy4s"]
+[ext_resource type="Texture2D" uid="uid://142qew3oa6he" path="res://sprites/CasaNivel1/CaixaFerramentaAberta.png" id="2_n55jt"]
+[ext_resource type="Texture2D" uid="uid://cmeh2mdynvh60" path="res://sprites/CasaNivel1/antenna.png" id="3_5nkos"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=432235094]
+script = ExtResource("1_ddy4s")
+
+[node name="Panel" type="Panel" parent="." unique_id=1562059556]
+offset_left = 344.0
+offset_top = 177.0
+offset_right = 819.0
+offset_bottom = 382.0
+
+[node name="ToolboxSprite" type="Sprite2D" parent="Panel" unique_id=1414744636]
+texture_filter = 1
+position = Vector2(237.00002, 88)
+scale = Vector2(3.3320305, 3.21875)
+texture = ExtResource("2_n55jt")
+
+[node name="AntennaSprite" type="Sprite2D" parent="Panel" unique_id=183604229]
+position = Vector2(272, 122)
+scale = Vector2(1.03125, 1)
+texture = ExtResource("3_5nkos")
+
+[node name="AntennaButton" type="Button" parent="Panel" unique_id=1714211368]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 268.0
+offset_top = 105.0
+offset_right = 276.0
+offset_bottom = 140.0
+
+[node name="CloseButton" type="Button" parent="Panel" unique_id=744082698]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 22.0
+offset_right = 355.0
+offset_bottom = 53.0
+text = "X"

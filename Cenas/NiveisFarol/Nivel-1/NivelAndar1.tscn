@@ -573,7 +573,7 @@ scale = Vector2(0.3402122, 1.853252)
 shape = SubResource("RectangleShape2D_sn0t7")
 
 [node name="Caixa de Ferramenta" parent="." unique_id=648558778 instance=ExtResource("29_4vnej")]
-position = Vector2(560, 596)
+position = Vector2(631, 596)
 
 [node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("30_p4fr8")]
 position = Vector2(1532, 593)
