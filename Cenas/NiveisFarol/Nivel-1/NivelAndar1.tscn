@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://cgxui4nvqe3ai" path="res://sprites/ComodosAbbyProvisorio/PortaAbertaProvisoria.png" id="26_7b5v8"]
 [ext_resource type="PackedScene" uid="uid://d15cuak0hgyrc" path="res://Cenas/caixa_de_ferramenta.tscn" id="29_4vnej"]
 [ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://RadioPuzzle.tscn" id="30_p4fr8"]
+[ext_resource type="PackedScene" uid="uid://dhp80323yctry" path="res://Cenas/carta-cena.tscn" id="31_ox6du"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("1_76t1x")
@@ -268,6 +269,7 @@ texture = ExtResource("13_egrpo")
 script = ExtResource("21_1310y")
 interface_puzzle = NodePath("../InterfaceRelogio")
 porta = NodePath("../StaticBody2D")
+texts = Array[String](["klasdsakddksoajlokjdsadsokiaj", "fdghfdgdf"])
 
 [node name="Sprite2D" type="Sprite2D" parent="RelogioDigital" unique_id=968507145]
 texture_filter = 1
@@ -576,7 +578,11 @@ shape = SubResource("RectangleShape2D_sn0t7")
 position = Vector2(631, 596)
 
 [node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("30_p4fr8")]
+texture_filter = 1
 position = Vector2(1532, 593)
+
+[node name="carta" parent="." unique_id=1341309616 instance=ExtResource("31_ox6du")]
+position = Vector2(936, 560)
 
 [connection signal="body_entered" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_exited"]

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dhp80323yctry"]
+
+[ext_resource type="Script" uid="uid://cic5fm83hha38" path="res://caixa_ferramenta_modificado.gd" id="1_ycoto"]
+[ext_resource type="Texture2D" uid="uid://7dx0hb3dguo8" path="res://sprites/CasaNivel1/Cartaz.png" id="2_ycoto"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpjf8"]
+
+[node name="carta" type="Area2D" unique_id=648558778]
+texture_filter = 1
+position = Vector2(344, 567)
+script = ExtResource("1_ycoto")
+texts = Array[String](["Ele sempre achava que podia consertar tudo.", "Portas quebradas... móveis velhos... até o farol.", "Mas existem coisas...", "Que ninguém consegue salvar."])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1429061157]
+position = Vector2(1.1920929e-07, 1.0000019)
+scale = Vector2(0.96875, 0.96875)
+texture = ExtResource("2_ycoto")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1224284075]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_cpjf8")
+
+[node name="Label" type="Label" parent="." unique_id=1065088072]
+offset_left = -37.0
+offset_top = -30.0
+offset_right = 3.0
+offset_bottom = -7.0
+text = "\"F\""

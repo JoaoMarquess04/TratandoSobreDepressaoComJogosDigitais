@@ -86,7 +86,7 @@ func _on_antenna_clicked():
 	get_tree().current_scene.add_child(dialog)
 	dialog.global_position = global_position + Vector2(0, -100)
 	dialog.start_dialog(texts)
-	dialog.dialog_finished.connect(_on_dialog_finished)
+	#dialog.dialog_finished.connect(_on_dialog_finished)
  
  
 # ============================================

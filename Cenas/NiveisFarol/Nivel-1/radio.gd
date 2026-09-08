@@ -7,6 +7,7 @@ var player_near := false
 var can_interact := true
 var dialog_scene = preload("res://Cenas/dialog_box.tscn")
 
+
 var dialog_open := false
 
 

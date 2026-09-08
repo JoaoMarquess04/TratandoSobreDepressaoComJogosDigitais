@@ -18,7 +18,6 @@ signal ui_closed
 @onready var toolbox_sprite = $Panel/ToolboxSprite
 @onready var antenna_sprite = $Panel/AntennaSprite
 
-
 # ============================================
 # INICIALIZAÇÃO
 # ============================================
