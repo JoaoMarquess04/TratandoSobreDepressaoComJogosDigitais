@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://b2h0r0ssae1ut" path="res://BIMINI, Avi Snow - No Way (with Avi Snow) [NCS Release].mp3" id="3_blej4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(100, 57)
+size = Vector2(23, 18)
 
 [node name="Radio" type="Area2D" unique_id=1753180043]
 script = ExtResource("1_nwumc")
@@ -14,6 +14,7 @@ script = ExtResource("1_nwumc")
 texture = ExtResource("2_blej4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1283543454]
+position = Vector2(-0.5, -2)
 shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="InteractionLabel" type="Label" parent="." unique_id=1313007972]

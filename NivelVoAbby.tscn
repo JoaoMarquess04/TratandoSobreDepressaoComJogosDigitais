@@ -1,0 +1,481 @@
+[gd_scene format=3 uid="uid://c7juqki37umxd"]
+
+[ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="1_duku6"]
+[ext_resource type="Texture2D" uid="uid://bdanyyuu7o2iu" path="res://sprites/CasaNivel1/FundoCasaMadeira.png" id="1_v17l8"]
+[ext_resource type="Texture2D" uid="uid://q8dk3u8wbut2" path="res://sprites/CasaNivel1/CasaMontagem.png" id="2_pp3yd"]
+[ext_resource type="Texture2D" uid="uid://cogi1ny11gxqw" path="res://sprites/CasaNivel1/TEXProv.png" id="2_vkro0"]
+[ext_resource type="Script" uid="uid://cdgcjwr7o6dd3" path="res://Cenas/NiveisFarol/Nivel-1/vozinha.gd" id="3_jhfwu"]
+[ext_resource type="Texture2D" uid="uid://msg3qrl5eemg" path="res://sprites/CasaNivel1/Sofas.png" id="3_xwglk"]
+[ext_resource type="Texture2D" uid="uid://ba01wgtal7x3h" path="res://sprites/CasaNivel1/MesaDeCanto.png" id="4_luslc"]
+[ext_resource type="Texture2D" uid="uid://cu5ibt585f5bh" path="res://sprites/characters/vozinha/F2.png" id="4_pu0q7"]
+[ext_resource type="Texture2D" uid="uid://5wpjao1t4tak" path="res://sprites/characters/vozinha/F4.png" id="5_apds7"]
+[ext_resource type="Texture2D" uid="uid://cols5ncw8t3t2" path="res://sprites/CasaNivel1/ComodosQuarto.png" id="5_v17l8"]
+[ext_resource type="Texture2D" uid="uid://cy23ck7ipyeo0" path="res://sprites/characters/vozinha/F5.png" id="6_rs0f6"]
+[ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="8_pu0q7"]
+[ext_resource type="Texture2D" uid="uid://bsveppf4yosci" path="res://sprites/CasaNivel1/MuralFerrProv.png" id="9_5h8pw"]
+[ext_resource type="Texture2D" uid="uid://dqtbc84x8nw1a" path="res://sprites/CasaNivel1/Relogio.png" id="9_apds7"]
+[ext_resource type="Texture2D" uid="uid://dpv23l0svpvx7" path="res://sprites/CasaNivel1/CaixaDeFerramenta.png" id="9_pu0q7"]
+[ext_resource type="Texture2D" uid="uid://7dx0hb3dguo8" path="res://sprites/CasaNivel1/Cartaz.png" id="10_apds7"]
+[ext_resource type="Texture2D" uid="uid://cv8f7vtf86lmo" path="res://sprites/CasaNivel1/GavetasFerrProv.png" id="10_iaion"]
+[ext_resource type="Texture2D" uid="uid://bc558tmxeup8k" path="res://sprites/CasaNivel1/Casaco.png" id="11_rs0f6"]
+[ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://RadioPuzzle.tscn" id="12_biiyk"]
+[ext_resource type="Texture2D" uid="uid://dk32j1sb22cv8" path="res://sprites/CasaNivel1/MesaDeTrabalho.png" id="16_luslc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_biiyk"]
+texture = ExtResource("1_duku6")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:0/0 = 0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:0/0 = 0
+13:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:0/0 = 0
+14:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:0/0 = 0
+15:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:0/0 = 0
+17:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:0/0 = 0
+18:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:0/0 = 0
+19:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:1/0 = 0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:1/0 = 0
+13:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:1/0 = 0
+14:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:1/0 = 0
+15:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:1/0 = 0
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:1/0 = 0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:1/0 = 0
+19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+13:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:2/0 = 0
+14:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:2/0 = 0
+15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:2/0 = 0
+17:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:2/0 = 0
+18:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:2/0 = 0
+19:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4bug8"]
+texture = ExtResource("2_pp3yd")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:0/0 = 0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:0/0 = 0
+13:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:0/0 = 0
+14:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:0/0 = 0
+15:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:1/0 = 0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:1/0 = 0
+13:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:1/0 = 0
+14:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:1/0 = 0
+15:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:2/0 = 0
+12:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+13:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:2/0 = 0
+14:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:2/0 = 0
+15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_qcimc"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_biiyk")
+sources/1 = SubResource("TileSetAtlasSource_4bug8")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xwglk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_pu0q7")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_apds7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rs0f6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rs0f6")
+}],
+"loop": 1,
+"name": &"running",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_luslc"]
+size = Vector2(32, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(20, 17)
+
+[node name="Node" type="Node" unique_id=329171235]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=358586998]
+texture_filter = 1
+offset_left = 1.0
+offset_top = 429.0
+offset_right = 1195.0
+offset_bottom = 613.0
+texture = ExtResource("1_v17l8")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect" unique_id=606484279]
+texture_filter = 1
+layout_mode = 0
+offset_left = 383.0
+offset_top = 2.0
+offset_right = 590.0
+offset_bottom = 174.0
+texture = ExtResource("2_vkro0")
+stretch_mode = 1
+
+[node name="TileMap" type="TileMap" parent="." unique_id=1736119189]
+texture_filter = 1
+position = Vector2(-1, -6.83)
+tile_set = SubResource("TileSet_qcimc")
+format = 2
+layer_0/tile_data = PackedInt32Array(2490368, 393217, 0, 2555904, 393217, 1, 2621440, 393217, 2, 2490369, 458753, 0, 2555905, 458753, 1, 2621441, 458753, 2, 2490370, 458753, 0, 2555906, 458753, 1, 2621442, 458753, 2, 2490371, 458753, 0, 2555907, 458753, 1, 2621443, 458753, 2, 2490372, 458753, 0, 2555908, 458753, 1, 2621444, 458753, 2, 2490373, 458753, 0, 2555909, 458753, 1, 2621445, 458753, 2, 2490374, 458753, 0, 2555910, 458753, 1, 2621446, 458753, 2, 2490375, 458753, 0, 2555911, 458753, 1, 2621447, 458753, 2, 2490376, 458753, 0, 2555912, 458753, 1, 2621448, 458753, 2, 2490377, 458753, 0, 2555913, 458753, 1, 2621449, 458753, 2, 2490378, 458753, 0, 2555914, 458753, 1, 2621450, 458753, 2, 2490379, 458753, 0, 2555915, 458753, 1, 2621451, 458753, 2, 2490380, 458753, 0, 2555916, 458753, 1, 2621452, 458753, 2, 2490381, 458753, 0, 2555917, 458753, 1, 2621453, 458753, 2, 2490382, 458753, 0, 2555918, 458753, 1, 2621454, 458753, 2, 2490383, 458753, 0, 2555919, 458753, 1, 2621455, 458753, 2, 2490384, 458753, 0, 2555920, 458753, 1, 2621456, 458753, 2, 2490385, 458753, 0, 2555921, 458753, 1, 2621457, 458753, 2, 2490386, 458753, 0, 2555922, 458753, 1, 2621458, 458753, 2, 2490387, 458753, 0, 2555923, 458753, 1, 2621459, 458753, 2, 2490388, 458753, 0, 2555924, 458753, 1, 2621460, 458753, 2, 2490389, 458753, 0, 2555925, 458753, 1, 2621461, 458753, 2, 2490390, 458753, 0, 2555926, 458753, 1, 2621462, 458753, 2, 2490391, 458753, 0, 2555927, 458753, 1, 2621463, 458753, 2, 2490392, 458753, 0, 2555928, 458753, 1, 2621464, 458753, 2, 2490393, 458753, 0, 2555929, 458753, 1, 2621465, 458753, 2, 2490394, 458753, 0, 2555930, 458753, 1, 2621466, 458753, 2, 2490395, 458753, 0, 2555931, 458753, 1, 2621467, 458753, 2, 2490396, 458753, 0, 2555932, 458753, 1, 2621468, 458753, 2, 2490397, 458753, 0, 2555933, 458753, 1, 2621469, 458753, 2, 2490398, 458753, 0, 2555934, 458753, 1, 2621470, 458753, 2, 2490399, 458753, 0, 2555935, 458753, 1, 2621471, 458753, 2, 2490400, 458753, 0, 2555936, 458753, 1, 2621472, 458753, 2, 2490401, 458753, 0, 2555937, 458753, 1, 2621473, 458753, 2, 2490402, 458753, 0, 2555938, 458753, 1, 2621474, 458753, 2, 2490403, 458753, 0, 2555939, 458753, 1, 2621475, 458753, 2, 2490404, 458753, 0, 2555940, 458753, 1, 2621476, 458753, 2, 2490405, 458753, 0, 2555941, 458753, 1, 2621477, 458753, 2, 2490406, 458753, 0, 2555942, 458753, 1, 2621478, 458753, 2, 2490407, 458753, 0, 2555943, 458753, 1, 2621479, 458753, 2, 2490408, 458753, 0, 2555944, 458753, 1, 2621480, 458753, 2, 2490409, 458753, 0, 2555945, 458753, 1, 2621481, 458753, 2, 2490410, 458753, 0, 2555946, 458753, 1, 2621482, 458753, 2, 2490411, 458753, 0, 2555947, 458753, 1, 2621483, 458753, 2, 2490412, 458753, 0, 2555948, 458753, 1, 2621484, 458753, 2, 2490413, 458753, 0, 2555949, 458753, 1, 2621485, 458753, 2, 2490414, 458753, 0, 2555950, 458753, 1, 2621486, 458753, 2, 2490415, 458753, 0, 2555951, 458753, 1, 2621487, 458753, 2, 2490416, 458753, 0, 2555952, 458753, 1, 2621488, 458753, 2, 2490417, 458753, 0, 2555953, 458753, 1, 2621489, 458753, 2, 2490418, 458753, 0, 2555954, 458753, 1, 2621490, 458753, 2, 2490419, 458753, 0, 2555955, 458753, 1, 2621491, 458753, 2, 2490420, 458753, 0, 2555956, 458753, 1, 2621492, 458753, 2, 2490421, 458753, 0, 2555957, 458753, 1, 2621493, 458753, 2, 2490422, 458753, 0, 2555958, 458753, 1, 2621494, 458753, 2, 2490423, 458753, 0, 2555959, 458753, 1, 2621495, 458753, 2, 2490424, 458753, 0, 2555960, 458753, 1, 2621496, 458753, 2, 2490425, 458753, 0, 2555961, 458753, 1, 2621497, 458753, 2, 2490426, 458753, 0, 2555962, 458753, 1, 2621498, 458753, 2, 2490427, 458753, 0, 2555963, 458753, 1, 2621499, 458753, 2, 2490428, 458753, 0, 2555964, 458753, 1, 2621500, 458753, 2, 2228224, 786433, 2, 2162688, 786433, 1, 1900544, 786433, 1, 1966080, 786433, 1, 2031616, 786433, 1, 2097152, 786433, 1, 1900568, 786433, 1, 1966104, 786433, 1, 2031640, 786433, 1, 2097176, 786433, 1, 2162712, 786433, 1, 2228248, 786433, 2, 1900580, 786433, 1, 1966116, 786433, 1, 2031652, 786433, 1, 2097188, 786433, 1, 2162724, 786433, 1, 2228260, 786433, 2, 1900618, 786433, 1, 1966154, 786433, 1, 2031690, 786433, 1, 2097226, 786433, 1, 2162762, 786433, 1, 2490429, 458753, 0, 2555965, 458753, 1, 2621501, 458753, 2, 2490430, 458753, 0, 2555966, 458753, 1, 2621502, 458753, 2, 2490431, 458753, 0, 2555967, 458753, 1, 2621503, 458753, 2, 2490432, 458753, 0, 2555968, 458753, 1, 2621504, 458753, 2, 2490433, 458753, 0, 2555969, 458753, 1, 2621505, 458753, 2, 2490434, 458753, 0, 2555970, 458753, 1, 2621506, 458753, 2, 2490435, 458753, 0, 2555971, 458753, 1, 2621507, 458753, 2, 2490436, 458753, 0, 2555972, 458753, 1, 2621508, 458753, 2, 2490437, 458753, 0, 2555973, 458753, 1, 2621509, 458753, 2, 2490438, 458753, 0, 2555974, 458753, 1, 2621510, 458753, 2, 2490439, 458753, 0, 2555975, 458753, 1, 2621511, 458753, 2, 2490440, 458753, 0, 2555976, 458753, 1, 2621512, 458753, 2, 2490442, 524289, 0, 2555978, 524289, 1, 2621514, 524289, 2, 2490441, 458753, 0, 2555977, 458753, 1, 2621513, 458753, 2, 2228298, 786433, 1, 2293834, 786433, 1, 2359370, 786433, 1, 2424906, 786433, 2, 2228272, 786433, 2, 2162736, 786433, 1, 2097200, 786433, 1, 2031664, 786433, 1, 1966128, 786433, 1, 1900592, 786433, 1, 1769472, 786433, 1610612736, 1769473, 786433, 1610612737, 1769474, 786433, 1610612737, 1769475, 786433, 1610612737, 1769476, 786433, 1610612737, 1769477, 786433, 1610612737, 1769478, 786433, 1610612737, 1769479, 786433, 1610612737, 1769480, 786433, 1610612737, 1769481, 786433, 1610612737, 1769482, 786433, 1610612737, 1769483, 786433, 1610612737, 1769484, 786433, 1610612737, 1769485, 786433, 1610612737, 1769486, 786433, 1610612737, 1769487, 786433, 1610612737, 1769488, 786433, 1610612737, 1769489, 786433, 1610612737, 1769490, 786433, 1610612737, 1769491, 786433, 1610612737, 1769492, 786433, 1610612737, 1769493, 786433, 1610612737, 1769494, 786433, 1610612737, 1769495, 786433, 1610612737, 1769496, 786433, 1610612737, 1769497, 786433, 1610612737, 1769498, 786433, 1610612737, 1769499, 786433, 1610612737, 1769500, 786433, 1610612737, 1769501, 786433, 1610612737, 1769502, 786433, 1610612737, 1769503, 786433, 1610612737, 1769504, 786433, 1610612737, 1769505, 786433, 1610612737, 1769506, 786433, 1610612737, 1769507, 786433, 1610612737, 1769508, 786433, 1610612737, 1769509, 786433, 1610612737, 1769510, 786433, 1610612737, 1769511, 786433, 1610612737, 1769512, 786433, 1610612737, 1769513, 786433, 1610612737, 1769514, 786433, 1610612737, 1769515, 786433, 1610612737, 1769516, 786433, 1610612737, 1769517, 786433, 1610612737, 1769518, 786433, 1610612737, 1769519, 786433, 1610612737, 1769520, 786433, 1610612737, 1769521, 786433, 1610612737, 1769522, 786433, 1610612737, 1769523, 786433, 1610612737, 1769524, 786433, 1610612737, 1769525, 786433, 1610612737, 1769526, 786433, 1610612737, 1769527, 786433, 1610612737, 1769528, 786433, 1610612737, 1769529, 786433, 1610612737, 1769530, 786433, 1610612737, 1769531, 786433, 1610612737, 1769532, 786433, 1610612737, 1769533, 786433, 1610612737, 1769534, 786433, 1610612737, 1769535, 786433, 1610612737, 1769536, 786433, 1610612737, 1769537, 786433, 1610612737, 1769538, 786433, 1610612737, 1769539, 786433, 1610612737, 1769540, 786433, 1610612737, 1769541, 786433, 1610612737, 1769542, 786433, 1610612737, 1769543, 786433, 1610612737, 1769544, 786433, 1610612737, 1769545, 786433, 1610612737, 1769546, 786433, 1610612738, 1835008, 786433, 1, 1835032, 786433, 1, 1835044, 786433, 1, 1835056, 786433, 1, 1835082, 786433, 1, 1835009, 851969, 1610612738, 1835031, 851969, 1342177282, 1835043, 851969, 1342177282, 1835055, 851969, 1342177282, 1835081, 851969, 1342177282, 1835057, 851969, 1610612738, 1835045, 851969, 1610612738, 1835033, 851969, 1610612738)
+
+[node name="Sofas" type="Sprite2D" parent="." unique_id=1208535890]
+texture_filter = 1
+position = Vector2(146.00002, 574)
+scale = Vector2(1.9861109, 1.9861109)
+texture = ExtResource("3_xwglk")
+
+[node name="MesaDeCanto" type="Sprite2D" parent="." unique_id=1937216732]
+texture_filter = 1
+position = Vector2(255.66663, 583)
+scale = Vector2(1.3333334, 1.3333334)
+texture = ExtResource("4_luslc")
+
+[node name="ComodosQuarto" type="Sprite2D" parent="." unique_id=1618161180]
+texture_filter = 1
+position = Vector2(683, 577)
+scale = Vector2(2.0555556, 2.0555556)
+texture = ExtResource("5_v17l8")
+
+[node name="MesaDeTrabalho" type="Sprite2D" parent="." unique_id=1025046122]
+texture_filter = 1
+position = Vector2(870, 577.25)
+scale = Vector2(1.625, 1.625)
+texture = ExtResource("16_luslc")
+
+[node name="MesaDeCanto2" type="Sprite2D" parent="." unique_id=2923478]
+texture_filter = 1
+position = Vector2(988.99994, 583)
+scale = Vector2(1.3055556, 1.3055556)
+texture = ExtResource("4_luslc")
+
+[node name="MuralFerrProv" type="Sprite2D" parent="." unique_id=172210466]
+texture_filter = 1
+position = Vector2(446.99997, 524.5)
+scale = Vector2(1.78125, 1.78125)
+texture = ExtResource("9_5h8pw")
+
+[node name="MuralFerrProv2" type="Sprite2D" parent="." unique_id=991427010]
+texture_filter = 1
+position = Vector2(521.00006, 525.50006)
+scale = Vector2(1.7728468, 1.7728468)
+texture = ExtResource("9_5h8pw")
+
+[node name="GavetasFerrProv" type="Sprite2D" parent="." unique_id=2111866247]
+texture_filter = 1
+position = Vector2(444, 576)
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("10_iaion")
+
+[node name="GavetasFerrProv2" type="Sprite2D" parent="." unique_id=600330357]
+texture_filter = 1
+position = Vector2(527, 576)
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("10_iaion")
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=2119634226]
+script = ExtResource("3_jhfwu")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D2" unique_id=1777922913]
+texture_filter = 1
+position = Vector2(55.63124, 575.99994)
+scale = Vector2(0.06932618, 0.06932618)
+sprite_frames = SubResource("SpriteFrames_xwglk")
+animation = &"running"
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=27569438]
+position = Vector2(56, 579)
+shape = SubResource("RectangleShape2D_luslc")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D2" unique_id=414094464]
+position = Vector2(45, 591)
+zoom = Vector2(3, 3)
+limit_left = 0
+limit_top = 0
+limit_right = 4380
+limit_bottom = 650
+
+[node name="InteragirDialogo[RELOGIO]" type="Area2D" parent="." unique_id=1218721252]
+position = Vector2(263, 579)
+script = ExtResource("8_pu0q7")
+texts = Array[String](["Esse relógio...", "Seu antigo relógio, nunca ficava sem ele.", "Apesar disso, você nunca acertava o horário...", "Vivia chegando atrasado...", "...", "Mas eu sempre ficava acordada esperando você voltar.", "Mãe aprende a esperar até quando não devia."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[RELOGIO]" unique_id=501859377]
+texture_filter = 1
+position = Vector2(0, 1.9598389)
+scale = Vector2(0.5599902, 0.5599902)
+texture = ExtResource("9_apds7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[RELOGIO]" unique_id=321801038]
+position = Vector2(0, 1.9598389)
+scale = Vector2(0.5599902, 0.5599902)
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[RELOGIO]" unique_id=760530182]
+offset_left = -4.0
+offset_top = -25.0
+offset_right = 36.0
+offset_bottom = -2.0
+text = "F"
+
+[node name="InteragirDialogo[CFERRAMENTA]" type="Area2D" parent="." unique_id=1627925305]
+position = Vector2(486, 597)
+script = ExtResource("8_pu0q7")
+texts = Array[String](["Sua caixa de ferramenta...", "Ele sempre achava que podia consertar tudo.", "Lembro de quando a porta da cozinha quebrou.", "Você passou a tarde inteira tentando consertar.", "Depois foi a cadeira...", "O armário...", "Aquela janela que nunca fechava direito...", "Até o farol"])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[CFERRAMENTA]" unique_id=438894541]
+texture_filter = 1
+texture = ExtResource("9_pu0q7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[CFERRAMENTA]" unique_id=915550073]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[CFERRAMENTA]" unique_id=2089829178]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[DISPENSA]" type="Area2D" parent="." unique_id=1697335997]
+position = Vector2(563, 573)
+script = ExtResource("8_pu0q7")
+texts = Array[String](["Qualquer coisa que ocorria você vinha até aqui...", "Pegava o que precisava...", "E dizia:", "\"Se tivesse uma ferramenta e tempo suficiente...", "“...dava para consertar qualquer coisa.”", "Mas existem coisas que ninguém consegue salvar."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[DISPENSA]" unique_id=1518077180]
+visible = false
+texture_filter = 1
+texture = ExtResource("9_pu0q7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[DISPENSA]" unique_id=244648817]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[DISPENSA]" unique_id=1355004722]
+texture_filter = 1
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[CARTA]" type="Area2D" parent="." unique_id=355635557]
+position = Vector2(630, 574)
+script = ExtResource("8_pu0q7")
+texts = Array[String](["Uma das cartas que ele me mandava...", "\"Achei a foto que estava perdida no farol...\"", "\"A Katrina devia ter seus OITO anos na época dessa foto...", "\"Ou eram SETE?...\"", "\"De qualquer forma levarei a foto para você as CINCO.\"", "A letra dele ficava torta quando estava cansado.", "Eu reconheceria essas palavras em qualquer lugar.", "É estranho...", "...", "Um pedaço de papel conseguir pesar tanto."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[CARTA]" unique_id=626972198]
+texture_filter = 1
+texture = ExtResource("10_apds7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[CARTA]" unique_id=56840934]
+position = Vector2(0, -3.5)
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[CARTA]" unique_id=699598872]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[POSCARTA]" type="Area2D" parent="." unique_id=856852149]
+position = Vector2(696, 573)
+script = ExtResource("8_pu0q7")
+texts = Array[String](["...", "Mães deveriam ir primeiro...", "Não os filhos...", "...", "...", "..."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[POSCARTA]" unique_id=1825052616]
+visible = false
+texture_filter = 1
+texture = ExtResource("9_pu0q7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[POSCARTA]" unique_id=1190297644]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[POSCARTA]" unique_id=1105120998]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=1548406826]
+position = Vector2(803, 573)
+script = ExtResource("8_pu0q7")
+texts = Array[String](["Eu achei que, se deixasse tudo igual...", "Então nada teria acabado de verdade."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=1672013735]
+visible = false
+texture_filter = 1
+texture = ExtResource("9_pu0q7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=1113977745]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[ESCRITORIO]" unique_id=21592633]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[CARTA]2" type="Area2D" parent="." unique_id=738184462]
+position = Vector2(936, 573)
+script = ExtResource("8_pu0q7")
+texts = Array[String](["Ele odiava frio.", "Mesmo adulto, ainda esquecia de levar casaco."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[CARTA]2" unique_id=1061854483]
+texture_filter = 1
+texture = ExtResource("11_rs0f6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[CARTA]2" unique_id=1724536353]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[CARTA]2" unique_id=2139002120]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("12_biiyk")]
+texture_filter = 1
+position = Vector2(997, 580)
+
+[node name="InteragirDialogo[POSRADIO]" type="Area2D" parent="." unique_id=623812995]
+position = Vector2(1034, 581)
+script = ExtResource("8_pu0q7")
+texts = Array[String](["Ele ligava esse rádio tão alto...", "A casa inteira vibrava junto.", "“Eu dizia que era barulho demais...", "Mas sem ele é muito pior.", "Tenho medo de esquecer a voz dele...", "...", "Tenho medo de lembrar...", "...", "Tenho medo dos dois."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[POSRADIO]" unique_id=1496047171]
+visible = false
+texture_filter = 1
+texture = ExtResource("9_pu0q7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[POSRADIO]" unique_id=1707708105]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[POSRADIO]" unique_id=1962098548]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
