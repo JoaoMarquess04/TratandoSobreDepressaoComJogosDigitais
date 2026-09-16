@@ -1,28 +1,28 @@
 [gd_scene format=3 uid="uid://c7juqki37umxd"]
 
-[ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="1_duku6"]
-[ext_resource type="Texture2D" uid="uid://bdanyyuu7o2iu" path="res://sprites/CasaNivel1/FundoCasaMadeira.png" id="1_v17l8"]
-[ext_resource type="Texture2D" uid="uid://q8dk3u8wbut2" path="res://sprites/CasaNivel1/CasaMontagem.png" id="2_pp3yd"]
-[ext_resource type="Texture2D" uid="uid://cogi1ny11gxqw" path="res://sprites/CasaNivel1/TEXProv.png" id="2_vkro0"]
-[ext_resource type="Script" uid="uid://cdgcjwr7o6dd3" path="res://Cenas/NiveisFarol/Nivel-1/vozinha.gd" id="3_jhfwu"]
-[ext_resource type="Texture2D" uid="uid://msg3qrl5eemg" path="res://sprites/CasaNivel1/Sofas.png" id="3_xwglk"]
-[ext_resource type="Texture2D" uid="uid://ba01wgtal7x3h" path="res://sprites/CasaNivel1/MesaDeCanto.png" id="4_luslc"]
-[ext_resource type="Texture2D" uid="uid://cu5ibt585f5bh" path="res://sprites/characters/vozinha/F2.png" id="4_pu0q7"]
-[ext_resource type="Texture2D" uid="uid://5wpjao1t4tak" path="res://sprites/characters/vozinha/F4.png" id="5_apds7"]
-[ext_resource type="Texture2D" uid="uid://cols5ncw8t3t2" path="res://sprites/CasaNivel1/ComodosQuarto.png" id="5_v17l8"]
-[ext_resource type="Texture2D" uid="uid://cy23ck7ipyeo0" path="res://sprites/characters/vozinha/F5.png" id="6_rs0f6"]
-[ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="8_pu0q7"]
-[ext_resource type="Texture2D" uid="uid://bsveppf4yosci" path="res://sprites/CasaNivel1/MuralFerrProv.png" id="9_5h8pw"]
-[ext_resource type="Texture2D" uid="uid://dqtbc84x8nw1a" path="res://sprites/CasaNivel1/Relogio.png" id="9_apds7"]
-[ext_resource type="Texture2D" uid="uid://dpv23l0svpvx7" path="res://sprites/CasaNivel1/CaixaDeFerramenta.png" id="9_pu0q7"]
-[ext_resource type="Texture2D" uid="uid://7dx0hb3dguo8" path="res://sprites/CasaNivel1/Cartaz.png" id="10_apds7"]
-[ext_resource type="Texture2D" uid="uid://cv8f7vtf86lmo" path="res://sprites/CasaNivel1/GavetasFerrProv.png" id="10_iaion"]
-[ext_resource type="Texture2D" uid="uid://bc558tmxeup8k" path="res://sprites/CasaNivel1/Casaco.png" id="11_rs0f6"]
-[ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://RadioPuzzle.tscn" id="12_biiyk"]
-[ext_resource type="Texture2D" uid="uid://dk32j1sb22cv8" path="res://sprites/CasaNivel1/MesaDeTrabalho.png" id="16_luslc"]
+[ext_resource type="Texture2D" uid="uid://bdanyyuu7o2iu" path="res://sprites/CasaNivel1/FundoCasaMadeira.png" id="1_pgo18"]
+[ext_resource type="Texture2D" uid="uid://cogi1ny11gxqw" path="res://sprites/CasaNivel1/TEXProv.png" id="2_pbibn"]
+[ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="3_2s6q8"]
+[ext_resource type="Texture2D" uid="uid://q8dk3u8wbut2" path="res://sprites/CasaNivel1/CasaMontagem.png" id="4_2wb0r"]
+[ext_resource type="Texture2D" uid="uid://msg3qrl5eemg" path="res://sprites/CasaNivel1/Sofas.png" id="5_fnbr3"]
+[ext_resource type="Texture2D" uid="uid://ba01wgtal7x3h" path="res://sprites/CasaNivel1/MesaDeCanto.png" id="6_0h26o"]
+[ext_resource type="Texture2D" uid="uid://cols5ncw8t3t2" path="res://sprites/CasaNivel1/ComodosQuarto.png" id="7_cv0i0"]
+[ext_resource type="Texture2D" uid="uid://dk32j1sb22cv8" path="res://sprites/CasaNivel1/MesaDeTrabalho.png" id="8_hj1yi"]
+[ext_resource type="Texture2D" uid="uid://bsveppf4yosci" path="res://sprites/CasaNivel1/MuralFerrProv.png" id="9_ywgnc"]
+[ext_resource type="Texture2D" uid="uid://cv8f7vtf86lmo" path="res://sprites/CasaNivel1/GavetasFerrProv.png" id="10_ine6p"]
+[ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="11_f4pxe"]
+[ext_resource type="Texture2D" uid="uid://dqtbc84x8nw1a" path="res://sprites/CasaNivel1/Relogio.png" id="12_terpp"]
+[ext_resource type="Texture2D" uid="uid://dpv23l0svpvx7" path="res://sprites/CasaNivel1/CaixaDeFerramenta.png" id="13_6g73f"]
+[ext_resource type="Texture2D" uid="uid://7dx0hb3dguo8" path="res://sprites/CasaNivel1/Cartaz.png" id="14_dcgow"]
+[ext_resource type="Texture2D" uid="uid://bc558tmxeup8k" path="res://sprites/CasaNivel1/Casaco.png" id="15_6ejfe"]
+[ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://RadioPuzzle.tscn" id="16_w8su5"]
+[ext_resource type="Script" uid="uid://cdgcjwr7o6dd3" path="res://Cenas/NiveisFarol/Nivel-1/vozinha.gd" id="17_jegjd"]
+[ext_resource type="Texture2D" uid="uid://cu5ibt585f5bh" path="res://sprites/characters/vozinha/F2.png" id="18_nbd8n"]
+[ext_resource type="Texture2D" uid="uid://5wpjao1t4tak" path="res://sprites/characters/vozinha/F4.png" id="19_tnf5e"]
+[ext_resource type="Texture2D" uid="uid://cy23ck7ipyeo0" path="res://sprites/characters/vozinha/F5.png" id="20_khe20"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_biiyk"]
-texture = ExtResource("1_duku6")
+texture = ExtResource("3_2s6q8")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -117,7 +117,7 @@ texture = ExtResource("1_duku6")
 19:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4bug8"]
-texture = ExtResource("2_pp3yd")
+texture = ExtResource("4_2wb0r")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -178,11 +178,14 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_biiyk")
 sources/1 = SubResource("TileSetAtlasSource_4bug8")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(20, 17)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_xwglk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_pu0q7")
+"texture": ExtResource("18_nbd8n")
 }],
 "loop": 1,
 "name": &"default",
@@ -190,13 +193,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_apds7")
+"texture": ExtResource("19_tnf5e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_rs0f6")
+"texture": ExtResource("20_khe20")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_rs0f6")
+"texture": ExtResource("20_khe20")
 }],
 "loop": 1,
 "name": &"running",
@@ -206,9 +209,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_luslc"]
 size = Vector2(32, 42)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
-size = Vector2(20, 17)
-
 [node name="Node" type="Node" unique_id=329171235]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=358586998]
@@ -217,7 +217,7 @@ offset_left = 1.0
 offset_top = 429.0
 offset_right = 1195.0
 offset_bottom = 613.0
-texture = ExtResource("1_v17l8")
+texture = ExtResource("1_pgo18")
 stretch_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="TextureRect" unique_id=606484279]
@@ -227,7 +227,7 @@ offset_left = 383.0
 offset_top = 2.0
 offset_right = 590.0
 offset_bottom = 174.0
-texture = ExtResource("2_vkro0")
+texture = ExtResource("2_pbibn")
 stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1736119189]
@@ -241,58 +241,224 @@ layer_0/tile_data = PackedInt32Array(2490368, 393217, 0, 2555904, 393217, 1, 262
 texture_filter = 1
 position = Vector2(146.00002, 574)
 scale = Vector2(1.9861109, 1.9861109)
-texture = ExtResource("3_xwglk")
+texture = ExtResource("5_fnbr3")
 
 [node name="MesaDeCanto" type="Sprite2D" parent="." unique_id=1937216732]
 texture_filter = 1
 position = Vector2(255.66663, 583)
 scale = Vector2(1.3333334, 1.3333334)
-texture = ExtResource("4_luslc")
+texture = ExtResource("6_0h26o")
 
 [node name="ComodosQuarto" type="Sprite2D" parent="." unique_id=1618161180]
 texture_filter = 1
 position = Vector2(683, 577)
 scale = Vector2(2.0555556, 2.0555556)
-texture = ExtResource("5_v17l8")
+texture = ExtResource("7_cv0i0")
 
 [node name="MesaDeTrabalho" type="Sprite2D" parent="." unique_id=1025046122]
 texture_filter = 1
 position = Vector2(870, 577.25)
 scale = Vector2(1.625, 1.625)
-texture = ExtResource("16_luslc")
+texture = ExtResource("8_hj1yi")
 
 [node name="MesaDeCanto2" type="Sprite2D" parent="." unique_id=2923478]
 texture_filter = 1
 position = Vector2(988.99994, 583)
 scale = Vector2(1.3055556, 1.3055556)
-texture = ExtResource("4_luslc")
+texture = ExtResource("6_0h26o")
 
 [node name="MuralFerrProv" type="Sprite2D" parent="." unique_id=172210466]
 texture_filter = 1
 position = Vector2(446.99997, 524.5)
 scale = Vector2(1.78125, 1.78125)
-texture = ExtResource("9_5h8pw")
+texture = ExtResource("9_ywgnc")
 
 [node name="MuralFerrProv2" type="Sprite2D" parent="." unique_id=991427010]
 texture_filter = 1
 position = Vector2(521.00006, 525.50006)
 scale = Vector2(1.7728468, 1.7728468)
-texture = ExtResource("9_5h8pw")
+texture = ExtResource("9_ywgnc")
 
 [node name="GavetasFerrProv" type="Sprite2D" parent="." unique_id=2111866247]
 texture_filter = 1
 position = Vector2(444, 576)
 scale = Vector2(1.6, 1.6)
-texture = ExtResource("10_iaion")
+texture = ExtResource("10_ine6p")
 
 [node name="GavetasFerrProv2" type="Sprite2D" parent="." unique_id=600330357]
 texture_filter = 1
 position = Vector2(527, 576)
 scale = Vector2(1.6, 1.6)
-texture = ExtResource("10_iaion")
+texture = ExtResource("10_ine6p")
+
+[node name="InteragirDialogo[RELOGIO]" type="Area2D" parent="." unique_id=1218721252]
+position = Vector2(263, 579)
+script = ExtResource("11_f4pxe")
+texts = Array[String](["Esse relógio...", "Seu antigo relógio, nunca ficava sem ele.", "Apesar disso, você nunca acertava o horário...", "Vivia chegando atrasado...", "...", "Mas eu sempre ficava acordada esperando você voltar.", "Mãe aprende a esperar até quando não devia."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[RELOGIO]" unique_id=501859377]
+texture_filter = 1
+position = Vector2(0, 1.9598389)
+scale = Vector2(0.5599902, 0.5599902)
+texture = ExtResource("12_terpp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[RELOGIO]" unique_id=321801038]
+position = Vector2(0, 1.9598389)
+scale = Vector2(0.5599902, 0.5599902)
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[RELOGIO]" unique_id=760530182]
+offset_left = -4.0
+offset_top = -25.0
+offset_right = 36.0
+offset_bottom = -2.0
+text = "F"
+
+[node name="InteragirDialogo[CFERRAMENTA]" type="Area2D" parent="." unique_id=1627925305]
+position = Vector2(486, 597)
+script = ExtResource("11_f4pxe")
+texts = Array[String](["Sua caixa de ferramenta...", "Ele sempre achava que podia consertar tudo.", "Lembro de quando a porta da cozinha quebrou.", "Você passou a tarde inteira tentando consertar.", "Depois foi a cadeira...", "O armário...", "Aquela janela que nunca fechava direito...", "Até o farol"])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[CFERRAMENTA]" unique_id=438894541]
+texture_filter = 1
+texture = ExtResource("13_6g73f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[CFERRAMENTA]" unique_id=915550073]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[CFERRAMENTA]" unique_id=2089829178]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[DISPENSA]" type="Area2D" parent="." unique_id=1697335997]
+position = Vector2(563, 573)
+script = ExtResource("11_f4pxe")
+texts = Array[String](["Qualquer coisa que ocorria você vinha até aqui...", "Pegava o que precisava...", "E dizia:", "\"Se tivesse uma ferramenta e tempo suficiente...", "“...dava para consertar qualquer coisa.”", "Mas existem coisas que ninguém consegue salvar."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[DISPENSA]" unique_id=1518077180]
+visible = false
+texture_filter = 1
+texture = ExtResource("13_6g73f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[DISPENSA]" unique_id=244648817]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[DISPENSA]" unique_id=1355004722]
+texture_filter = 1
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[CARTA]" type="Area2D" parent="." unique_id=355635557]
+position = Vector2(630, 574)
+script = ExtResource("11_f4pxe")
+texts = Array[String](["Uma das cartas que ele me mandava...", "\"Achei a foto que estava perdida no farol...\"", "\"A Katrina devia ter seus OITO anos na época dessa foto...", "\"Ou eram SETE?...\"", "\"De qualquer forma levarei a foto para você as CINCO.\"", "A letra dele ficava torta quando estava cansado.", "Eu reconheceria essas palavras em qualquer lugar.", "É estranho...", "...", "Um pedaço de papel conseguir pesar tanto."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[CARTA]" unique_id=626972198]
+texture_filter = 1
+texture = ExtResource("14_dcgow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[CARTA]" unique_id=56840934]
+position = Vector2(0, -3.5)
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[CARTA]" unique_id=699598872]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[POSCARTA]" type="Area2D" parent="." unique_id=856852149]
+position = Vector2(696, 573)
+script = ExtResource("11_f4pxe")
+texts = Array[String](["...", "Mães deveriam ir primeiro...", "Não os filhos...", "...", "...", "..."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[POSCARTA]" unique_id=1825052616]
+visible = false
+texture_filter = 1
+texture = ExtResource("13_6g73f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[POSCARTA]" unique_id=1190297644]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[POSCARTA]" unique_id=1105120998]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=1548406826]
+position = Vector2(803, 573)
+script = ExtResource("11_f4pxe")
+texts = Array[String](["Eu achei que, se deixasse tudo igual...", "Então nada teria acabado de verdade."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=1672013735]
+visible = false
+texture_filter = 1
+texture = ExtResource("13_6g73f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=1113977745]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[ESCRITORIO]" unique_id=21592633]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="InteragirDialogo[CARTA]2" type="Area2D" parent="." unique_id=738184462]
+position = Vector2(936, 573)
+script = ExtResource("11_f4pxe")
+texts = Array[String](["Ele odiava frio.", "Mesmo adulto, ainda esquecia de levar casaco."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[CARTA]2" unique_id=1061854483]
+texture_filter = 1
+texture = ExtResource("15_6ejfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[CARTA]2" unique_id=1724536353]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[CARTA]2" unique_id=2139002120]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
+
+[node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("16_w8su5")]
+texture_filter = 1
+position = Vector2(997, 580)
+
+[node name="InteragirDialogo[POSRADIO]" type="Area2D" parent="." unique_id=623812995]
+position = Vector2(1034, 581)
+script = ExtResource("11_f4pxe")
+texts = Array[String](["Ele ligava esse rádio tão alto...", "A casa inteira vibrava junto.", "“Eu dizia que era barulho demais...", "Mas sem ele é muito pior.", "Tenho medo de esquecer a voz dele...", "...", "Tenho medo de lembrar...", "...", "Tenho medo dos dois."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[POSRADIO]" unique_id=1496047171]
+visible = false
+texture_filter = 1
+texture = ExtResource("13_6g73f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[POSRADIO]" unique_id=1707708105]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Label" type="Label" parent="InteragirDialogo[POSRADIO]" unique_id=1962098548]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
 
 [node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=2119634226]
-script = ExtResource("3_jhfwu")
+script = ExtResource("17_jegjd")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D2" unique_id=1777922913]
 texture_filter = 1
@@ -313,169 +479,3 @@ limit_left = 0
 limit_top = 0
 limit_right = 4380
 limit_bottom = 650
-
-[node name="InteragirDialogo[RELOGIO]" type="Area2D" parent="." unique_id=1218721252]
-position = Vector2(263, 579)
-script = ExtResource("8_pu0q7")
-texts = Array[String](["Esse relógio...", "Seu antigo relógio, nunca ficava sem ele.", "Apesar disso, você nunca acertava o horário...", "Vivia chegando atrasado...", "...", "Mas eu sempre ficava acordada esperando você voltar.", "Mãe aprende a esperar até quando não devia."])
-
-[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[RELOGIO]" unique_id=501859377]
-texture_filter = 1
-position = Vector2(0, 1.9598389)
-scale = Vector2(0.5599902, 0.5599902)
-texture = ExtResource("9_apds7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[RELOGIO]" unique_id=321801038]
-position = Vector2(0, 1.9598389)
-scale = Vector2(0.5599902, 0.5599902)
-shape = SubResource("RectangleShape2D_bhunq")
-
-[node name="Label" type="Label" parent="InteragirDialogo[RELOGIO]" unique_id=760530182]
-offset_left = -4.0
-offset_top = -25.0
-offset_right = 36.0
-offset_bottom = -2.0
-text = "F"
-
-[node name="InteragirDialogo[CFERRAMENTA]" type="Area2D" parent="." unique_id=1627925305]
-position = Vector2(486, 597)
-script = ExtResource("8_pu0q7")
-texts = Array[String](["Sua caixa de ferramenta...", "Ele sempre achava que podia consertar tudo.", "Lembro de quando a porta da cozinha quebrou.", "Você passou a tarde inteira tentando consertar.", "Depois foi a cadeira...", "O armário...", "Aquela janela que nunca fechava direito...", "Até o farol"])
-
-[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[CFERRAMENTA]" unique_id=438894541]
-texture_filter = 1
-texture = ExtResource("9_pu0q7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[CFERRAMENTA]" unique_id=915550073]
-shape = SubResource("RectangleShape2D_bhunq")
-
-[node name="Label" type="Label" parent="InteragirDialogo[CFERRAMENTA]" unique_id=2089829178]
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "F"
-
-[node name="InteragirDialogo[DISPENSA]" type="Area2D" parent="." unique_id=1697335997]
-position = Vector2(563, 573)
-script = ExtResource("8_pu0q7")
-texts = Array[String](["Qualquer coisa que ocorria você vinha até aqui...", "Pegava o que precisava...", "E dizia:", "\"Se tivesse uma ferramenta e tempo suficiente...", "“...dava para consertar qualquer coisa.”", "Mas existem coisas que ninguém consegue salvar."])
-
-[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[DISPENSA]" unique_id=1518077180]
-visible = false
-texture_filter = 1
-texture = ExtResource("9_pu0q7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[DISPENSA]" unique_id=244648817]
-shape = SubResource("RectangleShape2D_bhunq")
-
-[node name="Label" type="Label" parent="InteragirDialogo[DISPENSA]" unique_id=1355004722]
-texture_filter = 1
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "F"
-
-[node name="InteragirDialogo[CARTA]" type="Area2D" parent="." unique_id=355635557]
-position = Vector2(630, 574)
-script = ExtResource("8_pu0q7")
-texts = Array[String](["Uma das cartas que ele me mandava...", "\"Achei a foto que estava perdida no farol...\"", "\"A Katrina devia ter seus OITO anos na época dessa foto...", "\"Ou eram SETE?...\"", "\"De qualquer forma levarei a foto para você as CINCO.\"", "A letra dele ficava torta quando estava cansado.", "Eu reconheceria essas palavras em qualquer lugar.", "É estranho...", "...", "Um pedaço de papel conseguir pesar tanto."])
-
-[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[CARTA]" unique_id=626972198]
-texture_filter = 1
-texture = ExtResource("10_apds7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[CARTA]" unique_id=56840934]
-position = Vector2(0, -3.5)
-shape = SubResource("RectangleShape2D_bhunq")
-
-[node name="Label" type="Label" parent="InteragirDialogo[CARTA]" unique_id=699598872]
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "F"
-
-[node name="InteragirDialogo[POSCARTA]" type="Area2D" parent="." unique_id=856852149]
-position = Vector2(696, 573)
-script = ExtResource("8_pu0q7")
-texts = Array[String](["...", "Mães deveriam ir primeiro...", "Não os filhos...", "...", "...", "..."])
-
-[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[POSCARTA]" unique_id=1825052616]
-visible = false
-texture_filter = 1
-texture = ExtResource("9_pu0q7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[POSCARTA]" unique_id=1190297644]
-shape = SubResource("RectangleShape2D_bhunq")
-
-[node name="Label" type="Label" parent="InteragirDialogo[POSCARTA]" unique_id=1105120998]
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "F"
-
-[node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=1548406826]
-position = Vector2(803, 573)
-script = ExtResource("8_pu0q7")
-texts = Array[String](["Eu achei que, se deixasse tudo igual...", "Então nada teria acabado de verdade."])
-
-[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=1672013735]
-visible = false
-texture_filter = 1
-texture = ExtResource("9_pu0q7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=1113977745]
-shape = SubResource("RectangleShape2D_bhunq")
-
-[node name="Label" type="Label" parent="InteragirDialogo[ESCRITORIO]" unique_id=21592633]
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "F"
-
-[node name="InteragirDialogo[CARTA]2" type="Area2D" parent="." unique_id=738184462]
-position = Vector2(936, 573)
-script = ExtResource("8_pu0q7")
-texts = Array[String](["Ele odiava frio.", "Mesmo adulto, ainda esquecia de levar casaco."])
-
-[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[CARTA]2" unique_id=1061854483]
-texture_filter = 1
-texture = ExtResource("11_rs0f6")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[CARTA]2" unique_id=1724536353]
-shape = SubResource("RectangleShape2D_bhunq")
-
-[node name="Label" type="Label" parent="InteragirDialogo[CARTA]2" unique_id=2139002120]
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "F"
-
-[node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("12_biiyk")]
-texture_filter = 1
-position = Vector2(997, 580)
-
-[node name="InteragirDialogo[POSRADIO]" type="Area2D" parent="." unique_id=623812995]
-position = Vector2(1034, 581)
-script = ExtResource("8_pu0q7")
-texts = Array[String](["Ele ligava esse rádio tão alto...", "A casa inteira vibrava junto.", "“Eu dizia que era barulho demais...", "Mas sem ele é muito pior.", "Tenho medo de esquecer a voz dele...", "...", "Tenho medo de lembrar...", "...", "Tenho medo dos dois."])
-
-[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[POSRADIO]" unique_id=1496047171]
-visible = false
-texture_filter = 1
-texture = ExtResource("9_pu0q7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[POSRADIO]" unique_id=1707708105]
-shape = SubResource("RectangleShape2D_bhunq")
-
-[node name="Label" type="Label" parent="InteragirDialogo[POSRADIO]" unique_id=1962098548]
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "F"

@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://csum1hmfe2yua"]
 
+[ext_resource type="Texture2D" uid="uid://bdanyyuu7o2iu" path="res://sprites/CasaNivel1/FundoCasaMadeira.png" id="1_5ilr8"]
 [ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="1_ytphb"]
+[ext_resource type="Texture2D" uid="uid://cols5ncw8t3t2" path="res://sprites/CasaNivel1/ComodosQuarto.png" id="2_8vtat"]
 [ext_resource type="Texture2D" uid="uid://d5jnicxwwxut" path="res://sprites/CasaNivel1/Espinhozin.png" id="2_b2yd7"]
 [ext_resource type="Script" uid="uid://cwj85d1venhau" path="res://CharacterMove.gd" id="2_jkeii"]
+[ext_resource type="Texture2D" uid="uid://msg3qrl5eemg" path="res://sprites/CasaNivel1/Sofas.png" id="3_miap4"]
 [ext_resource type="Script" uid="uid://xqsnohqhbb7y" path="res://botaoAtivo.gd" id="3_wcljq"]
 [ext_resource type="Texture2D" uid="uid://bka1h71kmifyl" path="res://sprites/character-NN/16x16 Rotate-Sheet.png" id="3_ymdjw"]
 [ext_resource type="Texture2D" uid="uid://dutqwoc3vegd6" path="res://sprites/MontagemFarolProv.png" id="4_dgshj"]
 [ext_resource type="Texture2D" uid="uid://ckdb3mqor6c0x" path="res://sprites/character-NN/16x16 Idle-Sheet.png" id="4_mg12l"]
+[ext_resource type="Texture2D" uid="uid://ba01wgtal7x3h" path="res://sprites/CasaNivel1/MesaDeCanto.png" id="4_wkh1b"]
 [ext_resource type="Texture2D" uid="uid://dwfdw0no0uydo" path="res://sprites/character-NN/16x16 Jump-Sheet.png" id="5_dgshj"]
 [ext_resource type="Script" uid="uid://cinfiy51wsjdq" path="res://botaoPassivo.gd" id="6_g4v4m"]
 [ext_resource type="Texture2D" uid="uid://dgmn6mi43e8qf" path="res://sprites/character-NN/16x16 Run-Sheet.png" id="6_wcljq"]
@@ -25,6 +29,8 @@
 [ext_resource type="Script" uid="uid://3207tb8123fc" path="res://Cenas/Placa1.gd" id="21_uc3vj"]
 [ext_resource type="Texture2D" uid="uid://cibo4hi8p02iq" path="res://sprites/caixas-dialogo/CaixaDialogoPadrao.png" id="22_ad8ox"]
 [ext_resource type="Script" uid="uid://deq772g1cim7r" path="res://damage.gd" id="25_b2yd7"]
+[ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="30_2sah2"]
+[ext_resource type="Texture2D" uid="uid://dpv23l0svpvx7" path="res://sprites/CasaNivel1/CaixaDeFerramenta.png" id="31_uxwnx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("1_ytphb")
@@ -397,7 +403,7 @@ animations = [{
 size = Vector2(18, 25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c27d8"]
-size = Vector2(54, 53)
+size = Vector2(28, 57)
 
 [sub_resource type="Curve2D" id="Curve2D_8apjj"]
 _data = {
@@ -451,8 +457,38 @@ size = Vector2(160, 6)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6f8o3"]
 size = Vector2(6, 81)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kl2gf"]
+size = Vector2(20, 17)
+
 [node name="Node" type="Node" unique_id=1482666183]
 metadata/_edit_horizontal_guides_ = [312.0]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1604407191]
+texture_filter = 1
+offset_left = 170.0
+offset_top = -214.0
+offset_right = 624.0
+offset_bottom = 92.0
+texture = ExtResource("1_5ilr8")
+stretch_mode = 1
+
+[node name="ComodosQuarto" type="Sprite2D" parent="." unique_id=1061084945]
+texture_filter = 1
+position = Vector2(311, 64)
+scale = Vector2(2.2222223, 2.2222223)
+texture = ExtResource("2_8vtat")
+
+[node name="Sofas" type="Sprite2D" parent="." unique_id=1926404239]
+texture_filter = 1
+position = Vector2(519, 62.000004)
+scale = Vector2(1.9722222, 1.9722222)
+texture = ExtResource("3_miap4")
+
+[node name="MesaDeCanto" type="Sprite2D" parent="." unique_id=835425841]
+texture_filter = 1
+position = Vector2(422, 70)
+scale = Vector2(1.4722222, 1.4722222)
+texture = ExtResource("4_wkh1b")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=2123595930]
 texture_filter = 1
@@ -610,7 +646,7 @@ text = "Haverão obstáculos maiores a frente... use \"E\" para um impulso extra
 autowrap_mode = 2
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=608180040 groups=["player"]]
-position = Vector2(-1320, 3)
+position = Vector2(998, -519)
 script = ExtResource("2_jkeii")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1416926623]
@@ -628,11 +664,11 @@ shape = SubResource("RectangleShape2D_k4kxg")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1039846920]
 position = Vector2(-130, 589)
-zoom = Vector2(3, 3)
-limit_left = -1472
-limit_top = 0
-limit_right = 1153
-limit_bottom = 650
+zoom = Vector2(2.29, 2.29)
+limit_left = -1473
+limit_top = -168
+limit_right = 1152
+limit_bottom = 648
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1880469479]
 
@@ -654,13 +690,13 @@ position = Vector2(1, 33)
 script = ExtResource("14_wcljq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTransition2" unique_id=2039874403]
-position = Vector2(211, 23)
+position = Vector2(197, 27.5)
 shape = SubResource("RectangleShape2D_c27d8")
 
 [node name="Sprite2D" type="Sprite2D" parent="SceneTransition2" unique_id=751011449]
 texture_filter = 1
-position = Vector2(220, 22)
-scale = Vector2(1.8437504, 2.2278647)
+position = Vector2(197, 29.999992)
+scale = Vector2(1.3906251, 1.6803384)
 texture = ExtResource("19_uc3vj")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=360281610]
@@ -727,6 +763,26 @@ script = ExtResource("25_b2yd7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Damage2" unique_id=168416997]
 position = Vector2(7, -32.5)
 shape = SubResource("RectangleShape2D_6f8o3")
+
+[node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=874581916]
+position = Vector2(573, 73)
+script = ExtResource("30_2sah2")
+texts = Array[String](["Essa sala...", "Parece a casa da Vó Abby..."])
+
+[node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=895815898]
+visible = false
+texture_filter = 1
+texture = ExtResource("31_uxwnx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=679650310]
+shape = SubResource("RectangleShape2D_kl2gf")
+
+[node name="Label" type="Label" parent="InteragirDialogo[ESCRITORIO]" unique_id=1059178192]
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 36.0
+offset_bottom = -9.0
+text = "F"
 
 [connection signal="body_entered" from="Botao1" to="Botao1" method="_on_body_entered"]
 [connection signal="body_exited" from="Botao1" to="Botao1" method="_on_body_exited"]
