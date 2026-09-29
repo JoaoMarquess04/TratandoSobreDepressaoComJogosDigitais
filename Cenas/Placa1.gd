@@ -1,32 +1,18 @@
 extends Node2D
+## Placa informativa: o diálogo abre automaticamente ao entrar na área.
 
-var player_perto = false
-var dialogo_aberto = false
-var texto_visivel = false
+var jogador_dentro := false
 
+func _ready() -> void:
+    $Label.visible = false
+    $TextureRect.visible = false
 
-#FUNCAO QUE CARREGA LOGO NO INICIO DO JOGO
-func _ready():
-	$Label.visible = false
-	$TextureRect.visible = false
+func _on_area_2d_body_entered(body: Node2D) -> void:
+    if body.is_in_group("player") or body.name == "CharacterBody2D":
+        jogador_dentro = true
+        $TextureRect.visible = true
 
-#FUNCAO EXECUTADA A CADA FRAME DO JOGO 
-func _process(delta):
-	if player_perto and Input.is_action_just_pressed("interagir"): #(se for botao de interagir mexer aqui ! )
-		dialogo_aberto = !dialogo_aberto
-		$TextureRect.visible = dialogo_aberto
-
-
-#FUNCAO QUANDO O CORPO ENTRA NA AREA2D
-func _on_area_2d_body_entered(body):
-	if body.name == "CharacterBody2D":
-		player_perto = true
-		$Label.visible = true
-		
-#FUNCAO QUANDO O CORPO SAI DA AREA2D 
-func _on_area_2d_body_exited(body):
-	if body.name == "CharacterBody2D":
-		player_perto = false
-		$Label.visible = false
-		$TextureRect.visible = false
-		dialogo_aberto = false
+func _on_area_2d_body_exited(body: Node2D) -> void:
+    if body.is_in_group("player") or body.name == "CharacterBody2D":
+        jogador_dentro = false
+        $TextureRect.visible = false

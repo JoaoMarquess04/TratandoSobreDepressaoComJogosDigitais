@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://c7juqki37umxd"]
 
+[ext_resource type="Script" path="res://Cenas/fade_in.gd" id="99_fade_in"]
+
 [ext_resource type="Texture2D" uid="uid://bdanyyuu7o2iu" path="res://sprites/CasaNivel1/FundoCasaMadeira.png" id="1_pgo18"]
 [ext_resource type="Texture2D" uid="uid://cogi1ny11gxqw" path="res://sprites/CasaNivel1/TEXProv.png" id="2_pbibn"]
 [ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="3_2s6q8"]
@@ -210,6 +212,10 @@ animations = [{
 size = Vector2(32, 42)
 
 [node name="Node" type="Node" unique_id=329171235]
+
+[node name="FadeIn" type="CanvasLayer" parent="."]
+script = ExtResource("99_fade_in")
+
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=358586998]
 texture_filter = 1

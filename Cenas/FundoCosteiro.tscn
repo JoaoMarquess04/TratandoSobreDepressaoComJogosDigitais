@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://Cenas/fundo_costeiro_tela.gd" id="1_fundo"]
+[ext_resource type="Script" path="res://Cenas/bando_procedural.gd" id="2_aves"]
+
+[ext_resource type="Script" path="res://Cenas/chuva_pixel.gd" id="3_chuva"]
+
+[node name="FundoCosteiro" type="CanvasLayer"]
+layer = -100
+
+[node name="Paisagem" type="Node2D" parent="."]
+script = ExtResource("1_fundo")
+
+[node name="BandoProcedural" type="Node2D" parent="."]
+script = ExtResource("2_aves")
+
+[node name="Chuva" type="Node2D" parent="."]
+script = ExtResource("3_chuva")

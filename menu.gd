@@ -5,13 +5,34 @@ extends Node2D
 #================================================
 @onready var botoes_principais: VBoxContainer = $"Hud/Botões principais"
 @onready var configuracao: Panel = $Hud/Configuração
+var cutscene_player: VideoStreamPlayer
+var iniciando := false
 
 #================================================
 #BOTÃO DE INICIAR
 #================================================
 #Função do botão iniciar
 func _on_jogar_pressed() -> void:
-	get_tree().change_scene_to_file("res://Cenas/CenaFarol.tscn")
+	if iniciando:
+		return
+	iniciando = true
+	botoes_principais.visible = false
+	$Hud.get_node("Bimini,AviSnowNoWay(withAviSnow)[ncsRelease]").stop()
+	cutscene_player = VideoStreamPlayer.new()
+	cutscene_player.name = "CutsceneInicial"
+	cutscene_player.stream = load("res://VideoScenes/Cutscene-Test-1.ogv")
+	cutscene_player.expand = true
+	cutscene_player.autoplay = true
+	cutscene_player.finished.connect(_cutscene_terminou)
+	var camada := CanvasLayer.new()
+	camada.layer = 100
+	add_child(camada)
+	camada.add_child(cutscene_player)
+	cutscene_player.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	cutscene_player.play()
+
+func _cutscene_terminou() -> void:
+	get_tree().change_scene_to_file("res://Cenas/CenaFarolCopia.tscn")
 
 #================================================
 #BOTÃO DE CONFIGURAÇÕES
