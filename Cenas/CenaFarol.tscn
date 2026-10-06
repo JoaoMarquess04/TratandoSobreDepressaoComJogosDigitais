@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://csum1hmfe2yua"]
 
 [ext_resource type="Texture2D" uid="uid://bdanyyuu7o2iu" path="res://sprites/CasaNivel1/FundoCasaMadeira.png" id="1_5ilr8"]
+[ext_resource type="Texture2D" uid="uid://da0y0gypxu2m8" path="res://sprites/FundoBrancoFarol.png" id="1_miap4"]
 [ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="1_ytphb"]
 [ext_resource type="Texture2D" uid="uid://cols5ncw8t3t2" path="res://sprites/CasaNivel1/ComodosQuarto.png" id="2_8vtat"]
 [ext_resource type="Texture2D" uid="uid://d5jnicxwwxut" path="res://sprites/CasaNivel1/Espinhozin.png" id="2_b2yd7"]
 [ext_resource type="Script" uid="uid://cwj85d1venhau" path="res://CharacterMove.gd" id="2_jkeii"]
+[ext_resource type="Texture2D" uid="uid://bijtaiqw8tdce" path="res://sprites/FundoVermelhoFarol.png" id="2_wkh1b"]
 [ext_resource type="Texture2D" uid="uid://msg3qrl5eemg" path="res://sprites/CasaNivel1/Sofas.png" id="3_miap4"]
 [ext_resource type="Script" uid="uid://xqsnohqhbb7y" path="res://botaoAtivo.gd" id="3_wcljq"]
 [ext_resource type="Texture2D" uid="uid://bka1h71kmifyl" path="res://sprites/character-NN/16x16 Rotate-Sheet.png" id="3_ymdjw"]
@@ -407,7 +409,7 @@ size = Vector2(28, 57)
 
 [sub_resource type="Curve2D" id="Curve2D_8apjj"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -1, -1, 0, 0, 0, 0, -99.00001, -5)
+"points": PackedVector2Array(0, 0, 0, 0, -1, -1, 0, 0, 0, 0, -129, -1)
 }
 point_count = 2
 
@@ -462,6 +464,24 @@ size = Vector2(20, 17)
 
 [node name="Node" type="Node" unique_id=1482666183]
 metadata/_edit_horizontal_guides_ = [312.0]
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=2110161201]
+texture_filter = 1
+offset_left = 164.0
+offset_top = -214.0
+offset_right = 997.0
+offset_bottom = 98.0
+texture = ExtResource("1_miap4")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1984244182]
+texture_filter = 1
+offset_left = 168.0
+offset_top = 97.0
+offset_right = 1001.0
+offset_bottom = 577.0
+texture = ExtResource("2_wkh1b")
+stretch_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1604407191]
 texture_filter = 1
@@ -646,7 +666,7 @@ text = "Haverão obstáculos maiores a frente... use \"E\" para um impulso extra
 autowrap_mode = 2
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=608180040 groups=["player"]]
-position = Vector2(998, -519)
+position = Vector2(208, -14)
 script = ExtResource("2_jkeii")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1416926623]
@@ -726,7 +746,7 @@ botao_ativo = NodePath("../Botao1")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1399312040]
 position = Vector2(-1, -1)
-rotation = -3.100799
+rotation = 3.1415927
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D" unique_id=1594425144]
 remote_path = NodePath("../../AnimatableBody2D")

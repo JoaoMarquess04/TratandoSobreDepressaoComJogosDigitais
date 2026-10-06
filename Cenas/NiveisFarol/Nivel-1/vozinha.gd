@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 #Player VARIAVEIS
-const  SPEED = 100.0
+const  SPEED = 50.0
 #Dano VARIAVEIS
 var taking_damage = false
 #BarraDeVida VARIAVEIS 

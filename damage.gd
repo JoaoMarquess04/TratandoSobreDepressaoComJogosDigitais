@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var damage := 10
+@export var damage := 30
 
 func _ready():
 	body_entered.connect(_on_body_entered)

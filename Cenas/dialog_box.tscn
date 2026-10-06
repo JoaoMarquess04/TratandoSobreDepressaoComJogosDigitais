@@ -25,6 +25,7 @@ offset_right = 2.0
 offset_bottom = 0.063964844
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 0.98509085)
 script = ExtResource("1_5illg")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=346003919]

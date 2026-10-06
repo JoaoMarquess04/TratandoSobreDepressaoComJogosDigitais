@@ -1,17 +1,9 @@
 [gd_scene format=3 uid="uid://c7juqki37umxd"]
 
-[ext_resource type="Script" path="res://Cenas/fade_in.gd" id="99_fade_in"]
-
-[ext_resource type="Texture2D" uid="uid://bdanyyuu7o2iu" path="res://sprites/CasaNivel1/FundoCasaMadeira.png" id="1_pgo18"]
-[ext_resource type="Texture2D" uid="uid://cogi1ny11gxqw" path="res://sprites/CasaNivel1/TEXProv.png" id="2_pbibn"]
+[ext_resource type="Texture2D" uid="uid://b58l6x2c1v7oi" path="res://Cenas/NiveisFarol/Nivel-1/TesteFundo1.png" id="2_2s6q8"]
 [ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="3_2s6q8"]
 [ext_resource type="Texture2D" uid="uid://q8dk3u8wbut2" path="res://sprites/CasaNivel1/CasaMontagem.png" id="4_2wb0r"]
-[ext_resource type="Texture2D" uid="uid://msg3qrl5eemg" path="res://sprites/CasaNivel1/Sofas.png" id="5_fnbr3"]
-[ext_resource type="Texture2D" uid="uid://ba01wgtal7x3h" path="res://sprites/CasaNivel1/MesaDeCanto.png" id="6_0h26o"]
-[ext_resource type="Texture2D" uid="uid://cols5ncw8t3t2" path="res://sprites/CasaNivel1/ComodosQuarto.png" id="7_cv0i0"]
-[ext_resource type="Texture2D" uid="uid://dk32j1sb22cv8" path="res://sprites/CasaNivel1/MesaDeTrabalho.png" id="8_hj1yi"]
-[ext_resource type="Texture2D" uid="uid://bsveppf4yosci" path="res://sprites/CasaNivel1/MuralFerrProv.png" id="9_ywgnc"]
-[ext_resource type="Texture2D" uid="uid://cv8f7vtf86lmo" path="res://sprites/CasaNivel1/GavetasFerrProv.png" id="10_ine6p"]
+[ext_resource type="Texture2D" uid="uid://cal7x81tmn5x0" path="res://Cenas/NiveisFarol/Nivel-1/TesteChao1.png" id="6_2s6q8"]
 [ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="11_f4pxe"]
 [ext_resource type="Texture2D" uid="uid://dqtbc84x8nw1a" path="res://sprites/CasaNivel1/Relogio.png" id="12_terpp"]
 [ext_resource type="Texture2D" uid="uid://dpv23l0svpvx7" path="res://sprites/CasaNivel1/CaixaDeFerramenta.png" id="13_6g73f"]
@@ -19,9 +11,21 @@
 [ext_resource type="Texture2D" uid="uid://bc558tmxeup8k" path="res://sprites/CasaNivel1/Casaco.png" id="15_6ejfe"]
 [ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://RadioPuzzle.tscn" id="16_w8su5"]
 [ext_resource type="Script" uid="uid://cdgcjwr7o6dd3" path="res://Cenas/NiveisFarol/Nivel-1/vozinha.gd" id="17_jegjd"]
+[ext_resource type="Texture2D" uid="uid://ekrq3k0avxt5" path="res://sprites/NivelVoAbby-DEF/HallEntrada/Cabide.png" id="17_pbibn"]
+[ext_resource type="Texture2D" uid="uid://qusmwhwohgk6" path="res://sprites/NivelVoAbby-DEF/HallEntrada/Lampada.png" id="18_2s6q8"]
 [ext_resource type="Texture2D" uid="uid://cu5ibt585f5bh" path="res://sprites/characters/vozinha/F2.png" id="18_nbd8n"]
+[ext_resource type="Texture2D" uid="uid://c8tqph12etss4" path="res://sprites/NivelVoAbby-DEF/HallEntrada/Mesinha.png" id="19_2wb0r"]
 [ext_resource type="Texture2D" uid="uid://5wpjao1t4tak" path="res://sprites/characters/vozinha/F4.png" id="19_tnf5e"]
+[ext_resource type="Texture2D" uid="uid://213ayurmirjp" path="res://sprites/NivelVoAbby-DEF/HallEntrada/MesinhaBota.png" id="20_fnbr3"]
 [ext_resource type="Texture2D" uid="uid://cy23ck7ipyeo0" path="res://sprites/characters/vozinha/F5.png" id="20_khe20"]
+[ext_resource type="Texture2D" uid="uid://m0ftafyacfue" path="res://sprites/NivelVoAbby-DEF/HallEntrada/Tapete.png" id="21_0h26o"]
+[ext_resource type="Texture2D" uid="uid://cubhceq1twdxx" path="res://sprites/NivelVoAbby-DEF/Sala/EstanteLivros.png" id="21_cv0i0"]
+[ext_resource type="Texture2D" uid="uid://blf8vx8crhdp3" path="res://sprites/NivelVoAbby-DEF/Sala/Tapete2.png" id="22_hj1yi"]
+[ext_resource type="Texture2D" uid="uid://bonak0tcoh8ci" path="res://sprites/NivelVoAbby-DEF/Sala/Janela.png" id="23_ywgnc"]
+[ext_resource type="Texture2D" uid="uid://eqge4e580by6" path="res://sprites/NivelVoAbby-DEF/Sala/Sofa.png" id="24_ine6p"]
+[ext_resource type="Texture2D" uid="uid://bnpvyabri2ppa" path="res://sprites/NivelVoAbby-DEF/Sala/Lareira.png" id="25_f4pxe"]
+[ext_resource type="Texture2D" uid="uid://c7hfqphgvwplp" path="res://sprites/NivelVoAbby-DEF/Sala/Quadro.png" id="26_terpp"]
+[ext_resource type="Script" uid="uid://dwof2tyurc0o6" path="res://Cenas/fade_in.gd" id="99_fade_in"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_biiyk"]
 texture = ExtResource("3_2s6q8")
@@ -175,10 +179,31 @@ texture = ExtResource("4_2wb0r")
 15:2/0 = 0
 15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2wb0r"]
+texture = ExtResource("6_2s6q8")
+texture_region_size = Vector2i(16, 18)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.0791531, 8, 1.0791531, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.0791531, 8, 1.0791531, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.0791531, 8, 1.0791531, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.0791531, 8, 1.0791531, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.0791531, 8, 1.0791531, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.0791531, 8, 1.0791531, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.0791531, 8, 1.0791531, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.0791531, 8, 1.0791531, 8, 8, -8, 8)
+
 [sub_resource type="TileSet" id="TileSet_qcimc"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_biiyk")
 sources/1 = SubResource("TileSetAtlasSource_4bug8")
+sources/2 = SubResource("TileSetAtlasSource_2wb0r")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
 size = Vector2(20, 17)
@@ -212,28 +237,18 @@ animations = [{
 size = Vector2(32, 42)
 
 [node name="Node" type="Node" unique_id=329171235]
+metadata/_edit_horizontal_guides_ = [533.0]
 
-[node name="FadeIn" type="CanvasLayer" parent="."]
+[node name="FadeIn" type="CanvasLayer" parent="." unique_id=1296203950]
 script = ExtResource("99_fade_in")
-
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=358586998]
 texture_filter = 1
-offset_left = 1.0
-offset_top = 429.0
-offset_right = 1195.0
-offset_bottom = 613.0
-texture = ExtResource("1_pgo18")
-stretch_mode = 1
-
-[node name="TextureRect2" type="TextureRect" parent="TextureRect" unique_id=606484279]
-texture_filter = 1
-layout_mode = 0
-offset_left = 383.0
-offset_top = 2.0
-offset_right = 590.0
-offset_bottom = 174.0
-texture = ExtResource("2_pbibn")
+offset_left = -1.0
+offset_top = 553.0
+offset_right = 815.0
+offset_bottom = 626.0
+texture = ExtResource("2_2s6q8")
 stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1736119189]
@@ -241,64 +256,11 @@ texture_filter = 1
 position = Vector2(-1, -6.83)
 tile_set = SubResource("TileSet_qcimc")
 format = 2
-layer_0/tile_data = PackedInt32Array(2490368, 393217, 0, 2555904, 393217, 1, 2621440, 393217, 2, 2490369, 458753, 0, 2555905, 458753, 1, 2621441, 458753, 2, 2490370, 458753, 0, 2555906, 458753, 1, 2621442, 458753, 2, 2490371, 458753, 0, 2555907, 458753, 1, 2621443, 458753, 2, 2490372, 458753, 0, 2555908, 458753, 1, 2621444, 458753, 2, 2490373, 458753, 0, 2555909, 458753, 1, 2621445, 458753, 2, 2490374, 458753, 0, 2555910, 458753, 1, 2621446, 458753, 2, 2490375, 458753, 0, 2555911, 458753, 1, 2621447, 458753, 2, 2490376, 458753, 0, 2555912, 458753, 1, 2621448, 458753, 2, 2490377, 458753, 0, 2555913, 458753, 1, 2621449, 458753, 2, 2490378, 458753, 0, 2555914, 458753, 1, 2621450, 458753, 2, 2490379, 458753, 0, 2555915, 458753, 1, 2621451, 458753, 2, 2490380, 458753, 0, 2555916, 458753, 1, 2621452, 458753, 2, 2490381, 458753, 0, 2555917, 458753, 1, 2621453, 458753, 2, 2490382, 458753, 0, 2555918, 458753, 1, 2621454, 458753, 2, 2490383, 458753, 0, 2555919, 458753, 1, 2621455, 458753, 2, 2490384, 458753, 0, 2555920, 458753, 1, 2621456, 458753, 2, 2490385, 458753, 0, 2555921, 458753, 1, 2621457, 458753, 2, 2490386, 458753, 0, 2555922, 458753, 1, 2621458, 458753, 2, 2490387, 458753, 0, 2555923, 458753, 1, 2621459, 458753, 2, 2490388, 458753, 0, 2555924, 458753, 1, 2621460, 458753, 2, 2490389, 458753, 0, 2555925, 458753, 1, 2621461, 458753, 2, 2490390, 458753, 0, 2555926, 458753, 1, 2621462, 458753, 2, 2490391, 458753, 0, 2555927, 458753, 1, 2621463, 458753, 2, 2490392, 458753, 0, 2555928, 458753, 1, 2621464, 458753, 2, 2490393, 458753, 0, 2555929, 458753, 1, 2621465, 458753, 2, 2490394, 458753, 0, 2555930, 458753, 1, 2621466, 458753, 2, 2490395, 458753, 0, 2555931, 458753, 1, 2621467, 458753, 2, 2490396, 458753, 0, 2555932, 458753, 1, 2621468, 458753, 2, 2490397, 458753, 0, 2555933, 458753, 1, 2621469, 458753, 2, 2490398, 458753, 0, 2555934, 458753, 1, 2621470, 458753, 2, 2490399, 458753, 0, 2555935, 458753, 1, 2621471, 458753, 2, 2490400, 458753, 0, 2555936, 458753, 1, 2621472, 458753, 2, 2490401, 458753, 0, 2555937, 458753, 1, 2621473, 458753, 2, 2490402, 458753, 0, 2555938, 458753, 1, 2621474, 458753, 2, 2490403, 458753, 0, 2555939, 458753, 1, 2621475, 458753, 2, 2490404, 458753, 0, 2555940, 458753, 1, 2621476, 458753, 2, 2490405, 458753, 0, 2555941, 458753, 1, 2621477, 458753, 2, 2490406, 458753, 0, 2555942, 458753, 1, 2621478, 458753, 2, 2490407, 458753, 0, 2555943, 458753, 1, 2621479, 458753, 2, 2490408, 458753, 0, 2555944, 458753, 1, 2621480, 458753, 2, 2490409, 458753, 0, 2555945, 458753, 1, 2621481, 458753, 2, 2490410, 458753, 0, 2555946, 458753, 1, 2621482, 458753, 2, 2490411, 458753, 0, 2555947, 458753, 1, 2621483, 458753, 2, 2490412, 458753, 0, 2555948, 458753, 1, 2621484, 458753, 2, 2490413, 458753, 0, 2555949, 458753, 1, 2621485, 458753, 2, 2490414, 458753, 0, 2555950, 458753, 1, 2621486, 458753, 2, 2490415, 458753, 0, 2555951, 458753, 1, 2621487, 458753, 2, 2490416, 458753, 0, 2555952, 458753, 1, 2621488, 458753, 2, 2490417, 458753, 0, 2555953, 458753, 1, 2621489, 458753, 2, 2490418, 458753, 0, 2555954, 458753, 1, 2621490, 458753, 2, 2490419, 458753, 0, 2555955, 458753, 1, 2621491, 458753, 2, 2490420, 458753, 0, 2555956, 458753, 1, 2621492, 458753, 2, 2490421, 458753, 0, 2555957, 458753, 1, 2621493, 458753, 2, 2490422, 458753, 0, 2555958, 458753, 1, 2621494, 458753, 2, 2490423, 458753, 0, 2555959, 458753, 1, 2621495, 458753, 2, 2490424, 458753, 0, 2555960, 458753, 1, 2621496, 458753, 2, 2490425, 458753, 0, 2555961, 458753, 1, 2621497, 458753, 2, 2490426, 458753, 0, 2555962, 458753, 1, 2621498, 458753, 2, 2490427, 458753, 0, 2555963, 458753, 1, 2621499, 458753, 2, 2490428, 458753, 0, 2555964, 458753, 1, 2621500, 458753, 2, 2228224, 786433, 2, 2162688, 786433, 1, 1900544, 786433, 1, 1966080, 786433, 1, 2031616, 786433, 1, 2097152, 786433, 1, 1900568, 786433, 1, 1966104, 786433, 1, 2031640, 786433, 1, 2097176, 786433, 1, 2162712, 786433, 1, 2228248, 786433, 2, 1900580, 786433, 1, 1966116, 786433, 1, 2031652, 786433, 1, 2097188, 786433, 1, 2162724, 786433, 1, 2228260, 786433, 2, 1900618, 786433, 1, 1966154, 786433, 1, 2031690, 786433, 1, 2097226, 786433, 1, 2162762, 786433, 1, 2490429, 458753, 0, 2555965, 458753, 1, 2621501, 458753, 2, 2490430, 458753, 0, 2555966, 458753, 1, 2621502, 458753, 2, 2490431, 458753, 0, 2555967, 458753, 1, 2621503, 458753, 2, 2490432, 458753, 0, 2555968, 458753, 1, 2621504, 458753, 2, 2490433, 458753, 0, 2555969, 458753, 1, 2621505, 458753, 2, 2490434, 458753, 0, 2555970, 458753, 1, 2621506, 458753, 2, 2490435, 458753, 0, 2555971, 458753, 1, 2621507, 458753, 2, 2490436, 458753, 0, 2555972, 458753, 1, 2621508, 458753, 2, 2490437, 458753, 0, 2555973, 458753, 1, 2621509, 458753, 2, 2490438, 458753, 0, 2555974, 458753, 1, 2621510, 458753, 2, 2490439, 458753, 0, 2555975, 458753, 1, 2621511, 458753, 2, 2490440, 458753, 0, 2555976, 458753, 1, 2621512, 458753, 2, 2490442, 524289, 0, 2555978, 524289, 1, 2621514, 524289, 2, 2490441, 458753, 0, 2555977, 458753, 1, 2621513, 458753, 2, 2228298, 786433, 1, 2293834, 786433, 1, 2359370, 786433, 1, 2424906, 786433, 2, 2228272, 786433, 2, 2162736, 786433, 1, 2097200, 786433, 1, 2031664, 786433, 1, 1966128, 786433, 1, 1900592, 786433, 1, 1769472, 786433, 1610612736, 1769473, 786433, 1610612737, 1769474, 786433, 1610612737, 1769475, 786433, 1610612737, 1769476, 786433, 1610612737, 1769477, 786433, 1610612737, 1769478, 786433, 1610612737, 1769479, 786433, 1610612737, 1769480, 786433, 1610612737, 1769481, 786433, 1610612737, 1769482, 786433, 1610612737, 1769483, 786433, 1610612737, 1769484, 786433, 1610612737, 1769485, 786433, 1610612737, 1769486, 786433, 1610612737, 1769487, 786433, 1610612737, 1769488, 786433, 1610612737, 1769489, 786433, 1610612737, 1769490, 786433, 1610612737, 1769491, 786433, 1610612737, 1769492, 786433, 1610612737, 1769493, 786433, 1610612737, 1769494, 786433, 1610612737, 1769495, 786433, 1610612737, 1769496, 786433, 1610612737, 1769497, 786433, 1610612737, 1769498, 786433, 1610612737, 1769499, 786433, 1610612737, 1769500, 786433, 1610612737, 1769501, 786433, 1610612737, 1769502, 786433, 1610612737, 1769503, 786433, 1610612737, 1769504, 786433, 1610612737, 1769505, 786433, 1610612737, 1769506, 786433, 1610612737, 1769507, 786433, 1610612737, 1769508, 786433, 1610612737, 1769509, 786433, 1610612737, 1769510, 786433, 1610612737, 1769511, 786433, 1610612737, 1769512, 786433, 1610612737, 1769513, 786433, 1610612737, 1769514, 786433, 1610612737, 1769515, 786433, 1610612737, 1769516, 786433, 1610612737, 1769517, 786433, 1610612737, 1769518, 786433, 1610612737, 1769519, 786433, 1610612737, 1769520, 786433, 1610612737, 1769521, 786433, 1610612737, 1769522, 786433, 1610612737, 1769523, 786433, 1610612737, 1769524, 786433, 1610612737, 1769525, 786433, 1610612737, 1769526, 786433, 1610612737, 1769527, 786433, 1610612737, 1769528, 786433, 1610612737, 1769529, 786433, 1610612737, 1769530, 786433, 1610612737, 1769531, 786433, 1610612737, 1769532, 786433, 1610612737, 1769533, 786433, 1610612737, 1769534, 786433, 1610612737, 1769535, 786433, 1610612737, 1769536, 786433, 1610612737, 1769537, 786433, 1610612737, 1769538, 786433, 1610612737, 1769539, 786433, 1610612737, 1769540, 786433, 1610612737, 1769541, 786433, 1610612737, 1769542, 786433, 1610612737, 1769543, 786433, 1610612737, 1769544, 786433, 1610612737, 1769545, 786433, 1610612737, 1769546, 786433, 1610612738, 1835008, 786433, 1, 1835032, 786433, 1, 1835044, 786433, 1, 1835056, 786433, 1, 1835082, 786433, 1, 1835009, 851969, 1610612738, 1835031, 851969, 1342177282, 1835043, 851969, 1342177282, 1835055, 851969, 1342177282, 1835081, 851969, 1342177282, 1835057, 851969, 1610612738, 1835045, 851969, 1610612738, 1835033, 851969, 1610612738)
-
-[node name="Sofas" type="Sprite2D" parent="." unique_id=1208535890]
-texture_filter = 1
-position = Vector2(146.00002, 574)
-scale = Vector2(1.9861109, 1.9861109)
-texture = ExtResource("5_fnbr3")
-
-[node name="MesaDeCanto" type="Sprite2D" parent="." unique_id=1937216732]
-texture_filter = 1
-position = Vector2(255.66663, 583)
-scale = Vector2(1.3333334, 1.3333334)
-texture = ExtResource("6_0h26o")
-
-[node name="ComodosQuarto" type="Sprite2D" parent="." unique_id=1618161180]
-texture_filter = 1
-position = Vector2(683, 577)
-scale = Vector2(2.0555556, 2.0555556)
-texture = ExtResource("7_cv0i0")
-
-[node name="MesaDeTrabalho" type="Sprite2D" parent="." unique_id=1025046122]
-texture_filter = 1
-position = Vector2(870, 577.25)
-scale = Vector2(1.625, 1.625)
-texture = ExtResource("8_hj1yi")
-
-[node name="MesaDeCanto2" type="Sprite2D" parent="." unique_id=2923478]
-texture_filter = 1
-position = Vector2(988.99994, 583)
-scale = Vector2(1.3055556, 1.3055556)
-texture = ExtResource("6_0h26o")
-
-[node name="MuralFerrProv" type="Sprite2D" parent="." unique_id=172210466]
-texture_filter = 1
-position = Vector2(446.99997, 524.5)
-scale = Vector2(1.78125, 1.78125)
-texture = ExtResource("9_ywgnc")
-
-[node name="MuralFerrProv2" type="Sprite2D" parent="." unique_id=991427010]
-texture_filter = 1
-position = Vector2(521.00006, 525.50006)
-scale = Vector2(1.7728468, 1.7728468)
-texture = ExtResource("9_ywgnc")
-
-[node name="GavetasFerrProv" type="Sprite2D" parent="." unique_id=2111866247]
-texture_filter = 1
-position = Vector2(444, 576)
-scale = Vector2(1.6, 1.6)
-texture = ExtResource("10_ine6p")
-
-[node name="GavetasFerrProv2" type="Sprite2D" parent="." unique_id=600330357]
-texture_filter = 1
-position = Vector2(527, 576)
-scale = Vector2(1.6, 1.6)
-texture = ExtResource("10_ine6p")
+layer_0/tile_data = PackedInt32Array(2555904, 2, 0, 2555905, 65538, 0, 2555906, 131074, 0, 2555907, 196610, 0, 2555908, 262146, 0, 2555909, 327682, 0, 2555910, 393218, 0, 2555911, 458754, 0, 2555912, 2, 0, 2555913, 65538, 0, 2555914, 131074, 0, 2555915, 196610, 0, 2555916, 262146, 0, 2555917, 327682, 0, 2555918, 393218, 0, 2555919, 458754, 0, 2555920, 2, 0, 2555921, 65538, 0, 2555922, 131074, 0, 2555923, 196610, 0, 2555924, 262146, 0, 2555925, 327682, 0, 2555926, 393218, 0, 2555927, 458754, 0, 2555928, 2, 0, 2555929, 65538, 0, 2555930, 131074, 0, 2555931, 196610, 0, 2555932, 262146, 0, 2555933, 327682, 0, 2555934, 393218, 0, 2555935, 458754, 0, 2555936, 2, 0, 2555937, 65538, 0, 2555938, 131074, 0, 2555939, 196610, 0, 2555940, 262146, 0, 2555941, 327682, 0, 2555942, 393218, 0, 2555943, 458754, 0, 2555944, 2, 0, 2555945, 65538, 0, 2555946, 131074, 0, 2555947, 196610, 0, 2555948, 262146, 0, 2555949, 327682, 0, 2555950, 393218, 0, 2555951, 458754, 0, 2555952, 2, 0, 2555953, 65538, 0, 2555954, 131074, 0)
 
 [node name="InteragirDialogo[RELOGIO]" type="Area2D" parent="." unique_id=1218721252]
-position = Vector2(263, 579)
+position = Vector2(122, 606)
+scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Esse relógio...", "Seu antigo relógio, nunca ficava sem ele.", "Apesar disso, você nunca acertava o horário...", "Vivia chegando atrasado...", "...", "Mas eu sempre ficava acordada esperando você voltar.", "Mãe aprende a esperar até quando não devia."])
 
@@ -319,9 +281,11 @@ offset_top = -25.0
 offset_right = 36.0
 offset_bottom = -2.0
 text = "F"
+metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CFERRAMENTA]" type="Area2D" parent="." unique_id=1627925305]
-position = Vector2(486, 597)
+position = Vector2(423.99997, 608)
+scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Sua caixa de ferramenta...", "Ele sempre achava que podia consertar tudo.", "Lembro de quando a porta da cozinha quebrou.", "Você passou a tarde inteira tentando consertar.", "Depois foi a cadeira...", "O armário...", "Aquela janela que nunca fechava direito...", "Até o farol"])
 
@@ -338,9 +302,11 @@ offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
 text = "F"
+metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[DISPENSA]" type="Area2D" parent="." unique_id=1697335997]
-position = Vector2(563, 573)
+position = Vector2(398.43716, 599.3535)
+scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Qualquer coisa que ocorria você vinha até aqui...", "Pegava o que precisava...", "E dizia:", "\"Se tivesse uma ferramenta e tempo suficiente...", "“...dava para consertar qualquer coisa.”", "Mas existem coisas que ninguém consegue salvar."])
 
@@ -359,9 +325,11 @@ offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
 text = "F"
+metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]" type="Area2D" parent="." unique_id=355635557]
-position = Vector2(630, 574)
+position = Vector2(449.3141, 602)
+scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Uma das cartas que ele me mandava...", "\"Achei a foto que estava perdida no farol...\"", "\"A Katrina devia ter seus OITO anos na época dessa foto...", "\"Ou eram SETE?...\"", "\"De qualquer forma levarei a foto para você as CINCO.\"", "A letra dele ficava torta quando estava cansado.", "Eu reconheceria essas palavras em qualquer lugar.", "É estranho...", "...", "Um pedaço de papel conseguir pesar tanto."])
 
@@ -379,9 +347,11 @@ offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
 text = "F"
+metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[POSCARTA]" type="Area2D" parent="." unique_id=856852149]
-position = Vector2(696, 573)
+position = Vector2(531.3141, 605)
+scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["...", "Mães deveriam ir primeiro...", "Não os filhos...", "...", "...", "..."])
 
@@ -399,9 +369,11 @@ offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
 text = "F"
+metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=1548406826]
-position = Vector2(803, 573)
+position = Vector2(587, 603.69354)
+scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Eu achei que, se deixasse tudo igual...", "Então nada teria acabado de verdade."])
 
@@ -419,9 +391,11 @@ offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
 text = "F"
+metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]2" type="Area2D" parent="." unique_id=738184462]
-position = Vector2(936, 573)
+position = Vector2(654, 595.8968)
+scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Ele odiava frio.", "Mesmo adulto, ainda esquecia de levar casaco."])
 
@@ -438,13 +412,16 @@ offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
 text = "F"
+metadata/_edit_use_anchors_ = true
 
 [node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("16_w8su5")]
 texture_filter = 1
-position = Vector2(997, 580)
+position = Vector2(702.7053, 602.8968)
+scale = Vector2(0.5913515, 0.5913515)
 
 [node name="InteragirDialogo[POSRADIO]" type="Area2D" parent="." unique_id=623812995]
-position = Vector2(1034, 581)
+position = Vector2(739.7053, 603.8968)
+scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Ele ligava esse rádio tão alto...", "A casa inteira vibrava junto.", "“Eu dizia que era barulho demais...", "Mas sem ele é muito pior.", "Tenho medo de esquecer a voz dele...", "...", "Tenho medo de lembrar...", "...", "Tenho medo dos dois."])
 
@@ -462,8 +439,72 @@ offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
 text = "F"
+metadata/_edit_use_anchors_ = true
+
+[node name="Tapete" type="Sprite2D" parent="." unique_id=1609031470]
+texture_filter = 1
+position = Vector2(83, 625)
+texture = ExtResource("21_0h26o")
+
+[node name="Cabide" type="Sprite2D" parent="." unique_id=347589085]
+texture_filter = 1
+position = Vector2(24.000002, 584)
+scale = Vector2(1.26, 1.26)
+texture = ExtResource("17_pbibn")
+
+[node name="Lampada" type="Sprite2D" parent="." unique_id=1906956900]
+texture_filter = 1
+position = Vector2(55.000008, 586)
+scale = Vector2(1.1842105, 1.1842105)
+texture = ExtResource("18_2s6q8")
+
+[node name="Mesinha" type="Sprite2D" parent="." unique_id=1628316865]
+texture_filter = 1
+position = Vector2(135, 614)
+texture = ExtResource("19_2wb0r")
+
+[node name="MesinhaBota" type="Sprite2D" parent="." unique_id=2146874767]
+texture_filter = 1
+position = Vector2(22, 617)
+texture = ExtResource("20_fnbr3")
+
+[node name="EstanteLivros" type="Sprite2D" parent="." unique_id=1121636610]
+texture_filter = 1
+position = Vector2(213, 598.00006)
+scale = Vector2(1.2727273, 1.2727273)
+texture = ExtResource("21_cv0i0")
+
+[node name="Tapete2" type="Sprite2D" parent="." unique_id=1609557911]
+texture_filter = 1
+position = Vector2(299, 625)
+texture = ExtResource("22_hj1yi")
+
+[node name="Janela" type="Sprite2D" parent="." unique_id=115433943]
+texture_filter = 1
+position = Vector2(299, 584)
+scale = Vector2(1.26, 1.26)
+texture = ExtResource("23_ywgnc")
+
+[node name="Sofa" type="Sprite2D" parent="." unique_id=1735142049]
+texture_filter = 1
+position = Vector2(299.00003, 609)
+scale = Vector2(1.1393442, 1.1393443)
+texture = ExtResource("24_ine6p")
+
+[node name="Lareira" type="Sprite2D" parent="." unique_id=1982900287]
+texture_filter = 1
+position = Vector2(366, 616.99994)
+scale = Vector2(1.1666666, 1.1666666)
+texture = ExtResource("25_f4pxe")
+
+[node name="Quadro" type="Sprite2D" parent="." unique_id=1446178035]
+texture_filter = 1
+position = Vector2(366, 585)
+texture = ExtResource("26_terpp")
 
 [node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=2119634226]
+position = Vector2(43.000004, 162)
+scale = Vector2(0.7627626, 0.7562329)
 script = ExtResource("17_jegjd")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D2" unique_id=1777922913]
@@ -479,9 +520,9 @@ position = Vector2(56, 579)
 shape = SubResource("RectangleShape2D_luslc")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D2" unique_id=414094464]
-position = Vector2(45, 591)
-zoom = Vector2(3, 3)
-limit_left = 0
-limit_top = 0
-limit_right = 4380
-limit_bottom = 650
+position = Vector2(35.397644, 569.9302)
+zoom = Vector2(8.195, 8.195)
+limit_left = 1
+limit_top = -16
+limit_right = 4381
+limit_bottom = 634
