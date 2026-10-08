@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b58l6x2c1v7oi" path="res://Cenas/NiveisFarol/Nivel-1/TesteFundo1.png" id="2_2s6q8"]
 [ext_resource type="Texture2D" uid="uid://dei1ep4wur50t" path="res://sprites/terreno/Sprite-0002.png" id="3_2s6q8"]
+[ext_resource type="Texture2D" uid="uid://87muivwn81c" path="res://sprites/NivelVoAbby-DEF/Cozinha/ParedeCozinha.png" id="3_6g73f"]
 [ext_resource type="Texture2D" uid="uid://q8dk3u8wbut2" path="res://sprites/CasaNivel1/CasaMontagem.png" id="4_2wb0r"]
 [ext_resource type="Texture2D" uid="uid://cal7x81tmn5x0" path="res://Cenas/NiveisFarol/Nivel-1/TesteChao1.png" id="6_2s6q8"]
 [ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="11_f4pxe"]
@@ -25,6 +26,16 @@
 [ext_resource type="Texture2D" uid="uid://eqge4e580by6" path="res://sprites/NivelVoAbby-DEF/Sala/Sofa.png" id="24_ine6p"]
 [ext_resource type="Texture2D" uid="uid://bnpvyabri2ppa" path="res://sprites/NivelVoAbby-DEF/Sala/Lareira.png" id="25_f4pxe"]
 [ext_resource type="Texture2D" uid="uid://c7hfqphgvwplp" path="res://sprites/NivelVoAbby-DEF/Sala/Quadro.png" id="26_terpp"]
+[ext_resource type="Texture2D" uid="uid://hdrrj1h1c2p0" path="res://sprites/NivelVoAbby-DEF/Cozinha/Tapete3.png" id="28_6ejfe"]
+[ext_resource type="Texture2D" uid="uid://b185ld0fedj6u" path="res://sprites/NivelVoAbby-DEF/Cozinha/MesaGeral.png" id="28_dcgow"]
+[ext_resource type="Texture2D" uid="uid://dnyw86l1ugjeq" path="res://sprites/NivelVoAbby-DEF/Cozinha/JanelaCozinha.png" id="29_6ejfe"]
+[ext_resource type="Texture2D" uid="uid://dla6uxi150mnv" path="res://sprites/NivelVoAbby-DEF/Cozinha/Temperos.png" id="30_w8su5"]
+[ext_resource type="Texture2D" uid="uid://cvu78vnfwtk03" path="res://sprites/NivelVoAbby-DEF/Cozinha/Panelas.png" id="31_jegjd"]
+[ext_resource type="Texture2D" uid="uid://w8jp4o1w15pf" path="res://sprites/NivelVoAbby-DEF/Cozinha/Fogao.png" id="32_nbd8n"]
+[ext_resource type="Texture2D" uid="uid://cu43hvqiuq00k" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/PiaArmarioInferior.png" id="34_nbd8n"]
+[ext_resource type="Texture2D" uid="uid://cgg0g6vic56at" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/Armario.png" id="35_tnf5e"]
+[ext_resource type="Texture2D" uid="uid://cylnm5ryo8w0a" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/ArmarioQuebrado.png" id="36_khe20"]
+[ext_resource type="Texture2D" uid="uid://cxw34txlwqw8c" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/CaixaFerramenta.png" id="37_e78ji"]
 [ext_resource type="Script" uid="uid://dwof2tyurc0o6" path="res://Cenas/fade_in.gd" id="99_fade_in"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_biiyk"]
@@ -251,6 +262,15 @@ offset_bottom = 626.0
 texture = ExtResource("2_2s6q8")
 stretch_mode = 1
 
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1943523444]
+texture_filter = 1
+offset_left = 430.0
+offset_top = 597.0
+offset_right = 719.0
+offset_bottom = 617.0
+texture = ExtResource("3_6g73f")
+stretch_mode = 1
+
 [node name="TileMap" type="TileMap" parent="." unique_id=1736119189]
 texture_filter = 1
 position = Vector2(-1, -6.83)
@@ -284,7 +304,7 @@ text = "F"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CFERRAMENTA]" type="Area2D" parent="." unique_id=1627925305]
-position = Vector2(423.99997, 608)
+position = Vector2(405.5628, 694.6465)
 scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Sua caixa de ferramenta...", "Ele sempre achava que podia consertar tudo.", "Lembro de quando a porta da cozinha quebrou.", "Você passou a tarde inteira tentando consertar.", "Depois foi a cadeira...", "O armário...", "Aquela janela que nunca fechava direito...", "Até o farol"])
@@ -305,7 +325,7 @@ text = "F"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[DISPENSA]" type="Area2D" parent="." unique_id=1697335997]
-position = Vector2(398.43716, 599.3535)
+position = Vector2(380, 686)
 scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Qualquer coisa que ocorria você vinha até aqui...", "Pegava o que precisava...", "E dizia:", "\"Se tivesse uma ferramenta e tempo suficiente...", "“...dava para consertar qualquer coisa.”", "Mas existem coisas que ninguém consegue salvar."])
@@ -328,7 +348,7 @@ text = "F"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]" type="Area2D" parent="." unique_id=355635557]
-position = Vector2(449.3141, 602)
+position = Vector2(430.87692, 688.6465)
 scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Uma das cartas que ele me mandava...", "\"Achei a foto que estava perdida no farol...\"", "\"A Katrina devia ter seus OITO anos na época dessa foto...", "\"Ou eram SETE?...\"", "\"De qualquer forma levarei a foto para você as CINCO.\"", "A letra dele ficava torta quando estava cansado.", "Eu reconheceria essas palavras em qualquer lugar.", "É estranho...", "...", "Um pedaço de papel conseguir pesar tanto."])
@@ -350,7 +370,7 @@ text = "F"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[POSCARTA]" type="Area2D" parent="." unique_id=856852149]
-position = Vector2(531.3141, 605)
+position = Vector2(512.87695, 691.6465)
 scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["...", "Mães deveriam ir primeiro...", "Não os filhos...", "...", "...", "..."])
@@ -372,7 +392,7 @@ text = "F"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=1548406826]
-position = Vector2(587, 603.69354)
+position = Vector2(568.56287, 690.34)
 scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Eu achei que, se deixasse tudo igual...", "Então nada teria acabado de verdade."])
@@ -386,15 +406,15 @@ texture = ExtResource("13_6g73f")
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Label" type="Label" parent="InteragirDialogo[ESCRITORIO]" unique_id=21592633]
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
+offset_left = -9.407019
+offset_top = -32.70474
+offset_right = 30.592981
+offset_bottom = -9.704739
 text = "F"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]2" type="Area2D" parent="." unique_id=738184462]
-position = Vector2(654, 595.8968)
+position = Vector2(634, 689)
 scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Ele odiava frio.", "Mesmo adulto, ainda esquecia de levar casaco."])
@@ -416,11 +436,11 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("16_w8su5")]
 texture_filter = 1
-position = Vector2(702.7053, 602.8968)
+position = Vector2(682.7053, 696)
 scale = Vector2(0.5913515, 0.5913515)
 
 [node name="InteragirDialogo[POSRADIO]" type="Area2D" parent="." unique_id=623812995]
-position = Vector2(739.7053, 603.8968)
+position = Vector2(719.7053, 697)
 scale = Vector2(0.5913515, 0.5913515)
 script = ExtResource("11_f4pxe")
 texts = Array[String](["Ele ligava esse rádio tão alto...", "A casa inteira vibrava junto.", "“Eu dizia que era barulho demais...", "Mas sem ele é muito pior.", "Tenho medo de esquecer a voz dele...", "...", "Tenho medo de lembrar...", "...", "Tenho medo dos dois."])
@@ -501,6 +521,64 @@ texture = ExtResource("25_f4pxe")
 texture_filter = 1
 position = Vector2(366, 585)
 texture = ExtResource("26_terpp")
+
+[node name="Tapete3" type="Sprite2D" parent="." unique_id=985798664]
+texture_filter = 1
+position = Vector2(481, 624)
+scale = Vector2(1.2872341, 1.287234)
+texture = ExtResource("28_6ejfe")
+
+[node name="MesaGeral" type="Sprite2D" parent="." unique_id=1433358179]
+texture_filter = 1
+position = Vector2(481, 612)
+texture = ExtResource("28_dcgow")
+
+[node name="JanelaCozinha" type="Sprite2D" parent="." unique_id=1038247367]
+texture_filter = 1
+position = Vector2(497.99997, 576)
+scale = Vector2(1.2757232, 1.2282612)
+texture = ExtResource("29_6ejfe")
+
+[node name="Temperos" type="Sprite2D" parent="." unique_id=1768920801]
+texture_filter = 1
+position = Vector2(537, 580)
+texture = ExtResource("30_w8su5")
+
+[node name="Panelas" type="Sprite2D" parent="." unique_id=420683887]
+texture_filter = 1
+position = Vector2(452.99997, 571.99994)
+scale = Vector2(1.1129032, 1.1129032)
+texture = ExtResource("31_jegjd")
+
+[node name="Fogao" type="Sprite2D" parent="." unique_id=1095185886]
+texture_filter = 1
+position = Vector2(557, 609.00006)
+scale = Vector2(0.9857143, 0.98571426)
+texture = ExtResource("32_nbd8n")
+
+[node name="PiaArmarioInferior" type="Sprite2D" parent="." unique_id=199449439]
+texture_filter = 1
+position = Vector2(650.97437, 607.00006)
+scale = Vector2(0.85897434, 0.85897434)
+texture = ExtResource("34_nbd8n")
+
+[node name="Armario" type="Sprite2D" parent="." unique_id=933853099]
+texture_filter = 1
+position = Vector2(615, 576.00006)
+scale = Vector2(0.7857143, 0.78571427)
+texture = ExtResource("35_tnf5e")
+
+[node name="ArmarioQuebrado" type="Sprite2D" parent="." unique_id=883325713]
+texture_filter = 1
+position = Vector2(688.89655, 576.06976)
+scale = Vector2(0.83239776, 0.83239794)
+texture = ExtResource("36_khe20")
+
+[node name="CaixaFerramenta" type="Sprite2D" parent="." unique_id=1542700500]
+texture_filter = 1
+position = Vector2(631, 595)
+scale = Vector2(0.71428573, 0.71428573)
+texture = ExtResource("37_e78ji")
 
 [node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=2119634226]
 position = Vector2(43.000004, 162)

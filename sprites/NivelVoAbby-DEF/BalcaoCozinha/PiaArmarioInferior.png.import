@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://87muivwn81c"
-path="res://.godot/imported/ParedeCozinha.png-1db3ae77a71e6b3770e83ce5dd85f8c0.ctex"
+uid="uid://cu43hvqiuq00k"
+path="res://.godot/imported/PiaArmarioInferior.png-f86c9787881a9eab792a74152f533fe4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/NivelVoAbby-DEF/Cozinha/ParedeCozinha.png"
-dest_files=["res://.godot/imported/ParedeCozinha.png-1db3ae77a71e6b3770e83ce5dd85f8c0.ctex"]
+source_file="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/PiaArmarioInferior.png"
+dest_files=["res://.godot/imported/PiaArmarioInferior.png-f86c9787881a9eab792a74152f533fe4.ctex"]
 
 [params]
 
