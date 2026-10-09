@@ -20,7 +20,7 @@ func _ready():
 	tween.tween_property(
 		self,
 		"scale",
-		Vector2.ONE,
+		Vector2(0.4, 0.4),
 		0.25
 	).set_trans(Tween.TRANS_BACK)
 

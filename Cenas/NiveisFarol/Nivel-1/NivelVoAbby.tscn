@@ -599,7 +599,7 @@ shape = SubResource("RectangleShape2D_luslc")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D2" unique_id=414094464]
 position = Vector2(35.397644, 569.9302)
-zoom = Vector2(8.195, 8.195)
+zoom = Vector2(8.04, 8.04)
 limit_left = 1
 limit_top = -16
 limit_right = 4381

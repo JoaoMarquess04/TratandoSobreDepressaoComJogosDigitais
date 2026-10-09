@@ -50,7 +50,7 @@ func show_dialog():
 	
 	var dialog = dialog_scene.instantiate()
 	get_tree().current_scene.add_child(dialog)
-	dialog.global_position = global_position + Vector2(0, -100)
+	dialog.global_position = global_position + Vector2(0, -30)
 	dialog.start_dialog(texts)
 	dialog.dialog_finished.connect(_on_dialog_finished)
 	#get_tree().paused = true
