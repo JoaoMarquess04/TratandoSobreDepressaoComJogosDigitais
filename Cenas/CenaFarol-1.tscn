@@ -715,7 +715,7 @@ position = Vector2(262, 78)
 texture = ExtResource("22_qc36r")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=608180040 groups=["player"]]
-position = Vector2(2375, -565)
+position = Vector2(881, -517)
 script = ExtResource("23_aegn6")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1416926623]
@@ -980,7 +980,7 @@ text = "X"
 metadata/_edit_use_anchors_ = true
 
 [node name="Checkpoint1" type="Area2D" parent="." unique_id=900200019]
-position = Vector2(90, 562)
+position = Vector2(262, 527)
 script = ExtResource("46_checkpoint")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoint1" unique_id=900200020]
