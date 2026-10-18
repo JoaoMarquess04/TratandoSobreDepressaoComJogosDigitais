@@ -50,7 +50,7 @@ func _process(_delta):
 # ============================================
 
 func _on_body_entered(body):
-	if body.name != "CharacterBody2D2":
+	if not body.is_in_group("player"):
 		return
 
 	player_near = true
@@ -58,7 +58,7 @@ func _on_body_entered(body):
 
 
 func _on_body_exited(body):
-	if body.name != "CharacterBody2D2":
+	if not body.is_in_group("player"):
 		return
 
 	player_near = false

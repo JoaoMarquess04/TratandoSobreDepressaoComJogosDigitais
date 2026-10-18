@@ -32,7 +32,7 @@ func _on_jogar_pressed() -> void:
 	cutscene_player.play()
 
 func _cutscene_terminou() -> void:
-	get_tree().change_scene_to_file("res://Cenas/CenaFarolCopia.tscn")
+	get_tree().change_scene_to_file("res://Cenas/CenaFarol-1.tscn")
 
 #================================================
 #BOTÃO DE CONFIGURAÇÕES

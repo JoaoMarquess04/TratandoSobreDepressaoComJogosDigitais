@@ -742,6 +742,7 @@ player = NodePath("../../CharacterBody2D")
 [node name="SceneTransition2" type="Area2D" parent="." unique_id=1000575445]
 position = Vector2(9, 33)
 script = ExtResource("31_bcw6r")
+destino = "res://Cenas/NiveisFarol/Nivel-1/NivelVoAbby.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTransition2" unique_id=2039874403]
 position = Vector2(197, 29.5)

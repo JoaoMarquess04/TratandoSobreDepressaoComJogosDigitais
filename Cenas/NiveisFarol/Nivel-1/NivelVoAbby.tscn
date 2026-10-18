@@ -10,8 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://dpv23l0svpvx7" path="res://sprites/CasaNivel1/CaixaDeFerramenta.png" id="13_6g73f"]
 [ext_resource type="Texture2D" uid="uid://7dx0hb3dguo8" path="res://sprites/CasaNivel1/Cartaz.png" id="14_dcgow"]
 [ext_resource type="Texture2D" uid="uid://bc558tmxeup8k" path="res://sprites/CasaNivel1/Casaco.png" id="15_6ejfe"]
-[ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://RadioPuzzle.tscn" id="16_w8su5"]
-[ext_resource type="Script" uid="uid://cdgcjwr7o6dd3" path="res://Cenas/NiveisFarol/Nivel-1/vozinha.gd" id="17_jegjd"]
+[ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://Cenas/NiveisFarol/Nivel-1/RadioPuzzle.tscn" id="16_w8su5"]
+[ext_resource type="Script" uid="uid://cwj85d1venhau" path="res://CharacterMove.gd" id="17_jegjd"]
+[ext_resource type="Script" uid="uid://cr8rrsvwci31j" path="res://Cenas/scene_transition_2.gd" id="99_transition"]
 [ext_resource type="Texture2D" uid="uid://ekrq3k0avxt5" path="res://sprites/NivelVoAbby-DEF/HallEntrada/Cabide.png" id="17_pbibn"]
 [ext_resource type="Texture2D" uid="uid://qusmwhwohgk6" path="res://sprites/NivelVoAbby-DEF/HallEntrada/Lampada.png" id="18_2s6q8"]
 [ext_resource type="Texture2D" uid="uid://cu5ibt585f5bh" path="res://sprites/characters/vozinha/F2.png" id="18_nbd8n"]
@@ -37,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://cylnm5ryo8w0a" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/ArmarioQuebrado.png" id="36_khe20"]
 [ext_resource type="Texture2D" uid="uid://cxw34txlwqw8c" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/CaixaFerramenta.png" id="37_e78ji"]
 [ext_resource type="Script" uid="uid://dwof2tyurc0o6" path="res://Cenas/fade_in.gd" id="99_fade_in"]
+[ext_resource type="Texture2D" uid="uid://cm3fs5kiw2r5d" path="res://sprites/ComodosAbbyProvisorio/PortaFechadaProvisoria.png" id="99_porta"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_biiyk"]
 texture = ExtResource("3_2s6q8")
@@ -246,6 +248,9 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_luslc"]
 size = Vector2(32, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_saida"]
+size = Vector2(28, 100)
 
 [node name="Node" type="Node" unique_id=329171235]
 metadata/_edit_horizontal_guides_ = [533.0]
@@ -580,10 +585,13 @@ position = Vector2(631, 595)
 scale = Vector2(0.71428573, 0.71428573)
 texture = ExtResource("37_e78ji")
 
-[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=2119634226]
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=2119634226 groups=["player"]]
 position = Vector2(43.000004, 162)
 scale = Vector2(0.7627626, 0.7562329)
 script = ExtResource("17_jegjd")
+speed = 50.0
+can_jump = false
+dash_enabled = false
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D2" unique_id=1777922913]
 texture_filter = 1
@@ -604,3 +612,19 @@ limit_left = 1
 limit_top = -16
 limit_right = 4381
 limit_bottom = 634
+
+[node name="PortaSaida" type="Sprite2D" parent="." unique_id=900100004]
+position = Vector2(1040, 584)
+scale = Vector2(1.15, 1.5)
+texture_filter = 1
+texture = ExtResource("99_porta")
+
+[node name="SceneTransition" type="Area2D" parent="." unique_id=900100001]
+position = Vector2(1040, 560)
+script = ExtResource("99_transition")
+destino = "res://Cenas/CenaFarol-2.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTransition" unique_id=900100002]
+shape = SubResource("RectangleShape2D_saida")
+
+[connection signal="body_entered" from="SceneTransition" to="SceneTransition" method="_on_body_entered"]

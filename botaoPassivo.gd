@@ -21,9 +21,9 @@ func _process(delta):
 			botao1.confirmar()
 
 func _on_body_entered(body):
-	if body.name == "CharacterBody2D":
+	if body.is_in_group("player"):
 		player_perto = true
 
 func _on_body_exited(body):
-	if body.name == "CharacterBody2D":
+	if body.is_in_group("player"):
 		player_perto = false

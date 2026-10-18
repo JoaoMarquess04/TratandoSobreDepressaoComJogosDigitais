@@ -20,7 +20,6 @@ buses/default_bus_layout="uid://p57t36oe15gh"
 
 [autoload]
 
-DialogManager="*uid://6s3rmkhlty0a"
 Inventory="*uid://bmdmfg8hmjcte"
 
 [input]

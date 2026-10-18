@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://6b4yn484hpjm"]
 
-[ext_resource type="Script" uid="uid://dcod5sk00ajyy" path="res://Cenas/NiveisFarol/Nivel-1/radio.gd" id="1_1hngd"]
+[ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="1_1hngd"]
 [ext_resource type="Texture2D" uid="uid://dqtbc84x8nw1a" path="res://sprites/CasaNivel1/Relogio.png" id="2_1hngd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cpjf8"]

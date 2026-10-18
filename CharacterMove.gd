@@ -1,10 +1,13 @@
 extends CharacterBody2D
 
-#Player VARIAVEIS
-const  SPEED = 200.0
-const JUMP_VELOCITY = -300.0
+#Player VARIAVEIS (configuráveis por cena)
+@export var speed := 200.0
+@export var jump_velocity := -300.0
+@export var can_jump := true
+@export var dash_enabled := true
 #Dano VARIAVEIS
 var taking_damage = false
+var damage_generation := 0
 #BarraDeVida VARIAVEIS 
 var maxHp = 100
 var hp = 100
@@ -13,8 +16,12 @@ const FALL_LIMIT = 1000.0
 var respawn_position: Vector2
 #WallGrab VARIAVEIS
 const wall_jump_pushback = 100
+const WALL_JUMP_LOCK = 0.18
 const wall_slide_gravity = 40
 var is_wall_sliding = false
+var wall_jump_lock := 0.0
+var ultimo_wall_normal := Vector2.ZERO
+var pulou_de_parede := false
 
 #===============================================
 #CONFIGURACOES E VARIAVEIS RELACIONADAS AO DASH
@@ -36,13 +43,19 @@ func _physics_process(delta: float) -> void:
 	aplicar_gravidade(delta)
 	regenerarVida(delta)
 	controlar_cooldown_dash(delta)
+	if wall_jump_lock > 0:
+		wall_jump_lock -= delta
 	resetarDash()
 	verificar_input_dash()
 	controlar_movimento_dash(delta)
 	verificar_queda()
 	move_and_slide()
-	wall_slide(delta) #NEW - func wall_slide()
-	sprite_2d.flip_h = velocity.x < 0
+	if is_on_floor():
+		pulou_de_parede = false
+	if can_jump:
+		wall_slide(delta)
+	if velocity.x != 0:
+		sprite_2d.flip_h = velocity.x < 0
 	
 #=========================================================================
 #FUNCOES DO DASH EM GERAL REESCRITAS E ORGANIZADAS !!!!!!!!!!!
@@ -64,7 +77,7 @@ func resetarDash():
 #FUNCAO PARA VERIFICAR INPUT DO DASH (SE FOI PRESSIONADO OU NAO BASICAMENTE) 
 #============================================================================     
 func verificar_input_dash():
-	if Input.is_action_just_pressed("Dash") and can_dash:
+	if dash_enabled and Input.is_action_just_pressed("Dash") and can_dash:
 		iniciar_dash()
 #===============================================================================================
 #FUNCAO PARA CONTROLAR O MOVIMENTO ( OU EXECUTA O DASH, OU DEIXA O MOVIMENTO NORMAL DO PLAYER)
@@ -91,26 +104,45 @@ func movimento_normal():
 	#=============================
 	# CODIGO DE PULO DO PLAYER
 	#=============================
-	if Input.is_action_just_pressed("ui_accept"):
+	if can_jump and Input.is_action_just_pressed("ui_accept"):
 		if is_on_floor():
-			velocity.y = JUMP_VELOCITY
-		#WallGrab
-		if is_on_wall() and Input.is_action_pressed("ui_right"):
-			velocity.y = JUMP_VELOCITY
-			velocity.x = -wall_jump_pushback
-		if is_on_wall() and Input.is_action_pressed("ui_left"):
-			velocity.y = JUMP_VELOCITY
-			velocity.x = wall_jump_pushback
+			velocity.y = jump_velocity
+		#WallGrab - o lock impede que o input horizontal sobrescreva o empurrão no mesmo frame.
+		#Só permite wall jump numa parede com normal diferente da última usada
+		#(corredor com duas paredes funciona; escalar a mesma parede, não).
+		elif is_on_wall() and (Input.is_action_pressed("ui_right") or Input.is_action_pressed("ui_left")):
+			var normal := get_wall_normal()
+			if not (pulou_de_parede and normal.is_equal_approx(ultimo_wall_normal)):
+				velocity.y = jump_velocity
+				velocity.x = -wall_jump_pushback if Input.is_action_pressed("ui_right") else wall_jump_pushback
+				wall_jump_lock = WALL_JUMP_LOCK
+				ultimo_wall_normal = normal
+				pulou_de_parede = true
 	#===========================================
 	# CODIGO DE MOVIMENTO HORIZONTAL DO PLAYER
 	#============================================
 	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-		sprite_2d.animation = "running"
+	if direction and wall_jump_lock <= 0:
+		velocity.x = direction * speed
 	else:
 		velocity.x = move_toward(velocity.x, 0, 20)
-		sprite_2d.animation = "default"
+	atualizar_animacao(direction)
+
+#===========================================
+#FUNCAO QUE ESCOLHE A ANIMACAO PELO ESTADO DO PLAYER
+#(evita o movimento_normal sobrescrever "jumping" a cada frame)
+#===========================================
+func atualizar_animacao(direction):
+	if not is_on_floor():
+		_set_anim("jumping")
+	elif direction != 0:
+		_set_anim("running")
+	else:
+		_set_anim("default")
+
+func _set_anim(nome: StringName):
+	if sprite_2d.sprite_frames.has_animation(nome):
+		sprite_2d.animation = nome
 
 #=============================
 #FUNCAO WALL SLIDE(COMP DE WALLGRAB)
@@ -133,7 +165,6 @@ func wall_slide(delta):
 func aplicar_gravidade(delta):
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-		sprite_2d.animation = "jumping"
 #============================================================
 #FUNCAO PARA PEGAR A DIRECAO EM QUE ESTA REALIZANDO O DASH
 #============================================================
@@ -183,14 +214,17 @@ func respawn():
 	velocity = Vector2.ZERO
 	is_dashing = false
 	taking_damage = false
+	damage_generation += 1
 #===============================================================
 #FUNCAO DE TOMAR DANO CASO ESTEJA EM ALGUM LUGAR QUE DE DANO 
+#(a geração garante que só um laço de dano rode por vez: sair e
+#entrar rápido na área não cria um segundo laço em paralelo)
 #===============================================================
 func take_damage(damage):
-	if taking_damage:
-		return
+	damage_generation += 1
+	var geracao = damage_generation
 	taking_damage = true
-	while taking_damage:
+	while taking_damage and geracao == damage_generation:
 		hp -= damage
 		if hp <= 0 :
 			morrer()
@@ -202,6 +236,7 @@ func take_damage(damage):
 #==================================================================================================================== 
 func stop_damage():
 	taking_damage = false
+	damage_generation += 1
 #=================================================
 #FUNCAO DE VERIFICAR QUEDA DO MAPA
 #=================================================

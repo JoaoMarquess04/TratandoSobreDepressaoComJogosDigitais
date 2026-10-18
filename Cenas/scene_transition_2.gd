@@ -1,6 +1,6 @@
 extends Area2D
 
-const DESTINO := "res://Cenas/NiveisFarol/Nivel-1/NivelVoAbby.tscn"
+@export var destino: String = "res://Cenas/NiveisFarol/Nivel-1/NivelVoAbby.tscn"
 const DURACAO_FADE := 1.25
 var trocando_cena := false
 var tela_preta: ColorRect
@@ -21,11 +21,11 @@ func _ready() -> void:
 	entrada.tween_property(tela_preta, "color:a", 0.0, DURACAO_FADE)
 
 func _on_body_entered(body: Node2D) -> void:
-	if not body is CharacterBody2D or trocando_cena:
+	if not body.is_in_group("player") or trocando_cena:
 		return
 	trocando_cena = true
 	var saida := create_tween()
 	saida.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN)
 	saida.tween_property(tela_preta, "color:a", 1.0, DURACAO_FADE)
 	await saida.finished
-	get_tree().change_scene_to_file.call_deferred(DESTINO)
+	get_tree().change_scene_to_file.call_deferred(destino)

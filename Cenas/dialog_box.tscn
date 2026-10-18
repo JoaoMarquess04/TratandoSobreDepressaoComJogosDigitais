@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bxqe3l1cnqsyw"]
 
-[ext_resource type="Script" uid="uid://vr3buxdyu5ta" path="res://Cenas/NiveisFarol/Nivel-1/dialog_box.gd" id="1_5illg"]
+[ext_resource type="Script" uid="uid://vr3buxdyu5ta" path="res://Cenas/dialog_box.gd" id="1_5illg"]
 [ext_resource type="Texture2D" uid="uid://cibo4hi8p02iq" path="res://sprites/caixas-dialogo/CaixaDialogoPadrao.png" id="2_vb1o3"]
 [ext_resource type="Texture2D" uid="uid://bxkdio0lem56k" path="res://sprites/BotCaixaDialogo.png" id="3_3ork1"]
 [ext_resource type="Texture2D" uid="uid://naf7aq4xjnb0" path="res://sprites/BotCaixaDialogoPressed.png" id="4_rbxjt"]

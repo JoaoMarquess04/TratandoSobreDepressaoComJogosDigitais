@@ -26,19 +26,17 @@ func _ready():
 	# Conecta sinais dos botões
 	antenna_button.pressed.connect(_on_antenna_clicked)
 	close_button.pressed.connect(_on_close_clicked)
-	
-	# Conecta ao clique do mouse fora do painel (opcional)
-	panel.gui_input.connect(_on_gui_input)
 
 
 # ============================================
 # EVENTOS DO MOUSE
 # ============================================
 
-func _on_gui_input(event: InputEvent):
-	# Fecha a UI se clicar fora do painel
+# Cliques nos botões/painel são consumidos como gui_input;
+# _unhandled_input só recebe cliques que caíram fora deles.
+func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseButton and event.pressed:
-		if not panel.get_global_rect().has_point(get_viewport().get_mouse_position()):
+		if not panel.get_global_rect().has_point(event.position):
 			close_ui()
 
 

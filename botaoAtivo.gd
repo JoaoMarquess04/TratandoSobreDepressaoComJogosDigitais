@@ -33,12 +33,12 @@ func _process(delta):
 
 #Entrada
 func _on_body_entered(body):
-	if body.name == "CharacterBody2D":
+	if body.is_in_group("player"):
 		player_perto = true
 
 #Saida
 func _on_body_exited(body):
-	if body.name == "CharacterBody2D":
+	if body.is_in_group("player"):
 		player_perto = false
 
 #Chamada do botao passivo quando pressionado

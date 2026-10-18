@@ -110,7 +110,7 @@ func _on_body_entered(body) -> void:
 	if puzzle_solved:
 		return
 
-	if body.name != "CharacterBody2D2":
+	if not body.is_in_group("player"):
 		return
 
 	player_near = true
@@ -121,7 +121,7 @@ func _on_body_entered(body) -> void:
 
 func _on_body_exited(body) -> void:
 
-	if body.name != "CharacterBody2D2":
+	if not body.is_in_group("player"):
 		return
 
 	player_near = false

@@ -30,13 +30,13 @@ func _ready():
 # ============================================
  
 func _on_body_entered(body):
-	if body is CharacterBody2D:
+	if body.is_in_group("player"):
 		player_near = true
 		label.visible = true
  
  
 func _on_body_exited(body):
-	if body is CharacterBody2D:
+	if body.is_in_group("player"):
 		player_near = false
 		label.visible = false
  
@@ -86,7 +86,7 @@ func _on_antenna_clicked():
 	get_tree().current_scene.add_child(dialog)
 	dialog.global_position = global_position + Vector2(0, -100)
 	dialog.start_dialog(texts)
-	#dialog.dialog_finished.connect(_on_dialog_finished)
+	dialog.dialog_finished.connect(_on_dialog_finished)
  
  
 # ============================================

@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cy23ck7ipyeo0" path="res://sprites/characters/vozinha/F5.png" id="15_soox3"]
 [ext_resource type="PackedScene" uid="uid://colct4ijuicwi" path="res://Cenas/antena.tscn" id="16_6rwqm"]
 [ext_resource type="PackedScene" uid="uid://bxqe3l1cnqsyw" path="res://Cenas/dialog_box.tscn" id="17_6i17h"]
-[ext_resource type="Script" uid="uid://cdgcjwr7o6dd3" path="res://Cenas/NiveisFarol/Nivel-1/vozinha.gd" id="17_soox3"]
+[ext_resource type="Script" uid="uid://cwj85d1venhau" path="res://CharacterMove.gd" id="17_soox3"]
 [ext_resource type="Texture2D" uid="uid://dcgwcp1jy26kq" path="res://sprites/ComodosAbbyProvisorio/Quadro 1.png" id="18_bg23m"]
 [ext_resource type="Texture2D" uid="uid://c3npslipmyouf" path="res://sprites/ComodosAbbyProvisorio/Quadro 2.png" id="19_soox3"]
 [ext_resource type="Texture2D" uid="uid://ohraifrfsebd" path="res://sprites/ComodosAbbyProvisorio/Quadro 3.png" id="20_cpjf8"]
@@ -29,8 +29,8 @@
 [ext_resource type="Texture2D" uid="uid://cm3fs5kiw2r5d" path="res://sprites/ComodosAbbyProvisorio/PortaFechadaProvisoria.png" id="25_av7oi"]
 [ext_resource type="Texture2D" uid="uid://cgxui4nvqe3ai" path="res://sprites/ComodosAbbyProvisorio/PortaAbertaProvisoria.png" id="26_7b5v8"]
 [ext_resource type="PackedScene" uid="uid://d15cuak0hgyrc" path="res://Cenas/caixa_de_ferramenta.tscn" id="29_4vnej"]
-[ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://RadioPuzzle.tscn" id="30_p4fr8"]
-[ext_resource type="PackedScene" uid="uid://dhp80323yctry" path="res://Cenas/carta-cena.tscn" id="31_ox6du"]
+[ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://Cenas/NiveisFarol/Nivel-1/RadioPuzzle.tscn" id="30_p4fr8"]
+[ext_resource type="PackedScene" uid="uid://dhp80323yctry" path="res://Deprecado/carta-cena.tscn" id="31_ox6du"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("1_76t1x")
@@ -269,7 +269,7 @@ texture = ExtResource("13_egrpo")
 script = ExtResource("21_1310y")
 interface_puzzle = NodePath("../InterfaceRelogio")
 porta = NodePath("../StaticBody2D")
-texts = Array[String](["klasdsakddksoajlokjdsadsokiaj", "fdghfdgdf"])
+texts = Array[String]([])
 
 [node name="Sprite2D" type="Sprite2D" parent="RelogioDigital" unique_id=968507145]
 texture_filter = 1
@@ -292,8 +292,11 @@ offset_bottom = 576.0
 scale = Vector2(0.44, 0.44)
 text = "Press F"
 
-[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=85634322]
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=85634322 groups=["player"]]
 script = ExtResource("17_soox3")
+speed = 50.0
+can_jump = false
+dash_enabled = false
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D2" unique_id=1586933960]
 texture_filter = 1

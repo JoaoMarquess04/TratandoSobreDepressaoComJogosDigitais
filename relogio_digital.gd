@@ -21,8 +21,6 @@ func _ready():
 func _process(delta):
 	if player_perto and Input.is_action_just_pressed("interagir") and not puzzle_resolvido:
 		abrir_interface()
-	if puzzle_resolvido:
-		_on_show_dialog()
 
 func abrir_interface():
 	get_tree().paused = true
@@ -30,28 +28,25 @@ func abrir_interface():
 	interface.visible = true
 
 func _on_area_2d_body_entered(body):
-	if body.name == "CharacterBody2D2":
+	if body.is_in_group("player"):
 		player_perto = true
 		if not puzzle_resolvido:
 			$Label.visible = true
 
 func _on_area_2d_body_exited(body):
-	if body.name == "CharacterBody2D2":
+	if body.is_in_group("player"):
 		player_perto = false
 		$Label.visible = false
 
 func _on_puzzle_resolvido():
-	
-	print("Instanciando dialogo, textos: ", texts)
-	
-	print("Dialogo iniciado")
-	
-	print("Puzzle resolvido chamado!")
 	puzzle_resolvido = true
 	$Label.visible = false
 	porta_node.abrir()
+	_on_show_dialog()
 
 func _on_show_dialog():
+	if texts.is_empty():
+		return
 	var dialog = dialog_scene.instantiate()
 	add_child(dialog)
 	dialog.global_position = global_position + Vector2(0, -100)

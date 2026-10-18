@@ -33,6 +33,7 @@
 [ext_resource type="Script" uid="uid://ddnk1m5g5h88i" path="res://pathPlataform.gd" id="35_3kwns"]
 [ext_resource type="Texture2D" uid="uid://celreh1c42ris" path="res://sprites/PlataformaTeste.png" id="36_iscjl"]
 [ext_resource type="Script" uid="uid://deq772g1cim7r" path="res://damage.gd" id="37_ute0c"]
+[ext_resource type="Script" uid="uid://dwof2tyurc0o6" path="res://Cenas/fade_in.gd" id="99_fade_in"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("5_mlg5q")
@@ -451,6 +452,9 @@ size = Vector2(7, 248)
 size = Vector2(6, 208)
 
 [node name="Node" type="Node" unique_id=1482666183]
+
+[node name="FadeIn" type="CanvasLayer" parent="." unique_id=900100003]
+script = ExtResource("99_fade_in")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1783503189]
 texture_filter = 1
