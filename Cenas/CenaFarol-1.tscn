@@ -45,6 +45,8 @@
 [ext_resource type="Texture2D" uid="uid://cm3fs5kiw2r5d" path="res://sprites/ComodosAbbyProvisorio/PortaFechadaProvisoria.png" id="44_porta"]
 [ext_resource type="Texture2D" uid="uid://cibo4hi8p02iq" path="res://sprites/caixas-dialogo/CaixaDialogoPadrao.png" id="45_caixa"]
 [ext_resource type="Script" uid="uid://bj6qilje4mfk2" path="res://checkpoint.gd" id="46_checkpoint"]
+[ext_resource type="Script" path="res://musica_cena.gd" id="47_musica_script"]
+[ext_resource type="AudioStream" path="res://Audio/vampires_piano.mp3" id="48_musica"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("5_1i2kx")
@@ -484,6 +486,8 @@ size = Vector2(44, 48)
 size = Vector2(60, 80)
 
 [node name="Node" type="Node" unique_id=1482666183]
+script = ExtResource("47_musica_script")
+musica = ExtResource("48_musica")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1783503189]
 texture_filter = 1

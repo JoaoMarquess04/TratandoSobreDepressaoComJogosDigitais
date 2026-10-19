@@ -39,6 +39,8 @@
 [ext_resource type="Texture2D" uid="uid://cxw34txlwqw8c" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/CaixaFerramenta.png" id="37_e78ji"]
 [ext_resource type="Script" uid="uid://dwof2tyurc0o6" path="res://Cenas/fade_in.gd" id="99_fade_in"]
 [ext_resource type="Texture2D" uid="uid://cm3fs5kiw2r5d" path="res://sprites/ComodosAbbyProvisorio/PortaFechadaProvisoria.png" id="99_porta"]
+[ext_resource type="Script" path="res://musica_cena.gd" id="47_musica_script"]
+[ext_resource type="AudioStream" path="res://Audio/i_want_to_go_home.mp3" id="48_musica"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_biiyk"]
 texture = ExtResource("3_2s6q8")
@@ -253,6 +255,8 @@ size = Vector2(32, 42)
 size = Vector2(28, 100)
 
 [node name="Node" type="Node" unique_id=329171235]
+script = ExtResource("47_musica_script")
+musica = ExtResource("48_musica")
 metadata/_edit_horizontal_guides_ = [533.0]
 
 [node name="FadeIn" type="CanvasLayer" parent="." unique_id=1296203950]
