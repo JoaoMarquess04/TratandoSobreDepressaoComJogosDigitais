@@ -23,6 +23,13 @@ func iniciar(hora_correta: int, minuto_correto: int):
 	hora_atual = 0
 	minuto_atual = 0
 	atualizar_display()
+	# visivel so eh definido depois de iniciar() -> foco adiado para o idle frame
+	$Control/BotaoHoraMais.call_deferred("grab_focus")
+
+func _unhandled_input(event: InputEvent):
+	if visible and event.is_action_pressed("ui_cancel"):
+		fechar()
+		get_viewport().set_input_as_handled()
 
 func _on_hora_mais():
 	hora_atual = (hora_atual + 1) % 24

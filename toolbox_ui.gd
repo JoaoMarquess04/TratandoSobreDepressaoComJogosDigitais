@@ -26,6 +26,7 @@ func _ready():
 	# Conecta sinais dos botões
 	antenna_button.pressed.connect(_on_antenna_clicked)
 	close_button.pressed.connect(_on_close_clicked)
+	antenna_button.grab_focus()
 
 
 # ============================================
@@ -35,7 +36,10 @@ func _ready():
 # Cliques nos botões/painel são consumidos como gui_input;
 # _unhandled_input só recebe cliques que caíram fora deles.
 func _unhandled_input(event: InputEvent):
-	if event is InputEventMouseButton and event.pressed:
+	if event.is_action_pressed("ui_cancel"):
+		close_ui()
+		get_viewport().set_input_as_handled()
+	elif event is InputEventMouseButton and event.pressed:
 		if not panel.get_global_rect().has_point(event.position):
 			close_ui()
 

@@ -41,11 +41,13 @@ func _cutscene_terminou() -> void:
 func _ready() -> void:
 	botoes_principais.visible = true
 	configuracao.visible = false
+	botoes_principais.get_node("Jogar").grab_focus()
 
 #Função ativada ao entrar no menu de configurações, esconde o menu principal 
 func _on_configurações_do_jogo_pressed() -> void:
 	botoes_principais.visible = false
 	configuracao.visible = true
+	configuracao.get_node("ControleDeAudio").grab_focus()
 	
 #Função para retornar ao menu principal, utiliza da função inicial ao abrir o jogo 
 func _on_voltar_ao_menu_opcoes_pressed() -> void:
