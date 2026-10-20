@@ -1,7 +1,7 @@
 extends Node2D
 
-@export var hora_correta: int = 0      # 0 a 23
-@export var minuto_correto: int = 0   # 0 a 59
+@export var hora_correta: int = 1      # 0 a 23
+@export var minuto_correto: int = 32   # 0 a 59
 @export var interface_puzzle: NodePath  # arraste a InterfaceRelogioDigital aqui
 @export var porta: NodePath
 @export var texts: Array[String]  # <- novo: textos do dialogo apos resolver o puzzle

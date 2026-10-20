@@ -46,7 +46,11 @@
 [ext_resource type="Texture2D" uid="uid://cibo4hi8p02iq" path="res://sprites/caixas-dialogo/CaixaDialogoPadrao.png" id="45_caixa"]
 [ext_resource type="Script" uid="uid://bj6qilje4mfk2" path="res://checkpoint.gd" id="46_checkpoint"]
 [ext_resource type="Script" uid="uid://uop61t12p4sh" path="res://musica_cena.gd" id="47_musica_script"]
+[ext_resource type="Texture2D" uid="uid://bkp1rl85nsln" path="res://sprites/QuadroFlor-0.png" id="48_fowmg"]
 [ext_resource type="AudioStream" uid="uid://dxotoufwhx3av" path="res://Audio/vampires_piano.mp3" id="48_musica"]
+[ext_resource type="Texture2D" uid="uid://ev46v35oxrl4" path="res://sprites/QuadroFlor-1.png" id="49_wad2l"]
+[ext_resource type="Texture2D" uid="uid://b8j3b7d5613wv" path="res://sprites/QuadroFlor-2.png" id="50_p3hrq"]
+[ext_resource type="Texture2D" uid="uid://cjox3iifi3vsi" path="res://sprites/QuadroFlor-3.png" id="51_um18w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
 texture = ExtResource("5_1i2kx")
@@ -718,8 +722,32 @@ texture_filter = 1
 position = Vector2(262, 78)
 texture = ExtResource("22_qc36r")
 
+[node name="QuadroFlor0" type="Sprite2D" parent="." unique_id=353737231]
+texture_filter = 1
+position = Vector2(724, 48.08005)
+scale = Vector2(0.9200024, 0.9200024)
+texture = ExtResource("48_fowmg")
+
+[node name="QuadroFlor1" type="Sprite2D" parent="." unique_id=583813671]
+texture_filter = 1
+position = Vector2(764, 48.08005)
+scale = Vector2(0.9200024, 0.9200024)
+texture = ExtResource("49_wad2l")
+
+[node name="QuadroFlor2" type="Sprite2D" parent="." unique_id=1931486573]
+texture_filter = 1
+position = Vector2(840, 48.08005)
+scale = Vector2(0.9200024, 0.9200024)
+texture = ExtResource("50_p3hrq")
+
+[node name="QuadroFlor3" type="Sprite2D" parent="." unique_id=2004128940]
+texture_filter = 1
+position = Vector2(803, 48.08005)
+scale = Vector2(0.9200024, 0.9200024)
+texture = ExtResource("51_um18w")
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=608180040 groups=["player"]]
-position = Vector2(881, -517)
+position = Vector2(3185, -1152)
 script = ExtResource("23_aegn6")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1416926623]
@@ -898,6 +926,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="InterfaceRelogio" type="CanvasLayer" parent="." unique_id=900200009]
 process_mode = 3
+visible = false
 script = ExtResource("41_ifrelogio")
 
 [node name="TextureRect" type="TextureRect" parent="InterfaceRelogio" unique_id=900200010]
