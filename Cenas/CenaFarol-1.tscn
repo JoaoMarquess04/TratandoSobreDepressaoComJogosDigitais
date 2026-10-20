@@ -596,7 +596,27 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Sempre temos que começar de algum lugar... Use as setas para se movimentar "
+text = "Sempre temos que começar de algum lugar... Use as setas ou W,A,S,D para se movimentar "
+autowrap_mode = 2
+
+[node name="TextureRectControle" type="TextureRect" parent="Placa" unique_id=1579351773]
+offset_left = -9.0
+offset_top = -106.0
+offset_right = 186.0
+offset_bottom = -27.0
+texture = ExtResource("45_caixa")
+
+[node name="Label2" type="Label" parent="Placa/TextureRectControle" unique_id=1812005737]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 13.0
+offset_right = 184.0
+offset_bottom = 79.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 11
+text = "Sempre temos que começar de algum lugar... Use o \"joystick\" para se movimentar "
 autowrap_mode = 2
 
 [node name="Placa2" type="Sprite2D" parent="." unique_id=1045771762]
@@ -639,6 +659,26 @@ theme_override_font_sizes/font_size = 11
 text = "As vezes obstáculos aparecem em nossa jornada... Pressione \"space bar\" para pular"
 autowrap_mode = 2
 
+[node name="TextureRectControle" type="TextureRect" parent="Placa2" unique_id=2129924451]
+offset_left = -46.0
+offset_top = -109.0
+offset_right = 149.0
+offset_bottom = -26.0
+texture = ExtResource("45_caixa")
+
+[node name="Label2" type="Label" parent="Placa2/TextureRectControle" unique_id=1874599282]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 14.0
+offset_right = 185.0
+offset_bottom = 80.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 11
+text = "As vezes obstáculos aparecem em nossa jornada... Pressione \"B\" para pular"
+autowrap_mode = 2
+
 [node name="Placa3" type="Sprite2D" parent="." unique_id=1580870914]
 texture_filter = 1
 position = Vector2(-516, 506)
@@ -677,6 +717,26 @@ theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
 text = "Haverão obstáculos maiores a frente... use \"E\" para um impulso extra"
+autowrap_mode = 2
+
+[node name="TextureRectControle" type="TextureRect" parent="Placa3" unique_id=237349060]
+offset_left = -82.0
+offset_top = -97.0
+offset_right = 113.0
+offset_bottom = -15.0
+texture = ExtResource("45_caixa")
+
+[node name="Label2" type="Label" parent="Placa3/TextureRectControle" unique_id=1823026245]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 15.0
+offset_right = 185.0
+offset_bottom = 81.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 11
+text = "Haverão obstáculos maiores a frente... use \"Y\" para um impulso extra"
 autowrap_mode = 2
 
 [node name="Cabide" type="Sprite2D" parent="." unique_id=1894651979]
@@ -747,7 +807,7 @@ scale = Vector2(0.9200024, 0.9200024)
 texture = ExtResource("51_um18w")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=608180040 groups=["player"]]
-position = Vector2(2415, -579)
+position = Vector2(878, -528)
 script = ExtResource("23_aegn6")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1416926623]

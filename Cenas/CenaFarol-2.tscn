@@ -24,9 +24,9 @@
 [ext_resource type="Texture2D" uid="uid://ckdb3mqor6c0x" path="res://sprites/character-NN/16x16 Idle-Sheet.png" id="25_rw6y7"]
 [ext_resource type="Texture2D" uid="uid://dwfdw0no0uydo" path="res://sprites/character-NN/16x16 Jump-Sheet.png" id="26_jemup"]
 [ext_resource type="Texture2D" uid="uid://dgmn6mi43e8qf" path="res://sprites/character-NN/16x16 Run-Sheet.png" id="27_526vk"]
-[ext_resource type="Texture2D" uid="uid://cppq5u8u47hdl" path="res://sprites/general-itens/CoracaoVazio.png" id="28_ll15l"]
-[ext_resource type="Texture2D" uid="uid://cm0dewmoowc7" path="res://sprites/general-itens/CoracaoCheio.png" id="29_rq1u3"]
+[ext_resource type="Texture2D" uid="uid://deifnalvi7q86" path="res://sprites/BarraDeNaoVida.png" id="29_4lc3k"]
 [ext_resource type="Script" uid="uid://c6hk36s43v6xd" path="res://Cenas/BarraDeVida.gd" id="30_iexb4"]
+[ext_resource type="Texture2D" uid="uid://bb71g0dglw3bc" path="res://sprites/BarraDeVida.png" id="30_qwmtn"]
 [ext_resource type="Texture2D" uid="uid://cgxui4nvqe3ai" path="res://sprites/ComodosAbbyProvisorio/PortaAbertaProvisoria.png" id="32_7176y"]
 [ext_resource type="Script" uid="uid://byj1yedqgfsdi" path="res://Cenas/canvas_layer_2.gd" id="33_qek6p"]
 [ext_resource type="Texture2D" uid="uid://byb0gnrduh45o" path="res://sprites/general-itens/OrbeEnergia.png" id="34_q81w5"]
@@ -648,8 +648,8 @@ offset_right = 236.87036
 offset_bottom = 74.0
 value = 100.0
 nine_patch_stretch = true
-texture_under = ExtResource("28_ll15l")
-texture_progress = ExtResource("29_rq1u3")
+texture_under = ExtResource("29_4lc3k")
+texture_progress = ExtResource("30_qwmtn")
 script = ExtResource("30_iexb4")
 player = NodePath("../../CharacterBody2D")
 
