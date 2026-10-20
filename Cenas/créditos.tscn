@@ -42,10 +42,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -643.0
-offset_top = -7.0
-offset_right = 15.0
-offset_bottom = 166.0
+offset_left = -533.0
+offset_top = -70.0
+offset_right = -51.0
+offset_bottom = 130.5
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -53,14 +53,16 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-text = "João Filipe Pinheiro Marques"
+text = "João Filipe Pinheiro Marques
+"
 label_settings = SubResource("LabelSettings_61ot5")
 
 [node name="Label2" type="Label" parent="Hud/Desenvolvedores" unique_id=1343263976]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-text = "Lucas Machado da Costa Pennone"
+text = "Lucas Machado da Costa Pennone
+"
 label_settings = SubResource("LabelSettings_61ot5")
 
 [node name="Label3" type="Label" parent="Hud/Desenvolvedores" unique_id=1143001281]

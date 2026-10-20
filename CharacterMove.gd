@@ -104,7 +104,7 @@ func movimento_normal():
 	#=============================
 	# CODIGO DE PULO DO PLAYER
 	#=============================
-	if can_jump and Input.is_action_just_pressed("ui_accept"):
+	if can_jump and Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			velocity.y = jump_velocity
 		#WallGrab - o lock impede que o input horizontal sobrescreva o empurrão no mesmo frame.

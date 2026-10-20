@@ -34,8 +34,8 @@
 [ext_resource type="Texture2D" uid="uid://celreh1c42ris" path="res://sprites/PlataformaTeste.png" id="36_iscjl"]
 [ext_resource type="Script" uid="uid://deq772g1cim7r" path="res://damage.gd" id="37_ute0c"]
 [ext_resource type="Script" uid="uid://bj6qilje4mfk2" path="res://checkpoint.gd" id="46_checkpoint"]
-[ext_resource type="Script" path="res://musica_cena.gd" id="47_musica_script"]
-[ext_resource type="AudioStream" path="res://Audio/vampires_piano.mp3" id="48_musica"]
+[ext_resource type="Script" uid="uid://uop61t12p4sh" path="res://musica_cena.gd" id="47_musica_script"]
+[ext_resource type="AudioStream" uid="uid://dxotoufwhx3av" path="res://Audio/vampires_piano.mp3" id="48_musica"]
 [ext_resource type="Script" uid="uid://dwof2tyurc0o6" path="res://Cenas/fade_in.gd" id="99_fade_in"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1ngt"]
