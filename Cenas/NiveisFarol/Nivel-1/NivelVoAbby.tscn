@@ -37,10 +37,10 @@
 [ext_resource type="Texture2D" uid="uid://cgg0g6vic56at" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/Armario.png" id="35_tnf5e"]
 [ext_resource type="Texture2D" uid="uid://cylnm5ryo8w0a" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/ArmarioQuebrado.png" id="36_khe20"]
 [ext_resource type="Texture2D" uid="uid://cxw34txlwqw8c" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/CaixaFerramenta.png" id="37_e78ji"]
+[ext_resource type="Texture2D" uid="uid://cgxui4nvqe3ai" path="res://sprites/ComodosAbbyProvisorio/PortaAbertaProvisoria.png" id="45_porta_aberta"]
+[ext_resource type="Script" uid="uid://cig3pj2t51h20" path="res://porta.gd" id="46_porta"]
 [ext_resource type="Script" uid="uid://uop61t12p4sh" path="res://musica_cena.gd" id="47_musica_script"]
 [ext_resource type="AudioStream" uid="uid://bft15oui3mjhr" path="res://Audio/i_want_to_go_home.mp3" id="48_musica"]
-[ext_resource type="Script" uid="uid://cig3pj2t51h20" path="res://porta.gd" id="46_porta"]
-[ext_resource type="Texture2D" uid="uid://cgxui4nvqe3ai" path="res://sprites/ComodosAbbyProvisorio/PortaAbertaProvisoria.png" id="45_porta_aberta"]
 [ext_resource type="Script" uid="uid://dwof2tyurc0o6" path="res://Cenas/fade_in.gd" id="99_fade_in"]
 [ext_resource type="Texture2D" uid="uid://cm3fs5kiw2r5d" path="res://sprites/ComodosAbbyProvisorio/PortaFechadaProvisoria.png" id="99_porta"]
 [ext_resource type="Script" uid="uid://cr8rrsvwci31j" path="res://Cenas/scene_transition_2.gd" id="99_transition"]
@@ -315,7 +315,7 @@ offset_left = -4.0
 offset_top = -25.0
 offset_right = 36.0
 offset_bottom = -2.0
-text = "F"
+text = "B"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CFERRAMENTA]" type="Area2D" parent="." unique_id=1627925305]
@@ -332,11 +332,11 @@ texture = ExtResource("13_6g73f")
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Label" type="Label" parent="InteragirDialogo[CFERRAMENTA]" unique_id=2089829178]
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "F"
+offset_left = -21.98352
+offset_top = -18.60151
+offset_right = 18.01648
+offset_bottom = 4.398491
+text = "B"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[DISPENSA]" type="Area2D" parent="." unique_id=1697335997]
@@ -359,7 +359,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "F"
+text = "B"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]" type="Area2D" parent="." unique_id=355635557]
@@ -381,7 +381,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "F"
+text = "B"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[POSCARTA]" type="Area2D" parent="." unique_id=856852149]
@@ -403,7 +403,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "F"
+text = "B"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=1548406826]
@@ -425,7 +425,7 @@ offset_left = -5.0731053
 offset_top = -32.70474
 offset_right = 34.926895
 offset_bottom = -9.704739
-text = "F"
+text = "B"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]2" type="Area2D" parent="." unique_id=738184462]
@@ -446,7 +446,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "F"
+text = "B"
 metadata/_edit_use_anchors_ = true
 
 [node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("16_w8su5")]
@@ -474,7 +474,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "F"
+text = "B"
 metadata/_edit_use_anchors_ = true
 
 [node name="Tapete" type="Sprite2D" parent="." unique_id=1609031470]
@@ -625,7 +625,7 @@ limit_right = 4381
 limit_bottom = 634
 
 [node name="PortaSaida" type="StaticBody2D" parent="." unique_id=900100004]
-position = Vector2(1040, 584)
+position = Vector2(1040, 603)
 script = ExtResource("46_porta")
 textura_fechada = ExtResource("99_porta")
 textura_aberta = ExtResource("45_porta_aberta")
@@ -639,7 +639,7 @@ position = Vector2(0, -24)
 shape = SubResource("RectangleShape2D_porta_saida")
 
 [node name="SceneTransition" type="Area2D" parent="." unique_id=900100001]
-position = Vector2(1040, 560)
+position = Vector2(1040, 579)
 script = ExtResource("99_transition")
 destino = "res://Cenas/CenaFarol-2.tscn"
 

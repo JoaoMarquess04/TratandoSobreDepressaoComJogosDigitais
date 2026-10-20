@@ -739,6 +739,126 @@ theme_override_font_sizes/font_size = 11
 text = "Haverão obstáculos maiores a frente... use \"Y\" para um impulso extra"
 autowrap_mode = 2
 
+[node name="Placa5" type="Sprite2D" parent="." unique_id=700766370]
+texture_filter = 1
+position = Vector2(583, 554)
+texture = ExtResource("12_meohj")
+script = ExtResource("13_fowmg")
+
+[node name="Area2D" type="Area2D" parent="Placa5" unique_id=230463040]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Placa5/Area2D" unique_id=1317541452]
+position = Vector2(0.5, 3)
+shape = SubResource("RectangleShape2D_ad8ox")
+
+[node name="Label" type="Label" parent="Placa5" unique_id=43833714]
+visible = false
+offset_left = 15.0
+offset_top = -66.0
+offset_right = 92.0
+offset_bottom = -43.0
+text = "Press \"F\""
+
+[node name="TextureRect" type="TextureRect" parent="Placa5" unique_id=719032386]
+offset_left = -82.0
+offset_top = -97.0
+offset_right = 113.0
+offset_bottom = -15.0
+texture = ExtResource("45_caixa")
+
+[node name="Label2" type="Label" parent="Placa5/TextureRect" unique_id=2034488307]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 7.0
+offset_right = 185.0
+offset_bottom = 73.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 11
+text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"B\" novamente para um impulso extra"
+autowrap_mode = 2
+
+[node name="TextureRectControle" type="TextureRect" parent="Placa5" unique_id=1408076274]
+offset_left = -82.0
+offset_top = -97.0
+offset_right = 113.0
+offset_bottom = -15.0
+texture = ExtResource("45_caixa")
+
+[node name="Label2" type="Label" parent="Placa5/TextureRectControle" unique_id=256106948]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = 185.0
+offset_bottom = 72.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 11
+text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"B\" novamente para um impulso extra"
+autowrap_mode = 2
+
+[node name="Placa6" type="Sprite2D" parent="." unique_id=494250300]
+texture_filter = 1
+position = Vector2(587, 395)
+texture = ExtResource("12_meohj")
+script = ExtResource("13_fowmg")
+
+[node name="Area2D" type="Area2D" parent="Placa6" unique_id=1398101028]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Placa6/Area2D" unique_id=1430377104]
+position = Vector2(0.5, 3)
+shape = SubResource("RectangleShape2D_ad8ox")
+
+[node name="Label" type="Label" parent="Placa6" unique_id=394559436]
+visible = false
+offset_left = 15.0
+offset_top = -66.0
+offset_right = 92.0
+offset_bottom = -43.0
+text = "Press \"F\""
+
+[node name="TextureRect" type="TextureRect" parent="Placa6" unique_id=93004879]
+offset_left = -82.0
+offset_top = -97.0
+offset_right = 113.0
+offset_bottom = -15.0
+texture = ExtResource("45_caixa")
+
+[node name="Label2" type="Label" parent="Placa6/TextureRect" unique_id=1077227060]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 20.0
+offset_right = 185.0
+offset_bottom = 86.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 11
+text = "Pressione \"B\" próximo aos botões para ativar a plataforma "
+autowrap_mode = 2
+
+[node name="TextureRectControle" type="TextureRect" parent="Placa6" unique_id=1571985346]
+offset_left = -82.0
+offset_top = -97.0
+offset_right = 113.0
+offset_bottom = -15.0
+texture = ExtResource("45_caixa")
+
+[node name="Label2" type="Label" parent="Placa6/TextureRectControle" unique_id=1490131800]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 22.0
+offset_right = 186.0
+offset_bottom = 88.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 11
+text = "Pressione \"B\" próximo aos botões para ativar a plataforma "
+autowrap_mode = 2
+
 [node name="Cabide" type="Sprite2D" parent="." unique_id=1894651979]
 texture_filter = 1
 position = Vector2(560.5, 57)
@@ -944,7 +1064,67 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "F"
+text = "B"
+
+[node name="Placa4" type="Sprite2D" parent="." unique_id=815956463]
+texture_filter = 1
+position = Vector2(476, 153)
+texture = ExtResource("12_meohj")
+script = ExtResource("13_fowmg")
+
+[node name="Area2D" type="Area2D" parent="Placa4" unique_id=141946723]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Placa4/Area2D" unique_id=61677426]
+position = Vector2(0.5, 3)
+shape = SubResource("RectangleShape2D_ad8ox")
+
+[node name="Label" type="Label" parent="Placa4" unique_id=204259379]
+visible = false
+offset_left = 15.0
+offset_top = -66.0
+offset_right = 92.0
+offset_bottom = -43.0
+text = "Press \"F\""
+
+[node name="TextureRect" type="TextureRect" parent="Placa4" unique_id=414970151]
+offset_left = -82.0
+offset_top = -97.0
+offset_right = 113.0
+offset_bottom = -15.0
+texture = ExtResource("45_caixa")
+
+[node name="Label2" type="Label" parent="Placa4/TextureRect" unique_id=26192603]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 15.0
+offset_right = 185.0
+offset_bottom = 81.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 11
+text = "Cuidado com alguns obstacúlos, eles podem lhe causar dano..."
+autowrap_mode = 2
+
+[node name="TextureRectControle" type="TextureRect" parent="Placa4" unique_id=1112998055]
+offset_left = -82.0
+offset_top = -97.0
+offset_right = 113.0
+offset_bottom = -15.0
+texture = ExtResource("45_caixa")
+
+[node name="Label2" type="Label" parent="Placa4/TextureRectControle" unique_id=1151078562]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 15.0
+offset_right = 185.0
+offset_bottom = 81.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 11
+text = "Cuidado com alguns obstacúlos, eles podem lhe causar dano..."
+autowrap_mode = 2
 
 [node name="PortaComodo" type="StaticBody2D" parent="." unique_id=900200001]
 position = Vector2(615, 62)
@@ -982,7 +1162,7 @@ offset_top = 28.0
 offset_right = 660.0
 offset_bottom = 51.0
 scale = Vector2(0.44, 0.44)
-text = "F"
+text = "B"
 metadata/_edit_use_anchors_ = true
 
 [node name="InterfaceRelogio" type="CanvasLayer" parent="." unique_id=900200009]
@@ -1090,6 +1270,12 @@ shape = SubResource("RectangleShape2D_checkpoint1")
 [connection signal="body_exited" from="Placa2/Area2D" to="Placa2" method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="Placa3/Area2D" to="Placa3" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Placa3/Area2D" to="Placa3" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Placa5/Area2D" to="Placa5" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Placa5/Area2D" to="Placa5" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Placa6/Area2D" to="Placa6" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Placa6/Area2D" to="Placa6" method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="SceneTransition2" to="SceneTransition2" method="_on_body_entered"]
+[connection signal="body_entered" from="Placa4/Area2D" to="Placa4" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Placa4/Area2D" to="Placa4" method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="RelogioDigital/Area2D" to="RelogioDigital" method="_on_area_2d_body_exited"]
