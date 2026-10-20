@@ -776,7 +776,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"B\" novamente para um impulso extra"
+text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"A\" novamente para um impulso extra"
 autowrap_mode = 2
 
 [node name="TextureRectControle" type="TextureRect" parent="Placa5" unique_id=1408076274]
@@ -796,7 +796,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"B\" novamente para um impulso extra"
+text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"A\" novamente para um impulso extra"
 autowrap_mode = 2
 
 [node name="Placa6" type="Sprite2D" parent="." unique_id=494250300]
@@ -836,7 +836,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Pressione \"B\" próximo aos botões para ativar a plataforma "
+text = "Pressione \"A\" próximo aos botões para ativar a plataforma "
 autowrap_mode = 2
 
 [node name="TextureRectControle" type="TextureRect" parent="Placa6" unique_id=1571985346]
@@ -856,7 +856,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Pressione \"B\" próximo aos botões para ativar a plataforma "
+text = "Pressione \"A\" próximo aos botões para ativar a plataforma "
 autowrap_mode = 2
 
 [node name="Cabide" type="Sprite2D" parent="." unique_id=1894651979]
