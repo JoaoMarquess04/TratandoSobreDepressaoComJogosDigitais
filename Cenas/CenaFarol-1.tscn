@@ -37,13 +37,13 @@
 [ext_resource type="Texture2D" uid="uid://celreh1c42ris" path="res://sprites/PlataformaTeste.png" id="36_runt4"]
 [ext_resource type="Script" uid="uid://deq772g1cim7r" path="res://damage.gd" id="37_ygqrm"]
 [ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="38_w7b66"]
-[ext_resource type="Texture2D" uid="uid://dpv23l0svpvx7" path="res://sprites/CasaNivel1/CaixaDeFerramenta.png" id="39_0xpq6"]
 [ext_resource type="Script" uid="uid://c81vtb7adf63l" path="res://relogio_digital.gd" id="40_relogio"]
 [ext_resource type="Script" uid="uid://ds5ar7poetqr8" path="res://interface_relogio_digital.gd" id="41_ifrelogio"]
 [ext_resource type="Script" uid="uid://cig3pj2t51h20" path="res://porta.gd" id="42_porta"]
 [ext_resource type="Texture2D" uid="uid://dqtbc84x8nw1a" path="res://sprites/CasaNivel1/Relogio.png" id="43_relogio"]
 [ext_resource type="Texture2D" uid="uid://cm3fs5kiw2r5d" path="res://sprites/ComodosAbbyProvisorio/PortaFechadaProvisoria.png" id="44_porta"]
 [ext_resource type="Texture2D" uid="uid://cibo4hi8p02iq" path="res://sprites/caixas-dialogo/CaixaDialogoPadrao.png" id="45_caixa"]
+[ext_resource type="Texture2D" uid="uid://xk51y64ecgte" path="res://sprites/MemoriasTeste.png" id="45_fowmg"]
 [ext_resource type="Script" uid="uid://bj6qilje4mfk2" path="res://checkpoint.gd" id="46_checkpoint"]
 [ext_resource type="Script" uid="uid://uop61t12p4sh" path="res://musica_cena.gd" id="47_musica_script"]
 [ext_resource type="Texture2D" uid="uid://bkp1rl85nsln" path="res://sprites/QuadroFlor-0.png" id="48_fowmg"]
@@ -866,14 +866,15 @@ position = Vector2(7.5, -17)
 shape = SubResource("RectangleShape2D_6f8o3")
 
 [node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=874581916]
-position = Vector2(600, 73)
+position = Vector2(580, 73)
 script = ExtResource("38_w7b66")
 texts = Array[String](["Essa sala...", "Parece a casa da Vó Abby..."])
 
 [node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=895815898]
-visible = false
 texture_filter = 1
-texture = ExtResource("39_0xpq6")
+position = Vector2(0, 0.5)
+scale = Vector2(0.6875, 0.6875)
+texture = ExtResource("45_fowmg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=679650310]
 shape = SubResource("RectangleShape2D_kl2gf")

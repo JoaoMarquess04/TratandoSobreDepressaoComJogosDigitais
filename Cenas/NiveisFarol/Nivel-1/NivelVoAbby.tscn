@@ -7,12 +7,12 @@
 [ext_resource type="Texture2D" uid="uid://cal7x81tmn5x0" path="res://Cenas/NiveisFarol/Nivel-1/TesteChao1.png" id="6_2s6q8"]
 [ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="11_f4pxe"]
 [ext_resource type="Texture2D" uid="uid://dqtbc84x8nw1a" path="res://sprites/CasaNivel1/Relogio.png" id="12_terpp"]
+[ext_resource type="Texture2D" uid="uid://xk51y64ecgte" path="res://sprites/MemoriasTeste.png" id="13_4cb37"]
 [ext_resource type="Texture2D" uid="uid://dpv23l0svpvx7" path="res://sprites/CasaNivel1/CaixaDeFerramenta.png" id="13_6g73f"]
 [ext_resource type="Texture2D" uid="uid://7dx0hb3dguo8" path="res://sprites/CasaNivel1/Cartaz.png" id="14_dcgow"]
 [ext_resource type="Texture2D" uid="uid://bc558tmxeup8k" path="res://sprites/CasaNivel1/Casaco.png" id="15_6ejfe"]
 [ext_resource type="PackedScene" uid="uid://05dpdyrjnimh" path="res://Cenas/NiveisFarol/Nivel-1/RadioPuzzle.tscn" id="16_w8su5"]
 [ext_resource type="Script" uid="uid://cwj85d1venhau" path="res://CharacterMove.gd" id="17_jegjd"]
-[ext_resource type="Script" uid="uid://cr8rrsvwci31j" path="res://Cenas/scene_transition_2.gd" id="99_transition"]
 [ext_resource type="Texture2D" uid="uid://ekrq3k0avxt5" path="res://sprites/NivelVoAbby-DEF/HallEntrada/Cabide.png" id="17_pbibn"]
 [ext_resource type="Texture2D" uid="uid://qusmwhwohgk6" path="res://sprites/NivelVoAbby-DEF/HallEntrada/Lampada.png" id="18_2s6q8"]
 [ext_resource type="Texture2D" uid="uid://cu5ibt585f5bh" path="res://sprites/characters/vozinha/F2.png" id="18_nbd8n"]
@@ -37,10 +37,11 @@
 [ext_resource type="Texture2D" uid="uid://cgg0g6vic56at" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/Armario.png" id="35_tnf5e"]
 [ext_resource type="Texture2D" uid="uid://cylnm5ryo8w0a" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/ArmarioQuebrado.png" id="36_khe20"]
 [ext_resource type="Texture2D" uid="uid://cxw34txlwqw8c" path="res://sprites/NivelVoAbby-DEF/BalcaoCozinha/CaixaFerramenta.png" id="37_e78ji"]
+[ext_resource type="Script" uid="uid://uop61t12p4sh" path="res://musica_cena.gd" id="47_musica_script"]
+[ext_resource type="AudioStream" uid="uid://bft15oui3mjhr" path="res://Audio/i_want_to_go_home.mp3" id="48_musica"]
 [ext_resource type="Script" uid="uid://dwof2tyurc0o6" path="res://Cenas/fade_in.gd" id="99_fade_in"]
 [ext_resource type="Texture2D" uid="uid://cm3fs5kiw2r5d" path="res://sprites/ComodosAbbyProvisorio/PortaFechadaProvisoria.png" id="99_porta"]
-[ext_resource type="Script" path="res://musica_cena.gd" id="47_musica_script"]
-[ext_resource type="AudioStream" path="res://Audio/i_want_to_go_home.mp3" id="48_musica"]
+[ext_resource type="Script" uid="uid://cr8rrsvwci31j" path="res://Cenas/scene_transition_2.gd" id="99_transition"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_biiyk"]
 texture = ExtResource("3_2s6q8")
@@ -340,9 +341,9 @@ script = ExtResource("11_f4pxe")
 texts = Array[String](["Qualquer coisa que ocorria você vinha até aqui...", "Pegava o que precisava...", "E dizia:", "\"Se tivesse uma ferramenta e tempo suficiente...", "“...dava para consertar qualquer coisa.”", "Mas existem coisas que ninguém consegue salvar."])
 
 [node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[DISPENSA]" unique_id=1518077180]
-visible = false
 texture_filter = 1
-texture = ExtResource("13_6g73f")
+position = Vector2(0, 5.073125)
+texture = ExtResource("13_4cb37")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[DISPENSA]" unique_id=244648817]
 shape = SubResource("RectangleShape2D_bhunq")
@@ -385,9 +386,9 @@ script = ExtResource("11_f4pxe")
 texts = Array[String](["...", "Mães deveriam ir primeiro...", "Não os filhos...", "...", "...", "..."])
 
 [node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[POSCARTA]" unique_id=1825052616]
-visible = false
 texture_filter = 1
-texture = ExtResource("13_6g73f")
+position = Vector2(0, 8.455105)
+texture = ExtResource("13_4cb37")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[POSCARTA]" unique_id=1190297644]
 shape = SubResource("RectangleShape2D_bhunq")
@@ -407,17 +408,17 @@ script = ExtResource("11_f4pxe")
 texts = Array[String](["Eu achei que, se deixasse tudo igual...", "Então nada teria acabado de verdade."])
 
 [node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=1672013735]
-visible = false
 texture_filter = 1
-texture = ExtResource("13_6g73f")
+position = Vector2(0, 11.837291)
+texture = ExtResource("13_4cb37")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[ESCRITORIO]" unique_id=1113977745]
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Label" type="Label" parent="InteragirDialogo[ESCRITORIO]" unique_id=21592633]
-offset_left = -9.407019
+offset_left = -5.0731053
 offset_top = -32.70474
-offset_right = 30.592981
+offset_right = 34.926895
 offset_bottom = -9.704739
 text = "F"
 metadata/_edit_use_anchors_ = true
@@ -455,9 +456,9 @@ script = ExtResource("11_f4pxe")
 texts = Array[String](["Ele ligava esse rádio tão alto...", "A casa inteira vibrava junto.", "“Eu dizia que era barulho demais...", "Mas sem ele é muito pior.", "Tenho medo de esquecer a voz dele...", "...", "Tenho medo de lembrar...", "...", "Tenho medo dos dois."])
 
 [node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[POSRADIO]" unique_id=1496047171]
-visible = false
 texture_filter = 1
-texture = ExtResource("13_6g73f")
+position = Vector2(0, 5.073125)
+texture = ExtResource("13_4cb37")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteragirDialogo[POSRADIO]" unique_id=1707708105]
 shape = SubResource("RectangleShape2D_bhunq")
@@ -618,9 +619,9 @@ limit_right = 4381
 limit_bottom = 634
 
 [node name="PortaSaida" type="Sprite2D" parent="." unique_id=900100004]
+texture_filter = 1
 position = Vector2(1040, 584)
 scale = Vector2(1.15, 1.5)
-texture_filter = 1
 texture = ExtResource("99_porta")
 
 [node name="SceneTransition" type="Area2D" parent="." unique_id=900100001]
