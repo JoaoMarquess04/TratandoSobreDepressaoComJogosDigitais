@@ -19,6 +19,9 @@ extends Area2D
 # Quanto muda a cada clique
 @export var frequency_step: float = 0.1
 
+# Porta que abre quando o puzzle eh resolvido
+@export var porta: NodePath
+
 
 # ============================================
 # VARIÁVEIS
@@ -341,6 +344,10 @@ func solve_radio() -> void:
 	# Desativa a detecção do rádio
 	# porque o puzzle já terminou
 	set_deferred("monitoring", false)
+
+	# Abre a porta de saida
+	if not porta.is_empty():
+		get_node(porta).abrir()
 
 
 # ============================================
