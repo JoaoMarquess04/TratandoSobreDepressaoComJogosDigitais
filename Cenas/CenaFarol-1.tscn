@@ -26,14 +26,14 @@
 [ext_resource type="Texture2D" uid="uid://ckdb3mqor6c0x" path="res://sprites/character-NN/16x16 Idle-Sheet.png" id="25_gqgwd"]
 [ext_resource type="Texture2D" uid="uid://dwfdw0no0uydo" path="res://sprites/character-NN/16x16 Jump-Sheet.png" id="26_wh41g"]
 [ext_resource type="Texture2D" uid="uid://dgmn6mi43e8qf" path="res://sprites/character-NN/16x16 Run-Sheet.png" id="27_jknk2"]
-[ext_resource type="Texture2D" uid="uid://cppq5u8u47hdl" path="res://sprites/general-itens/CoracaoVazio.png" id="28_ja3dl"]
-[ext_resource type="Texture2D" uid="uid://cm0dewmoowc7" path="res://sprites/general-itens/CoracaoCheio.png" id="29_yy71g"]
 [ext_resource type="Script" uid="uid://c6hk36s43v6xd" path="res://Cenas/BarraDeVida.gd" id="30_ges4o"]
 [ext_resource type="Script" uid="uid://cr8rrsvwci31j" path="res://Cenas/scene_transition_2.gd" id="31_bcw6r"]
 [ext_resource type="Texture2D" uid="uid://cgxui4nvqe3ai" path="res://sprites/ComodosAbbyProvisorio/PortaAbertaProvisoria.png" id="32_wh8sa"]
 [ext_resource type="Script" uid="uid://byj1yedqgfsdi" path="res://Cenas/canvas_layer_2.gd" id="33_xkcpm"]
+[ext_resource type="Texture2D" uid="uid://deifnalvi7q86" path="res://sprites/BarraDeNaoVida.png" id="34_fowmg"]
 [ext_resource type="Texture2D" uid="uid://byb0gnrduh45o" path="res://sprites/general-itens/OrbeEnergia.png" id="34_s6g7a"]
 [ext_resource type="Script" uid="uid://ddnk1m5g5h88i" path="res://pathPlataform.gd" id="35_n5avy"]
+[ext_resource type="Texture2D" uid="uid://bb71g0dglw3bc" path="res://sprites/BarraDeVida.png" id="35_wad2l"]
 [ext_resource type="Texture2D" uid="uid://celreh1c42ris" path="res://sprites/PlataformaTeste.png" id="36_runt4"]
 [ext_resource type="Script" uid="uid://deq772g1cim7r" path="res://damage.gd" id="37_ygqrm"]
 [ext_resource type="Script" uid="uid://dfe31c2gm77u5" path="res://interagir_dialogo.gd" id="38_w7b66"]
@@ -747,7 +747,7 @@ scale = Vector2(0.9200024, 0.9200024)
 texture = ExtResource("51_um18w")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=608180040 groups=["player"]]
-position = Vector2(3185, -1152)
+position = Vector2(2415, -579)
 script = ExtResource("23_aegn6")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1416926623]
@@ -781,8 +781,8 @@ offset_right = 236.87036
 offset_bottom = 74.0
 value = 100.0
 nine_patch_stretch = true
-texture_under = ExtResource("28_ja3dl")
-texture_progress = ExtResource("29_yy71g")
+texture_under = ExtResource("34_fowmg")
+texture_progress = ExtResource("35_wad2l")
 script = ExtResource("30_ges4o")
 player = NodePath("../../CharacterBody2D")
 
