@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dh8mkud20xo4b"]
+
+[ext_resource type="Texture2D" uid="uid://jvmvlqt6ccia" path="res://sprites/MainMenu/Fundo-Menu.jpeg" id="1_mn17y"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_acp4l"]
+font_size = 64
+shadow_size = 13
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="FimJogo" type="Node2D" unique_id=379282987]
+
+[node name="Imagem de fundo" type="TextureRect" parent="." unique_id=811266704]
+texture_filter = 1
+offset_top = -1.000001
+offset_right = 388.67398
+offset_bottom = 62.780777
+scale = Vector2(2.961351, 10.097086)
+texture = ExtResource("1_mn17y")
+expand_mode = 1
+
+[node name="Créditos" type="Label" parent="Imagem de fundo" unique_id=1830670376]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -153.47726
+offset_top = 22.481733
+offset_right = 464.52277
+offset_bottom = 110.481735
+grow_horizontal = 2
+scale = Vector2(0.5, 0.24277857)
+text = "Obrigado por jogar !"
+label_settings = SubResource("LabelSettings_acp4l")
