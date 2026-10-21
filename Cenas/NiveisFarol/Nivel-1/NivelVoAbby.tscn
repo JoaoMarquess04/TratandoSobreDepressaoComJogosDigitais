@@ -315,7 +315,7 @@ offset_left = -4.0
 offset_top = -25.0
 offset_right = 36.0
 offset_bottom = -2.0
-text = "B"
+text = "A"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CFERRAMENTA]" type="Area2D" parent="." unique_id=1627925305]
@@ -336,7 +336,7 @@ offset_left = -21.98352
 offset_top = -18.60151
 offset_right = 18.01648
 offset_bottom = 4.398491
-text = "B"
+text = "A"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[DISPENSA]" type="Area2D" parent="." unique_id=1697335997]
@@ -359,7 +359,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "B"
+text = "A"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]" type="Area2D" parent="." unique_id=355635557]
@@ -381,7 +381,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "B"
+text = "A"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[POSCARTA]" type="Area2D" parent="." unique_id=856852149]
@@ -403,7 +403,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "B"
+text = "A"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=1548406826]
@@ -425,7 +425,7 @@ offset_left = -5.0731053
 offset_top = -32.70474
 offset_right = 34.926895
 offset_bottom = -9.704739
-text = "B"
+text = "A"
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]2" type="Area2D" parent="." unique_id=738184462]
@@ -446,7 +446,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "B"
+text = "A"
 metadata/_edit_use_anchors_ = true
 
 [node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("16_w8su5")]
@@ -474,7 +474,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "B"
+text = "A"
 metadata/_edit_use_anchors_ = true
 
 [node name="Tapete" type="Sprite2D" parent="." unique_id=1609031470]

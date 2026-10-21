@@ -1064,7 +1064,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "B"
+text = "A"
 
 [node name="Placa4" type="Sprite2D" parent="." unique_id=815956463]
 texture_filter = 1
@@ -1162,7 +1162,7 @@ offset_top = 28.0
 offset_right = 660.0
 offset_bottom = 51.0
 scale = Vector2(0.44, 0.44)
-text = "B"
+text = "A"
 metadata/_edit_use_anchors_ = true
 
 [node name="InterfaceRelogio" type="CanvasLayer" parent="." unique_id=900200009]
