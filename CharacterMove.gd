@@ -71,8 +71,8 @@ func controlar_cooldown_dash(delta):
 func resetarDash():
 	if is_on_floor() and dash_cooldown_timer <= 0:
 		can_dash = true
-	'if is_on_wall() and dash_cooldown_timer <= 0:
-		can_dash = true'
+	if is_on_wall() and dash_cooldown_timer <= 0:
+		can_dash = true
 #============================================================================
 #FUNCAO PARA VERIFICAR INPUT DO DASH (SE FOI PRESSIONADO OU NAO BASICAMENTE) 
 #============================================================================     
