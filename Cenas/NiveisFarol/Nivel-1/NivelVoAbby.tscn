@@ -315,7 +315,7 @@ offset_left = -4.0
 offset_top = -25.0
 offset_right = 36.0
 offset_bottom = -2.0
-text = "A"
+text = "\"B\"/\"F\""
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CFERRAMENTA]" type="Area2D" parent="." unique_id=1627925305]
@@ -332,11 +332,11 @@ texture = ExtResource("13_6g73f")
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Label" type="Label" parent="InteragirDialogo[CFERRAMENTA]" unique_id=2089829178]
-offset_left = -21.98352
-offset_top = -18.60151
-offset_right = 18.01648
-offset_bottom = 4.398491
-text = "A"
+offset_left = -35.511852
+offset_top = -21.983593
+offset_right = 18.488148
+offset_bottom = 1.016407
+text = "\"B\"/\"F\""
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[DISPENSA]" type="Area2D" parent="." unique_id=1697335997]
@@ -355,11 +355,11 @@ shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Label" type="Label" parent="InteragirDialogo[DISPENSA]" unique_id=1355004722]
 texture_filter = 1
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "A"
+offset_left = -38.893936
+offset_top = -32.12984
+offset_right = 15.106064
+offset_bottom = -9.129841
+text = "\"B\"/\"F\""
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]" type="Area2D" parent="." unique_id=355635557]
@@ -377,11 +377,11 @@ position = Vector2(0, -3.5)
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Label" type="Label" parent="InteragirDialogo[CARTA]" unique_id=699598872]
-offset_left = -4.0
-offset_top = -32.0
-offset_right = 36.0
-offset_bottom = -9.0
-text = "A"
+offset_left = -43.96706
+offset_top = -33.82068
+offset_right = 10.03294
+offset_bottom = -10.820679
+text = "\"B\"/\"F\""
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[POSCARTA]" type="Area2D" parent="." unique_id=856852149]
@@ -403,7 +403,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "A"
+text = "\"B\"/\"F\""
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[ESCRITORIO]" type="Area2D" parent="." unique_id=1548406826]
@@ -425,7 +425,7 @@ offset_left = -5.0731053
 offset_top = -32.70474
 offset_right = 34.926895
 offset_bottom = -9.704739
-text = "A"
+text = "\"B\"/\"F\""
 metadata/_edit_use_anchors_ = true
 
 [node name="InteragirDialogo[CARTA]2" type="Area2D" parent="." unique_id=738184462]
@@ -446,7 +446,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "A"
+text = "\"B\"/\"F\""
 metadata/_edit_use_anchors_ = true
 
 [node name="Radio" parent="." unique_id=1753180043 instance=ExtResource("16_w8su5")]
@@ -474,7 +474,7 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "A"
+text = "\"B\"/\"F\""
 metadata/_edit_use_anchors_ = true
 
 [node name="Tapete" type="Sprite2D" parent="." unique_id=1609031470]

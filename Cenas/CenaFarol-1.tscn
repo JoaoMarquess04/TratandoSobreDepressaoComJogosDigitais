@@ -627,7 +627,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "As vezes obstáculos aparecem em nossa jornada... Pressione \"B\" para pular"
+text = "As vezes obstáculos aparecem em nossa jornada... Pressione \"A\" para pular"
 autowrap_mode = 2
 
 [node name="Placa3" type="Sprite2D" parent="." unique_id=1580870914]
@@ -687,7 +687,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Haverão obstáculos maiores a frente... use \"Y\" para um impulso extra"
+text = "Haverão obstáculos maiores a frente... use \"X\" para um impulso extra"
 autowrap_mode = 2
 
 [node name="Placa5" type="Sprite2D" parent="." unique_id=700766370]
@@ -727,7 +727,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"A\" novamente para um impulso extra"
+text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"space bar\" novamente para um impulso extra"
 autowrap_mode = 2
 
 [node name="TextureRectControle" type="TextureRect" parent="Placa5" unique_id=1408076274]
@@ -747,7 +747,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"B\" novamente para um impulso extra"
+text = "Ao encostar em uma parede, enquanto estiver no ar pressione \"A\" novamente para um impulso extra"
 autowrap_mode = 2
 
 [node name="Placa6" type="Sprite2D" parent="." unique_id=494250300]
@@ -787,7 +787,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Pressione \"A\" próximo aos botões para ativar a plataforma "
+text = "Pressione \"F\" próximo aos botões para ativar a plataforma "
 autowrap_mode = 2
 
 [node name="TextureRectControle" type="TextureRect" parent="Placa6" unique_id=1571985346]
@@ -807,7 +807,7 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_outline_size = 1
 theme_override_font_sizes/font_size = 11
-text = "Pressione \"A\" próximo aos botões para ativar a plataforma "
+text = "Pressione \"B\" próximo aos botões para ativar a plataforma "
 autowrap_mode = 2
 
 [node name="QuadroFlor0" type="Sprite2D" parent="." unique_id=353737231]
@@ -1021,12 +1021,11 @@ offset_left = -4.0
 offset_top = -32.0
 offset_right = 36.0
 offset_bottom = -9.0
-text = "A"
+text = "\"B\"/\"F\""
 
 [node name="Placa4" type="Sprite2D" parent="." unique_id=815956463]
-visible = false
 texture_filter = 1
-position = Vector2(820, 154)
+position = Vector2(649, 59)
 texture = ExtResource("12_meohj")
 script = ExtResource("13_fowmg")
 
@@ -1123,7 +1122,7 @@ offset_top = 28.0
 offset_right = 660.0
 offset_bottom = 51.0
 scale = Vector2(0.44, 0.44)
-text = "A"
+text = "\"B\"/\"F\""
 metadata/_edit_use_anchors_ = true
 
 [node name="InterfaceRelogio" type="CanvasLayer" parent="." unique_id=900200009]
