@@ -43,6 +43,7 @@
 [ext_resource type="AudioStream" uid="uid://bft15oui3mjhr" path="res://Audio/i_want_to_go_home.mp3" id="48_musica"]
 [ext_resource type="Script" uid="uid://dwof2tyurc0o6" path="res://Cenas/fade_in.gd" id="99_fade_in"]
 [ext_resource type="Script" uid="uid://cr8rrsvwci31j" path="res://Cenas/scene_transition_2.gd" id="99_transition"]
+[ext_resource type="Script" path="res://porta_invisivel.gd" id="49_porta_invisivel"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_biiyk"]
 texture = ExtResource("3_2s6q8")
@@ -258,6 +259,9 @@ size = Vector2(32, 42)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_saida"]
 size = Vector2(28, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_porta_invisivel"]
+size = Vector2(40, 110)
 
 [node name="Node" type="Node" unique_id=329171235]
 script = ExtResource("47_musica_script")
@@ -608,6 +612,7 @@ texture = ExtResource("45_xcytx")
 texture_filter = 1
 position = Vector2(938, 606)
 scale = Vector2(0.5913515, 0.5913515)
+porta = NodePath("../PortaSaida")
 
 [node name="PortaAbertaProvisoria" type="Sprite2D" parent="." unique_id=82973185]
 texture_filter = 1
@@ -638,6 +643,13 @@ limit_left = 1
 limit_top = -16
 limit_right = 1150
 limit_bottom = 634
+
+[node name="PortaSaida" type="StaticBody2D" parent="." unique_id=900100010]
+position = Vector2(1120, 579)
+script = ExtResource("49_porta_invisivel")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PortaSaida" unique_id=900100011]
+shape = SubResource("RectangleShape2D_porta_invisivel")
 
 [node name="SceneTransition" type="Area2D" parent="." unique_id=900100001]
 position = Vector2(1120, 579)

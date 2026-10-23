@@ -103,6 +103,17 @@ func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_right"):
 		increase_frequency()
 
+	# A / espaco / enter confirma a frequencia
+	if Input.is_action_just_pressed("ui_accept"):
+		confirm_frequency()
+
+
+# soh teclado aqui: B do controle ja eh "interagir",
+# tratar ui_cancel em _unhandled_input fecharia e reabriria no mesmo frame
+func _unhandled_key_input(event: InputEvent) -> void:
+	if radio_open and event.is_action_pressed("ui_cancel"):
+		close_radio()
+
 
 # ============================================
 # DETECÇÃO DO PLAYER

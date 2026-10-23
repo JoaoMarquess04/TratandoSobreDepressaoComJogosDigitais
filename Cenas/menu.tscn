@@ -61,6 +61,11 @@ theme_override_font_sizes/font_size = 20
 text = "SAIR
 "
 
+[node name="Nivel Vo Abby" type="Button" parent="Hud/Botões principais" unique_id=900100001]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "IR PARA VÓ ABBY"
+
 [node name="Nome do Jogo" type="TextureRect" parent="Hud" unique_id=1141086767]
 texture_filter = 1
 anchors_preset = 4
@@ -147,5 +152,6 @@ audio_bus_name = "Musica"
 [connection signal="pressed" from="Hud/Botões principais/Configurações do Jogo" to="." method="_on_configurações_do_jogo_pressed"]
 [connection signal="pressed" from="Hud/Botões principais/Créditos" to="." method="_on_créditos_pressed"]
 [connection signal="pressed" from="Hud/Botões principais/Sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="Hud/Botões principais/Nivel Vo Abby" to="." method="_on_nivel_vo_abby_pressed"]
 [connection signal="pressed" from="Hud/Configuração/Voltar ao menu" to="." method="_on_voltar_ao_menu_opcoes_pressed"]
 [connection signal="value_changed" from="Hud/Configuração/ControleDeAudio" to="Hud/Configuração/ControleDeAudio" method="_on_value_changed"]

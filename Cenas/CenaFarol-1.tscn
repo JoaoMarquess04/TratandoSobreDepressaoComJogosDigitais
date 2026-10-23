@@ -1284,7 +1284,7 @@ shape = SubResource("RectangleShape2D_checkpoint1")
 [node name="InteragirDialogo[ESCRITORIO]2" type="Area2D" parent="." unique_id=1353880914]
 position = Vector2(481, 536)
 script = ExtResource("38_w7b66")
-texts = Array[String](["Lembro de quando meu pai me ensinou a reconhecer as constelações.", "Eu não entendia muito sobre o universo.", "Naquela época, eu só me preocupava com as noites passarem rápido demais.", "Hoje, daria qualquer coisa para perder mais algumas horas ao lado dele."])
+texts = Array[String](["Lembro de quando meu pai me ensinou", "a reconhecer as constelações.", "Eu não entendia muito sobre o universo.", "Naquela época, eu só me preocupava", "com as noites passarem rápido demais.", "Hoje, daria qualquer coisa para perder", "mais algumas horas ao lado dele."])
 
 [node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[ESCRITORIO]2" unique_id=48917340]
 texture_filter = 1
@@ -1305,7 +1305,7 @@ text = "\"B\"/\"F\""
 [node name="InteragirDialogo[ESCRITORIO]3" type="Area2D" parent="." unique_id=1524603285]
 position = Vector2(946, 152)
 script = ExtResource("38_w7b66")
-texts = Array[String](["Meu pai dedicou a vida a manter essa luz acesa. ", "Quando criança, eu não entendia sua dedicação.", "Hoje, sei que ele fazia isso para guiar pessoas de volta para casa.", "Passou a vida orientando tantos, mas, quando partiu, deixou sua própria família à deriva."])
+texts = Array[String](["Meu pai dedicou a vida a manter essa luz acesa.", "Quando criança, eu não entendia sua dedicação.", "Hoje, sei que ele fazia isso", "para guiar pessoas de volta para casa.", "Passou a vida orientando tantos,", "mas, quando partiu,", "deixou sua própria família à deriva."])
 
 [node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[ESCRITORIO]3" unique_id=2127460759]
 texture_filter = 1
@@ -1326,7 +1326,7 @@ text = "\"B\"/\"F\""
 [node name="InteragirDialogo[ESCRITORIO]4" type="Area2D" parent="." unique_id=1070346027]
 position = Vector2(1154, 537)
 script = ExtResource("38_w7b66")
-texts = Array[String](["Eu acreditava que meu pai sempre saberia encontrar o caminho.", "Para mim, ele tinha todas as respostas e era capaz de consertar qualquer coisa.", "Demorei a entender que nem tudo podia ser consertado, nem todos os caminhos permitiam uma volta.", "Passei tanto tempo ressentido por sua partida que me esqueci de tudo o que ele deixou em mim.", "Ainda não sei como voltar para ele, mas posso continuar seguindo seus ensinamentos."])
+texts = Array[String](["Eu acreditava que meu pai sempre saberia", "encontrar o caminho.", "Para mim, ele tinha todas as respostas", "e era capaz de consertar qualquer coisa.", "Demorei a entender que nem tudo", "podia ser consertado, nem todos", "os caminhos permitiam uma volta.", "Passei tanto tempo ressentido por sua partida", "que me esqueci de tudo o que ele deixou em mim.", "Ainda não sei como voltar para ele,", "mas posso continuar seguindo seus ensinamentos."])
 
 [node name="Sprite2D" type="Sprite2D" parent="InteragirDialogo[ESCRITORIO]4" unique_id=93798923]
 texture_filter = 1

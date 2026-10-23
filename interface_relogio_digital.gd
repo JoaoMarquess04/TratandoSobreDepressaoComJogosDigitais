@@ -31,6 +31,12 @@ func _unhandled_input(event: InputEvent):
 		fechar()
 		get_viewport().set_input_as_handled()
 
+# teclado nao chega em _unhandled_input: Esc vem por aqui
+func _unhandled_key_input(event: InputEvent):
+	if visible and event.is_action_pressed("ui_cancel"):
+		fechar()
+		get_viewport().set_input_as_handled()
+
 func _on_hora_mais():
 	hora_atual = (hora_atual + 1) % 24
 	atualizar_display()

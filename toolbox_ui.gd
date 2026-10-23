@@ -43,6 +43,12 @@ func _unhandled_input(event: InputEvent):
 		if not panel.get_global_rect().has_point(event.position):
 			close_ui()
 
+# teclado nao chega em _unhandled_input: Esc vem por aqui
+func _unhandled_key_input(event: InputEvent):
+	if event.is_action_pressed("ui_cancel"):
+		close_ui()
+		get_viewport().set_input_as_handled()
+
 
 # ============================================
 # CLIQUES
