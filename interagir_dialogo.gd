@@ -1,6 +1,7 @@
 extends Area2D
 
 @export var texts: Array[String]
+@export var dialog_scale := Vector2.ZERO
 @onready var label = $Label
 
 var player_near := false
@@ -47,6 +48,8 @@ func show_dialog():
 	dialog_open = true
 	
 	var dialog = dialog_scene.instantiate()
+	if dialog_scale != Vector2.ZERO:
+		dialog.scale = dialog_scale
 	get_tree().current_scene.add_child(dialog)
 	dialog.global_position = global_position + Vector2(0, -30)
 	dialog.start_dialog(texts)
