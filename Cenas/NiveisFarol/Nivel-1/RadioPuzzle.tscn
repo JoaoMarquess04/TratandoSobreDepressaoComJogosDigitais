@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://05dpdyrjnimh"]
 
 [ext_resource type="Script" uid="uid://c2sb6tyqofst3" path="res://Cenas/NiveisFarol/Nivel-1/RadioPuzzle.gd" id="1_nwumc"]
-[ext_resource type="Texture2D" uid="uid://b8c5nx8bqnudx" path="res://sprites/CasaNivel1/Radio.png" id="2_blej4"]
+[ext_resource type="Texture2D" uid="uid://dyolj4txw6e63" path="res://sprites/1.png" id="2_yyk2u"]
 [ext_resource type="AudioStream" uid="uid://b2h0r0ssae1ut" path="res://BIMINI, Avi Snow - No Way (with Avi Snow) [NCS Release].mp3" id="3_blej4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
@@ -11,7 +11,9 @@ size = Vector2(23, 18)
 script = ExtResource("1_nwumc")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1110927855]
-texture = ExtResource("2_blej4")
+position = Vector2(-3.8146973e-06, -2)
+scale = Vector2(0.0203125, 0.020312503)
+texture = ExtResource("2_yyk2u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1283543454]
 position = Vector2(-0.5, -2)

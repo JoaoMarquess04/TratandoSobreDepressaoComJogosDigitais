@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eilaij0ow441"
-path="res://.godot/imported/Janela.png-f9843d2dd5e74fd882d6e8c7013c4006.ctex"
+uid="uid://bvmtf3526bv6l"
+path="res://.godot/imported/Mesa-Cadeira.png-402bf2384cbd6c697765ea6e38382eb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Janela.png"
-dest_files=["res://.godot/imported/Janela.png-f9843d2dd5e74fd882d6e8c7013c4006.ctex"]
+source_file="res://sprites/Mesa-Cadeira.png"
+dest_files=["res://.godot/imported/Mesa-Cadeira.png-402bf2384cbd6c697765ea6e38382eb3.ctex"]
 
 [params]
 

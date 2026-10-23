@@ -20,7 +20,7 @@ func _on_jogar_pressed() -> void:
 	$Hud.get_node("Bimini,AviSnowNoWay(withAviSnow)[ncsRelease]").stop()
 	cutscene_player = VideoStreamPlayer.new()
 	cutscene_player.name = "CutsceneInicial"
-	cutscene_player.stream = load("res://VideoScenes/Cutscene-Test-1.ogv")
+	cutscene_player.stream = load("res://VideoScenes/CutsceneInicial2.ogv")
 	cutscene_player.expand = true
 	cutscene_player.autoplay = true
 	cutscene_player.finished.connect(_cutscene_terminou)

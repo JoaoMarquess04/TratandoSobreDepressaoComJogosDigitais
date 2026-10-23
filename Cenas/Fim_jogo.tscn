@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dh8mkud20xo4b"]
 
-[ext_resource type="Texture2D" uid="uid://jvmvlqt6ccia" path="res://sprites/MainMenu/Fundo-Menu.jpeg" id="1_mn17y"]
+[ext_resource type="Texture2D" uid="uid://bqaa2bjbgl27f" path="res://Cenas/ObgdPorJogar.png" id="1_mn17y"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_acp4l"]
 font_size = 64
@@ -19,6 +19,7 @@ texture = ExtResource("1_mn17y")
 expand_mode = 1
 
 [node name="Créditos" type="Label" parent="Imagem de fundo" unique_id=1830670376]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5

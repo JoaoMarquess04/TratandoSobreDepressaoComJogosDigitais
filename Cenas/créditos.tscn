@@ -89,21 +89,54 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-text = "A Galera"
+text = "Heitor Murta"
 label_settings = SubResource("LabelSettings_61ot5")
 
 [node name="Label2" type="Label" parent="Hud/Designers" unique_id=299194928]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-text = "De"
+text = "Gyovanna Marraya"
 label_settings = SubResource("LabelSettings_61ot5")
 
 [node name="Label3" type="Label" parent="Hud/Designers" unique_id=922812018]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-text = "Design"
+text = "Guilherme Toffanelli"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Label3" type="Label" parent="Hud/Designers/Label3" unique_id=2043058613]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 40.0
+offset_right = 301.0
+offset_bottom = 75.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Kallany Leandrini"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Label4" type="Label" parent="Hud/Designers/Label3" unique_id=682128271]
+layout_mode = 0
+offset_left = 46.0
+offset_top = -128.0
+offset_right = 181.0
+offset_bottom = -93.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "DESIGNERS"
+label_settings = SubResource("LabelSettings_61ot5")
+
+[node name="Label4" type="Label" parent="Hud/Designers/Label3/Label4" unique_id=1849226050]
+layout_mode = 0
+offset_left = -681.0
+offset_top = -70.0
+offset_right = -441.0
+offset_bottom = -35.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "DESENVOLVEDORES"
 label_settings = SubResource("LabelSettings_61ot5")
 
 [node name="Voltar ao menu" type="Button" parent="Hud" unique_id=887170160]
